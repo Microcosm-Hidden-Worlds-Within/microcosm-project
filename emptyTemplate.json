@@ -6,7 +6,7 @@
     "data": {
         "picData": {
             "title": "",
-            "author": [],
+            "author": "",
             "period": "",
             "technique": ""
         },
@@ -27,13 +27,13 @@
     "data": {
         "picData": {
             "title": "MRSA",
-            "author": ["Annie Cavanagh"],
+            "author": "Annie Cavanagh",
             "period": "",
-            "technique": ""
+            "technique": null
         },
         "subjectData": {
             "type": "Bacteria",
-            "system": ["Integumentary System", "Respiratory system", "Circulatory System"],
+            "system": "Integumentary System, Respiratory system, Circulatory System",
             "dimensions": ""
         }
     },
@@ -48,13 +48,13 @@
     "data": {
         "picData": {
             "title": "SEM tooth showing rods in plaque",
-            "author": ["David Gregory", "Debbie Marshall"],
+            "author": "David Gregory, Debbie Marshall",
             "period": "",
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
             "type": "Bacteria",
-            "system": ["Skeletal System"],
+            "system": "Skeletal System",
             "dimensions": "0.2-10µm"
         }
     },
@@ -69,13 +69,13 @@
     "data": {
         "picData": {
             "title": "Microplasma",
-            "author": ["Kevin Mackenzie"],
+            "author": "Kevin Mackenzie",
             "period": "",
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
             "type": "Bacteria",
-            "system": ["Skeletal System", "Respiratory system", "Genitourinary system"],
+            "system": "Skeletal System, Respiratory system, Genitourinary system",
             "dimensions": "0.2-1µm"
         }
     },
@@ -90,13 +90,13 @@
     "data": {
         "picData": {
             "title": "Clostridium difficile colony",
-            "author": ["David Goulding"],
+            "author": "David Goulding",
             "period": "",
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
             "type": "Bacteria",
-            "system": ["Digestive System", "Respiratory system", "Genitourinary system"],
+            "system": "Digestive System, Respiratory system, Genitourinary system",
             "dimensions": "3-8µm"
         }
     },
