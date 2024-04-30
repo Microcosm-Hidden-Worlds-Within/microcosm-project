@@ -1,11 +1,12 @@
-{
+[
+    {
     "id": "",
     "name": "",
     "image": "",
     "data": {
         "picData": {
             "title": "",
-            "author": "",
+            "author": [],
             "period": "",
             "technique": ""
         },
@@ -18,4 +19,89 @@
     "shortInfo": "",
     "longerInfo": "",
     "fullInfo": ""
+},
+{
+    "id": "4",
+    "name": "Staphylococcus aureus",
+    "image": "pics/pic-4.jpeg",
+    "data": {
+        "picData": {
+            "title": "MRSA",
+            "author": ["Annie Cavanagh"],
+            "period": "",
+            "technique": ""
+        },
+        "subjectData": {
+            "type": "Bacteria",
+            "system": ["Integumentary System", "Respiratory system", "Circulatory System"],
+            "dimensions": ""
+        }
+    },
+    "shortInfo": "Clusters of methicillin-resistant Staphylococcus aureus (MRSA) bacteria.",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "5",
+    "name": "Tooth with bacteria",
+    "image": "pics/pic-5.jpeg",
+    "data": {
+        "picData": {
+            "title": "SEM tooth showing rods in plaque",
+            "author": ["David Gregory", "Debbie Marshall"],
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Bacteria",
+            "system": ["Skeletal System"],
+            "dimensions": "0.2-10µm"
+        }
+    },
+    "shortInfo": "Scanning electron microscope image of tooth, showing rod-like bacteria in plaque.",
+    "longerInfo": "",
+    "fullInfo": ""
+}, 
+{
+    "id": "6",
+    "name": "Microplasma",
+    "image": "pics/pic-6.jpeg",
+    "data": {
+        "picData": {
+            "title": "Microplasma",
+            "author": ["Kevin Mackenzie"],
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Bacteria",
+            "system": ["Skeletal System", "Respiratory system", "Genitourinary system"],
+            "dimensions": "0.2-1µm"
+        }
+    },
+    "shortInfo": "This scanning electron micrograph shows microplasma, a genus of bacteria that lack a cell wall. Without a cell wall they are unaffected by many common antibiotics, such as penicillin, or other beta-lactam antibiotics that work by targeting cell wall synthesis. These microplasma are shown on the surface of osteoblast cells, cells that are involved in the creation of new bone.",
+    "longerInfo": "",
+    "fullInfo": ""
+}, 
+{
+    "id": "7",
+    "name": "Clostridium difficile colony",
+    "image": "pics/pic-7.jpeg",
+    "data": {
+        "picData": {
+            "title": "Clostridium difficile colony",
+            "author": ["David Goulding"],
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Bacteria",
+            "system": ["Digestive System", "Respiratory system", "Genitourinary system"],
+            "dimensions": "3-8µm"
+        }
+    },
+    "shortInfo": "Clostridium difficile is a major cause of antibiotic-associated diarrheal disease. This false-coloured scanning electron micrograph shows part of the expanding edge of a bacterial colony in situ on an agar plate. Both vegetative cells and spores are visible. In order to study and accurately profile an intact colony it has been essential to minimise the disturbance of the cells. In this way it has been possible to optimise conditions for spore formation, characterise different cell morphologies across the colony and to study biofilm formation directly.",
+    "longerInfo": "",
+    "fullInfo": ""
 }
+]
