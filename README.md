@@ -24,5 +24,20 @@
 ## images
 ### Historical images: Simone
 ### Diseases: Ludovica
-* Id = 4
+#### Id 4
+
 ![picture 4](pics/pic-4.jpeg)
+
+#### Id 5
+
+![picture 5](pics/pic-5.jpeg)
+
+#### Id 6
+
+![picture 6](pics/pic-6.jpeg)
+
+#### Id 7
+![picture 7](pics/pic-7.jpeg)
+
+
+
