@@ -1,5 +1,68 @@
 [
     {
+    "id": "1",
+    "name": "The eye, as seen through a microscope: two figures",
+    "image": "pics/pic-1.jpg",
+    "data": {
+        "picData": {
+            "title": "The eye, as seen through a microscope: two figures",
+            "author": "Liebreich, Richard",
+            "period": "",
+            "technique": "litograph"
+        },
+        "subjectData": {
+            "type": "",
+            "system": "",
+            "dimensions": ""
+        }
+    },
+    "shortInfo": "",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "2",
+    "name": "The eye, as seen through a microscope: two figures",
+    "image": "pics/pic-2.jpg",
+    "data": {
+        "picData": {
+            "title": "The eye, as seen through a microscope: two figures",
+            "author": "Liebreich, Richard",
+            "period": "",
+            "technique": "litograph"
+        },
+        "subjectData": {
+            "type": "",
+            "system": "",
+            "dimensions": ""
+        }
+    },
+    "shortInfo": "",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "3",
+    "name": "Healthy hair Bulb",
+    "image": "pics/pic-3.jpg",
+    "data": {
+        "picData": {
+            "title": "Healthy hair Bulb",
+            "author": "Glaister, John",
+            "period": "",
+            "technique": ""
+        },
+        "subjectData": {
+            "type": "",
+            "system": "",
+            "dimensions": ""
+        }
+    },
+    "shortInfo": "",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
     "id": "",
     "name": "",
     "image": "",
