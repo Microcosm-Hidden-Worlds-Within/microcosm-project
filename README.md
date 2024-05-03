@@ -51,5 +51,20 @@
 #### Id 7
 ![picture 7](pics/pic-7.jpeg)
 
+#### Id 8
+![picture 8](pics/pic-8.jpeg)
+
+#### Id 9
+![picture 9](pics/pic-9.jpeg)
+
+#### Id 10
+![picture 7](pics/pic-10.jpeg)
+
+#### Id 11
+![picture 7](pics/pic-11.jpeg)
+
+#### Id 12
+![picture 12](pics/pic-12.jpeg)
+
 
 
