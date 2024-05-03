@@ -51,20 +51,21 @@
 #### Id 7
 ![picture 7](pics/pic-7.jpeg)
 
+### Systems: Alberto
 #### Id 8
-![picture 8](pics/pic-8.jpeg)
+![picture 8](pics/pic-8.jpg)
 
 #### Id 9
-![picture 9](pics/pic-9.jpeg)
+![picture 9](pics/pic-9.jpg)
 
 #### Id 10
-![picture 7](pics/pic-10.jpeg)
+![picture 7](pics/pic-10.jpg)
 
 #### Id 11
-![picture 7](pics/pic-11.jpeg)
+![picture 7](pics/pic-11.jpg)
 
 #### Id 12
-![picture 12](pics/pic-12.jpeg)
+![picture 12](pics/pic-12.jpg)
 
 
 
