@@ -95,7 +95,7 @@
             "technique": null
         },
         "subjectData": {
-            "type": "Bacteria",
+            "type": "Bacterium",
             "system": "Integumentary System, Respiratory system, Circulatory System",
             "dimensions": ""
         }
@@ -116,7 +116,7 @@
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
-            "type": "Bacteria",
+            "type": "Bacterium",
             "system": "Skeletal System",
             "dimensions": "0.2-10µm"
         }
@@ -134,10 +134,10 @@
             "title": "Microplasma",
             "author": "Kevin Mackenzie",
             "period": "",
-            "technique": "Scanning Electron Microscope (SEM)"
+            "technique": "Scanning Electron Microscope (SEM), Colorized"
         },
         "subjectData": {
-            "type": "Bacteria",
+            "type": "Bacterium",
             "system": "Skeletal System, Respiratory system, Genitourinary system",
             "dimensions": "0.2-1µm"
         }
@@ -158,7 +158,7 @@
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
-            "type": "Bacteria",
+            "type": "Bacterium",
             "system": "Digestive System, Respiratory system, Genitourinary system",
             "dimensions": "3-8µm"
         }
