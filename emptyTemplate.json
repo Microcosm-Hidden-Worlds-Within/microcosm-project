@@ -1,0 +1,21 @@
+{
+    "id": "",
+    "name": "",
+    "image": "",
+    "data": {
+        "picData": {
+            "title": "",
+            "author": "",
+            "period": "",
+            "technique": ""
+        },
+        "subjectData": {
+            "type": "",
+            "system": "",
+            "dimensions": ""
+        }
+    },
+    "shortInfo": "",
+    "longerInfo": "",
+    "fullInfo": ""
+}
