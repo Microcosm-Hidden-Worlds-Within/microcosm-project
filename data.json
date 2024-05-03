@@ -170,7 +170,7 @@
 {
     "id": "8",
     "name": "Blood Vessel",
-    "image": "",
+    "image": "pics/pic-8.jpg",
     "data": {
         "picData": {
             "title": "Ruptured blood vessel",
@@ -191,7 +191,7 @@
 {
     "id": "9",
     "name": "Red Globules",
-    "image": "",
+    "image": "pics/pic-9.jpg",
     "data": {
         "picData": {
             "title": "Blood Cells, SEM",
@@ -212,7 +212,7 @@
 {
     "id": "10",
     "name": "Intestinal Villi",
-    "image": "",
+    "image": "pics/pic-10.jpg",
     "data": {
         "picData": {
             "title": "Villus from the small intestine",
@@ -233,7 +233,7 @@
 {
     "id": "11",
     "name": "Alveoli",
-    "image": "",
+    "image": "pics/pic-11.jpg",
     "data": {
         "picData": {
             "title": "SEM alveoli in the lung",
@@ -254,7 +254,7 @@
 {
     "id": "12",
     "name": "Stromal Lymphocytes",
-    "image": "",
+    "image": "pics/pic-12.jpg",
     "data": {
         "picData": {
             "title": "Massed small stromal lymphocytes - coloured",
