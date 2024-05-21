@@ -1,3 +1,8 @@
+html{
+   font-size: 10px;
+}
+
+
 body {
   scroll-behavior: smooth;
   background-color: white;
@@ -6,6 +11,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
+
+
 
 /* Hero section */
 .hero {
@@ -38,11 +45,12 @@ body {
 .hero-title {
   font-weight: 700;
   color: white;
-  font-size: 5rem;
+  font-size: 10rem;
 
 }
 
 .hero-subtitle {
+  font-size: 4rem;
   margin-top: -1rem;
   font-weight: 500;
   color: white;
@@ -51,7 +59,7 @@ body {
 .hero-btn {
   background-color: rgba(255, 255, 255, 0.35);
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 2rem;
   margin-top: 1.5rem;
   color: white;
   padding-left: 2rem;
@@ -68,4 +76,10 @@ body {
 #address iframe {
   max-width: 100vw;
   max-height: 50vw;
+}
+
+@media (max-width:500px) {
+  html {
+    font-size: 5px;
+  }
 }
