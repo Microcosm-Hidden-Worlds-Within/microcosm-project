@@ -1,17 +1,70 @@
 body {
   scroll-behavior: smooth;
   background-color: white;
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
-h3 {
-  text-align: center;
+/* Hero section */
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(pics/pic-11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(80%);
+}
+.hero-content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title {
+  font-weight: 700;
+  color: white;
+  font-size: 5rem;
+
+}
+
+.hero-subtitle {
+  margin-top: -1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.hero-btn {
+  background-color: rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  letter-spacing: 1px;
+
+}
+
+.hero-btn:hover {
+  background-color: white;
 }
 
 /* Alberto */
-
 #address iframe {
   max-width: 100vw;
   max-height: 50vw;
