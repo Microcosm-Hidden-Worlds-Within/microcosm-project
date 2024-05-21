@@ -27,7 +27,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../pics/pic-11.jpg);
+  background: url(../pics/pic-16.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -78,7 +78,8 @@ body {
   max-height: 50vw;
 }
 
-@media (max-width:500px) {
+/* Media Queries */
+@media (max-width:700px) {
   html {
     font-size: 5px;
   }
