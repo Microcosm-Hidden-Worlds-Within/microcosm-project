@@ -272,4 +272,151 @@
     "longerInfo": "",
     "fullInfo": ""
 },
+{
+    "id": "13",
+    "name": "Human hair",
+    "image": "pics/pic-13.jpg",
+    "data": {
+        "picData": {
+            "title": "Split end of a human hair",
+            "author": "Liz Hirst",
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Organ",
+            "system": "Integumentary system",
+            "dimensions": "0.017-0.18mm"
+        }
+    },
+    "shortInfo": "Colour-enhanced scanning electron microgaph of the split end of a human hair showing the outer cuticle layer surrounding the inner cortical layer.",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "14",
+    "name": "Collagen",
+    "image": "pics/pic-14.jpg",
+    "data": {
+        "picData": {
+            "title": "SEM of collagen",
+            "author": "David Gregory, Debbie Marshall",
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Protein",
+            "system": "Integumentary system, Musculoskeletal system",
+            "dimensions": "300 nm"
+        }
+    },
+    "shortInfo": "",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "15",
+    "name": "Purkinje neurons",
+    "image": "pics/pic-15.jpg",
+    "data": {
+        "picData": {
+            "title": "Purkinje neurons in culture",
+            "author": "Annie Cavanagh",
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Cell",
+            "system": "Central Nervous System",
+            "dimensions": "20-40µm"
+        }
+    },
+    "shortInfo": "This scanning electron micrograph, shows differentiating neurons grown in culture.",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "16",
+    "name": "Blood vessels in the optic disc",
+    "image": "pics/pic-16.jpg",
+    "data": {
+        "picData": {
+            "title": "Blood vessels emerging from the optic disc",
+            "author": "Freya Mowat",
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Artery",
+            "system": "Cardiovascular System",
+            "dimensions": "120-200µm"
+        }
+    },
+    "shortInfo": "Blood vessels in the retina emerging from the optic disc (black). The optic disc is the area of the retina where the optic nerve and retinal blood vessels leave the back of the eye.",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "17",
+    "name": "Tongue",
+    "image": "pics/pic-17.jpg",
+    "data": {
+        "picData": {
+            "title": "Tongue, taste bud on fungiform papilla. SEM",
+            "author": "David Gregory, Debbie Marshall",
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Organ",
+            "system": "Digestive system, Muscular system, Respiratory system",
+            "dimensions": "50-100µm"
+        }
+    },
+    "shortInfo": "Scanning electron micrograph of fungiform papilla on tongue, showing taste bud.",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "18",
+    "name": "Human proximal tubule",
+    "image": "pics/pic-18.jpg",
+    "data": {
+        "picData": {
+            "title": "Human proximal tubule, tubular structure, SEM",
+            "author": "David Gregory, Debbie Marshall",
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Nephron",
+            "system": "Urinary System",
+            "dimensions": "14-18mm"
+        }
+    },
+    "shortInfo": "Scanning electron micrograph of human proximal tubule, showing tubular structure.",
+    "longerInfo": "",
+    "fullInfo": ""
+},
+{
+    "id": "19",
+    "name": "Blood vessel in a melanoma",
+    "image": "pics/pic-19.jpg",
+    "data": {
+        "picData": {
+            "title": "Blood vessel in a melanoma, SEM",
+            "author": "S. Gschmeissner, K. Hodivala-Dilke, M. Stone",
+            "period": "",
+            "technique": "Scanning Electron Microscope (SEM)"
+        },
+        "subjectData": {
+            "type": "Artery",
+            "system": "Circulatory system, Integumentary system",
+            "dimensions": ""
+        }
+    },
+    "shortInfo": "Colour-enhanced, freeze-fracture scanning electron micrograph of a blood vessel that has grown into a melanoma and is providing nourishment to it.",
+    "longerInfo": "",
+    "fullInfo": ""
+}
 ]
