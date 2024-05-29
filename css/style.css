@@ -13,19 +13,20 @@ body {
   font-size: 2rem;
 }
 
-
-
 section {
   padding: 2rem; 
-  padding-left: 10vw;
-  padding-right: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 h3 {
   text-align: center;
   font-size: 4rem;
   padding: 2rem;
+}
 
+h4 {
+  font-size: 3rem;
 }
 
 .btn {
@@ -48,7 +49,7 @@ h3 {
 /* Hero section */
 #hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -68,7 +69,7 @@ h3 {
 }
 .hero-content {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -108,7 +109,15 @@ h3 {
 
 /* Alberto */
 #address iframe {
-  max-width: 100vw;
+  width: 100%;
+  height: 50vh;
   max-height: 50vw;
 }
 
+#address p {
+  font-size: 2.5rem;
+}
+
+#address .container {
+  padding: 1rem;
+}
