@@ -8,3 +8,35 @@ img {
    width: 100%;
    height: 100%;
 }
+
+@media DISABLED {
+   /* Disabilita il comportamento di clic sui bottoni degli header */
+   .accordion-button {
+       cursor: default;
+       pointer-events: none;
+   }
+
+   /* Mantieni visibili tutti i contenuti dei pannelli */
+   .accordion-collapse {
+       display: block !important; /* Forza la visualizzazione di tutti i contenuti */
+       visibility: visible !important; /* Assicura che siano visibili */
+       height: auto !important; /* Assicura che l'altezza sia automatica */
+   }
+
+   /* Assicurati che le classi "show" non influenzino la visualizzazione */
+   .accordion-collapse.collapse:not(.show) {
+       display: block !important; /* Forza la visualizzazione anche se non ha la classe "show" */
+       height: auto !important; /* Assicura che l'altezza sia automatica */
+   }
+
+   /* Assicurati che i contenuti siano visibili e correttamente formattati */
+   .accordion-body {
+       padding: 1rem;
+       border-top: 1px solid #dee2e6;
+   }
+
+   /* Rimuove la freccia aggiunta da Bootstrap nei bottoni dell'accordion */
+   .accordion-button::after {
+       content: none !important; /* Rimuove il contenuto pseudo-elemento (la freccia) */
+   }
+}
