@@ -27,6 +27,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media-700.css">
 
   <!-- Javascript -->
   <script type="text/javascript" src="#"></script>
@@ -64,21 +65,24 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
+    <section id="hero">
       <div class="hero-content">
         <h1 class="hero-title">Microcosm</h1>
         <h2 class="hero-subtitle">Hidden Worlds Within</h2>
-        <a class="btn hero-btn" href="#" role="button">Explore</a>
+        <a class="btn hero-btn" href="/html_pages/app.html" role="button">Explore</a>
       </div>
     </section>
-    <div>
-      <h3>What is about?</h3>
-      <p>Explore "Microcosm: Hidden Worlds Within" where science meets art through stunning 
-        micrographs of the human body. This exhibition reveals the intricate 
-        complexity and elegance of human tissues and cells, showcasing the 
-        extraordinary beauty beneath the surface. Join us for a visual journey 
-        that celebrates the marvels of human biology in vivid colors and delicate structures.</p>
-    </div>
+    <section id='description'>
+
+      <div>
+        <h3>What is about?</h3>
+        <p>Explore "Microcosm: Hidden Worlds Within" where science meets art through stunning
+          micrographs of the human body. This exhibition reveals the intricate
+          complexity and elegance of human tissues and cells, showcasing the
+          extraordinary beauty beneath the surface. Join us for a visual journey
+          that celebrates the marvels of human biology in vivid colors and delicate structures.</p>
+      </div>
+    </section>
 
     <section id="narratives">
       <h3>Narratives</h3>
@@ -86,55 +90,64 @@
       <div class="container">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('pics/pic-12.jpg'); background-size: cover; background-position: center; height: 300px;">
+            <div class="carousel-item active"
+              style="background-image: url('pics/pic-12.jpg'); background-size: cover; background-position: center; height: 300px;">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Circulatory system</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-11.jpg'); background-size: cover; background-position: center; height: 300px;">
+            <div class="carousel-item"
+              style="background-image: url('pics/pic-11.jpg'); background-size: cover; background-position: center; height: 300px;">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Respiratory system</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-13.jpg'); background-size: cover; background-position: center; height: 300px;">
+            <div class="carousel-item"
+              style="background-image: url('pics/pic-13.jpg'); background-size: cover; background-position: center; height: 300px;">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Integumentary system</h5>
                 <p>Some representative placeholder content for the third slide.</p>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
-      <div>
+      <div class="center">
         <a class="btn btn-primary" href="#" role="button">See all the narratives</a>
       </div>
     </section>
-    <section id="navigation">
+    <section id="navigation" class="colored-bg">
       <h3>Microcosm exhibition at Guggenheim Museum</h3>
       <div>
-        <p>Welcome to the navigation section for the exhibition hosted at the Guggenheim Museum. Navigate through the exhibit's details and explore the museum's offerings.</p>
-        <img src="Guggenheim_Museum_2.png"> 
+        <p>Welcome to the navigation section for the exhibition hosted at the Guggenheim Museum. Navigate through the
+          exhibit's details and explore the museum's offerings.</p>
+        <img src="">
       </div>
-      <div>
+      <div class="center">
         <a class="btn btn-primary" href="https://www.guggenheim.org/" role="button">Link</a>
       </div>
     </section>
-    <section id="address">
+    <section id="address" class="colored-bg">
       <h3>Address</h3>
       <!-- placeholder map of palazzo poggi -->
       <iframe

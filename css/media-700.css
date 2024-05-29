@@ -1,0 +1,15 @@
+/* Media Queries */
+@media (max-width:700px) {
+  html {
+    font-size: 5px;
+  }
+  
+  body {
+    font-size: 3rem;
+  }
+
+  section {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
