@@ -1,0 +1,53 @@
+/* Desktop version */
+@media (min-width:700px) {
+   /* disable accordion button */
+    .accordion-button {
+       cursor: default;
+       pointer-events: none;
+    }
+
+   /* all accordion content visible */
+    .accordion-collapse {
+       display: block !important; /* Forza la visualizzazione di tutti i contenuti */
+       visibility: visible !important; /* Assicura che siano visibili */
+       height: auto !important; /* Assicura che l'altezza sia automatica */
+    }
+
+   /* Avoid "show" classes behaviour */
+    .accordion-collapse.collapse:not(.show) {
+       display: block !important; /* Forza la visualizzazione anche se non ha la classe "show" */
+       height: auto !important; /* Assicura che l'altezza sia automatica */
+    }
+
+    .accordion-body {
+       padding: 1rem;
+  
+    }
+    
+
+   /* Remove bootstrap accordion arrow */
+    .accordion-button::after {
+       content: none !important; /* Rimuove il contenuto pseudo-elemento (la freccia) */
+    }
+   
+   /* Remove accordion border */
+    .accordion .accordion-item {
+        border: 0;
+    }
+
+    /* remove background color */
+    .accordion-button:not(.collapsed)  {
+        background-color: transparent;
+        color: black;
+        box-shadow: none;
+    }
+    
+    /* make h3 title of the tables closer to the table */
+    .accordion-button {
+        padding-bottom: 10px;
+        padding-top: 25px;
+
+
+ 
+    }
+}

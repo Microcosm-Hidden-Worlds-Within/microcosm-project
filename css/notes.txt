@@ -26,3 +26,17 @@ Some CSS for the button:
 	.return img {
 	  max-height: 5rem;
 	}
+
+
+
+
+
+
+	Attribution ICONS 
+	<a href="https://www.flaticon.com/free-icons/bacteria" title="bacteria icons">Bacteria icons created by Good Ware - Flaticon</a>
+
+	<a href="https://www.flaticon.com/free-icons/ruler" title="ruler icons">Ruler icons created by Creaticca Creative Agency - Flaticon</a>
+
+	<a href="https://www.flaticon.com/free-icons/microscope" title="microscope icons">Microscope icons created by DinosoftLabs - Flaticon</a>
+
+	<a href="https://www.flaticon.com/free-icons/hourglass" title="hourglass icons">Hourglass icons created by prettycons - Flaticon</a>

@@ -32,7 +32,7 @@
             "technique": "litograph"
         },
         "subjectData": {
-            "type": "",
+            "type": "Organ",
             "system": "nervous system",
             "dimensions": ""
         }
@@ -53,7 +53,7 @@
             "technique": "litograph"
         },
         "subjectData": {
-            "type": "",
+            "type": "Organ",
             "system": "nervous system",
             "dimensions": ""
         }
@@ -74,7 +74,7 @@
             "technique": ""
         },
         "subjectData": {
-            "type": "",
+            "type": "Organ",
             "system": "integumentary system",
             "dimensions": ""
         }
@@ -138,7 +138,7 @@
         },
         "subjectData": {
             "type": "Bacterium",
-            "system": "Skeletal System, Respiratory system, Genitourinary system",
+            "system": "Skeletal System, Respiratory system, Urinary system",
             "dimensions": "0.2-1µm"
         }
     },
@@ -305,8 +305,8 @@
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
-            "type": "Protein",
-            "system": "Integumentary system, Musculoskeletal system",
+            "type": "",
+            "system": "Integumentary system, Skeletal system, Muscular system",
             "dimensions": "300 nm"
         }
     },
@@ -327,7 +327,7 @@
         },
         "subjectData": {
             "type": "Cell",
-            "system": "Central Nervous System",
+            "system": "Nervous System",
             "dimensions": "20-40µm"
         }
     },
@@ -347,8 +347,8 @@
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
-            "type": "Artery",
-            "system": "Cardiovascular System",
+            "type": "Organ",
+            "system": "Circulatory System",
             "dimensions": "120-200µm"
         }
     },
@@ -389,7 +389,7 @@
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
-            "type": "Nephron",
+            "type": "Organ",
             "system": "Urinary System",
             "dimensions": "14-18mm"
         }
@@ -410,7 +410,7 @@
             "technique": "Scanning Electron Microscope (SEM)"
         },
         "subjectData": {
-            "type": "Artery",
+            "type": "Organ",
             "system": "Circulatory system, Integumentary system",
             "dimensions": ""
         }

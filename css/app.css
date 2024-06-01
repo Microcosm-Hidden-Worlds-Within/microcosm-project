@@ -1,3 +1,49 @@
+/* base for rem */
+html{
+   font-size: 10px;
+}
+
+body {
+   scroll-behavior: smooth;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* title */
+h2 {
+   text-align: center;
+   font-size: 3.5rem;
+   font-weight: 800;
+   padding: 1rem;
+   margin: 0;
+}
+
+.card {
+   border: 0
+}
+
+.card-header {
+   padding: 0;
+   border: 0;
+   background-color: transparent;
+}
+
+.accordion-button {
+   font-size: 2.5rem;
+   padding: 20px 15px;
+   text-align: center;
+   font-weight: 700;
+}
+
+.card-body {
+   padding-top: 0;
+
+}
+
 figure {
    height: 80vh;
    width: 100%;
@@ -9,34 +55,41 @@ img {
    height: 100%;
 }
 
-@media DISABLED {
-   /* Disabilita il comportamento di clic sui bottoni degli header */
-   .accordion-button {
-       cursor: default;
-       pointer-events: none;
-   }
+.narrative-icon {
+   height: 5rem;
+   width: auto;
+   margin-right: 1rem;
+   margin-left: 1rem;
+}
 
-   /* Mantieni visibili tutti i contenuti dei pannelli */
-   .accordion-collapse {
-       display: block !important; /* Forza la visualizzazione di tutti i contenuti */
-       visibility: visible !important; /* Assicura che siano visibili */
-       height: auto !important; /* Assicura che l'altezza sia automatica */
-   }
+.accordion-body {
+   padding: 0 !important;
+   font-size: 2rem;
+   border: 0; 
+}
 
-   /* Assicurati che le classi "show" non influenzino la visualizzazione */
-   .accordion-collapse.collapse:not(.show) {
-       display: block !important; /* Forza la visualizzazione anche se non ha la classe "show" */
-       height: auto !important; /* Assicura che l'altezza sia automatica */
-   }
+/* table */
+.table p {
+   display: inline;
+}
 
-   /* Assicurati che i contenuti siano visibili e correttamente formattati */
-   .accordion-body {
-       padding: 1rem;
-       border-top: 1px solid #dee2e6;
-   }
+.table {
+   margin: 0;
+   width: 100%;
+}
 
-   /* Rimuove la freccia aggiunta da Bootstrap nei bottoni dell'accordion */
-   .accordion-button::after {
-       content: none !important; /* Rimuove il contenuto pseudo-elemento (la freccia) */
-   }
+.table th, .table td {
+  padding: 15px;
+}
+
+.table td {
+   width: 100%;
+}
+
+tbody {
+   width: 100%;
+}
+
+th {
+   vertical-align: middle;
 }

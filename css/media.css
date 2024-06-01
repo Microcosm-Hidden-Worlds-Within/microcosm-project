@@ -1,7 +1,7 @@
 /* Media Queries */
 @media (max-width:700px) {
   html {
-    font-size: 5px;
+    font-size: 7px;
   }
   
   body {
@@ -12,4 +12,6 @@
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
+  
 }
