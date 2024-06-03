@@ -80,14 +80,14 @@ figcaption {
    left: 0;
    background-color: white;
    padding: 2px 6px;
-   border-bottom: 1px solid rgb(206, 206, 206);
-   border-left: 1px solid rgb(206, 206, 206);
+   border-bottom: 1px solid var(--light-grey);
+   border-left: 1px solid var(--light-grey);
    border-radius: 0 5px 0 0;
 }
 
 .narrative-button {
    display: inline-block;
-   background-color: rgb(239, 239, 239);
+   background-color: var(--light-grey);
    padding: 7px;
    margin-right: 1rem;
    border-radius: 20px;
@@ -165,7 +165,7 @@ h5 {
    text-align: justify;
    margin: auto;
    font-size: 1.7rem;
-   border-top: 1px solid rgb(206, 206, 206);
+   border-top: 1px solid var(--light-grey);
    padding: 1rem;
 }
 
