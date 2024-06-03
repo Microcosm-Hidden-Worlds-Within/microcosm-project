@@ -1,12 +1,17 @@
+:root {
+   --dark-grey: rgb(84, 84, 84);
+   --light-grey: rgb(206, 206, 206);
+}
+
 /* base for rem */
 html{
    font-size: 10px;
 }
 
 body {
-   scroll-behavior: smooth;
+scroll-behavior: smooth;
   background-color: rgb(255, 255, 255);
-  color: rgb(84, 84, 84);
+  color: var(--dark-grey);
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -15,7 +20,7 @@ body {
 }
 
 .card {
-   color: rgb(84, 84, 84);
+   color: var(--dark-grey);
 }
 
 /* title */
@@ -42,7 +47,7 @@ h2 {
    padding: 20px 15px;
    text-align: center;
    font-weight: 700;
-   color: rgb(84, 84, 84);
+   color: var(--dark-grey);
 }
 
 .card-body {
@@ -68,7 +73,7 @@ img {
 
 
 figcaption {
-   color: rgb(84, 84, 84);
+   color: var(--dark-grey);
    font-size: 1.5rem;
    position: absolute;
    bottom: 0;
@@ -117,11 +122,11 @@ a {
 }
 
 .table>:not(caption)>*>* {
-   color: rgb(84, 84, 84);
+   color: var(--dark-grey);
 }
 
 .accordion-item {
-   color: rgb(84, 84, 84);
+   color: var(--dark-grey);
 }
 
 /* table */
