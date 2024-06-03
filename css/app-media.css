@@ -38,7 +38,7 @@
     /* remove background color */
     .accordion-button:not(.collapsed)  {
         background-color: transparent;
-        color: black;
+        color: rgb(84, 84, 84);
         box-shadow: none;
     }
     
@@ -46,8 +46,7 @@
     .accordion-button {
         padding-bottom: 10px;
         padding-top: 25px;
-
-
- 
     }
+
+     
 }

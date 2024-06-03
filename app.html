@@ -26,6 +26,17 @@
    </header>
 
    <main>
+      <!-- Modal -->
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <img src="pics/pic-8.jpg" class="img-fluid" alt="Ruptured blood vessel">
+               </div>
+            </div>
+         </div>
+      </div>
+
       <!-- Main Card -->
       <div class="card" id="mainCard">
          <!-- Header Card-->
@@ -37,8 +48,9 @@
             <div class="row">
                <div class="col-sm-12 col-md-8 d-flex"> <!-- d-flex??? -->
                   <figure>
-                     <img id="img" src="pics/pic-8.jpg" class=" m-auto" alt="">
-                     <figcaption>Lorem impsum </figcaption>
+                     <img id="img" src="pics/pic-8.jpg" class=" m-auto" alt="" data-bs-toggle="modal"
+                        data-bs-target="#imageModal">
+                     <figcaption><i>Ruptured blood vessel</i>, Anne Weston</figcaption>
                   </figure>
 
                   <!-- card-img-top - rounded borders?? --> <!-- there was limitHeight, don't know if it is useful -->
@@ -61,20 +73,37 @@
                                     <tr>
                                        <th>Systems</th>
                                        <td>
-                                          <img src="icons/systems/circulatory.png" class="narrative-icon">
-                                          <img src="icons/systems/respiratory.png" class="narrative-icon">
-                                          <img src="icons/systems/skeletal.png" class="narrative-icon">
+                                          <a class="narrative-button" role="button" href="#" onclick="changeNarrative()"
+                                             style="background-color: red;">
+                                             <img src="icons/systems/circulatory.png" class="narrative-icon">
+                                          </a>
+                                          <a class="narrative-button" role="button" href="#" onclick="changeNarrative()"
+                                             style="background-color: rgb(141, 215, 255);">
+                                             <img src="icons/systems/respiratory.png" class="narrative-icon">
+                                          </a>
+                                          <a class="narrative-button" role="button" href="#" onclick="changeNarrative()"
+                                             style="background-color: rgb(255, 238, 52)">
+                                             <img src="icons/systems/skeletal.png" class="narrative-icon">
+                                          </a>
                                        </td>
                                     </tr>
                                     <tr>
                                        <th>Type</th>
-                                       <td><img src="icons/type/bacterium.png" class="narrative-icon"></td>
+                                       <td>
+                                          <a class="narrative-button" role="button" href="#" onclick="changeNarrative()"
+                                             style="background-color: rgb(10, 159, 23)">
+                                             <img src="icons/type/bacterium.png" class="narrative-icon">
+                                          </a>
+                                       </td>
                                     </tr>
                                     <tr>
                                        <th>Dimension</th>
                                        <td>
-                                          <img src="icons/dimension.png" class="narrative-icon">
-                                          <p>50-100µm</p>
+                                          <a class="narrative-button" role="button" href="#"
+                                             onclick="changeNarrative()">
+                                             <img src="icons/dimension.png" class="narrative-icon">
+                                             <p>50-100µm</p>
+                                          </a>
                                        </td>
                                     </tr>
                                  </tbody>
@@ -98,15 +127,21 @@
                                     <tr>
                                        <th>Technique:</th>
                                        <td>
-                                          <img src="icons/technique.png" class="narrative-icon" alt="">
-                                          <p>SEM</p>
+                                          <a class="narrative-button" role="button" href="#"
+                                             onclick="changeNarrative()">
+                                             <img src="icons/technique.png" class="narrative-icon" alt="">
+
+                                             <p>SEM</p>
+                                          </a>
                                        </td>
                                     </tr>
                                     <tr>
                                        <th>Period:</th>
-                                       <td>
-                                          <img src="icons/period.png" class="narrative-icon" alt="">
-                                          <p>Modern</p>
+                                       <td><a class="narrative-button" role="button" href="#"
+                                             onclick="changeNarrative()">
+                                             <img src="icons/period.png" class="narrative-icon" alt="">
+                                             <p>Modern</p>
+                                          </a>
                                        </td>
                                     </tr>
                                  </tbody>
@@ -119,7 +154,13 @@
             </div>
             <!-- Info Card-->
             <h5 class="card-title text-center">Info</h5>
-            <p class="card-text" id="shortInfo">
+            <p class="card-text" id="shortInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna
+               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis
+               aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint
+               occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <p class="card-text d-none" id="longerInfo"></p>
             </p>
