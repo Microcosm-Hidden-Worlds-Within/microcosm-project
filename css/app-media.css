@@ -1,5 +1,5 @@
 /* Desktop version */
-@media (min-width:700px) {
+@media (min-width:768px) {
    /* disable accordion button */
     .accordion-button {
        cursor: default;
