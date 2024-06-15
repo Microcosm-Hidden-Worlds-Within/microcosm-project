@@ -1,7 +1,4 @@
-:root {
-   --dark-grey: rgb(191, 47, 47);
-   --light-grey: rgb(206, 206, 206);
-}
+
 
 /* base for rem */
 html{
@@ -10,8 +7,8 @@ html{
 
 body {
   scroll-behavior: smooth;
-  background-color: rgb(255, 255, 255);
-  color: var(--dark-grey);
+  background-color: var(--primary);
+  color: var(--secondary);
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -20,7 +17,7 @@ body {
 }
 
 .card {
-   color: var(--dark-grey);
+   color: var(--secondary);
 }
 
 /* title */
@@ -30,6 +27,13 @@ h2 {
    font-weight: 400;
    padding: 1rem;
    margin: 0;
+   color: var(--primary);
+   background-color: var(--secondary);
+}
+
+h3 {
+   color: var(--secondary);
+   background-color: var(--primary);
 }
 
 .card {
@@ -42,23 +46,32 @@ h2 {
    background-color: transparent;
 }
 
+.accordion-header {
+   text-align: right;
+}
+
 .accordion-button {
    font-size: 2.5rem;
    padding: 20px 15px;
    text-align: center;
    font-weight: 500;
-   color: var(--dark-grey);
+   color: var(--secondary);
+   justify-content: center;
+   background-color: var(--primary);
 }
 
 .card-body {
    padding: 0;
-
 }
 
 figure {
-   height: 80vh;
+   height: 100%;
    width: 100%;
    position: relative;
+}
+
+.figure-container {
+   height: 80vh;
 }
 
 img {
@@ -73,21 +86,21 @@ img {
 
 
 figcaption {
-   color: var(--dark-grey);
+   color: var(--secondary);
    font-size: 1.5rem;
    position: absolute;
    bottom: 0;
    left: 0;
-   background-color: white;
+   background-color: var(--primary);
    padding: 2px 6px;
-   border-bottom: 1px solid var(--light-grey);
-   border-left: 1px solid var(--light-grey);
+   border-bottom: 1px solid var(--secondary);
+   border-left: 1px solid var(--secondary);
    border-radius: 0 5px 0 0;
 }
 
 .narrative-button {
    display: inline-block;
-   background-color: var(--light-grey);
+   background-color: var(--tertiary);
    padding: 7px;
    margin-right: 1rem;
    border-radius: 20px;
@@ -105,6 +118,7 @@ a {
 .narrative-button p {
    margin-left: 5px;
    margin-right: 5px;
+   color: var(--secondary)
 }
 
 .narrative-icon {
@@ -119,7 +133,7 @@ a {
 /* Accordion */
 
 .accordion {
-   --bs-accordion-bg: black;
+   --bs-accordion-bg: var(--primary);
 }
 
 .accordion-body {
@@ -129,7 +143,7 @@ a {
 }
 
 .table>:not(caption)>*>* {
-   color: var(--dark-grey);
+   color: var(--secondary);
 }
 
 .accordion-item {
@@ -160,20 +174,44 @@ tbody {
    width: 100%;
 }
 
+tbody, td, tfoot, th, thead, tr {
+   border: 0px;
+}
+
+tr {
+   position: relative;
+   justify-content: center;
+}
+
+tr::before {
+   content: '';
+   position: absolute;
+   width: 85%; /* Adjust this width as needed */
+   border-top: solid var(--secondary) 1px;
+   left: 50%; /* Position at the horizontal center */
+  transform: translateX(-50%); /* Adjust to center horizontally */
+}
+
 th {
    vertical-align: middle;
    font-weight: 400;
 }
 
 /* info box */
+
+.card-title {
+      background-color: var(--secondary);
+   color: var(--primary)
+}
 h5 {
-   font-size: 2rem;
+   font-size: 2.5rem;
+   padding: 1rem;
 }
 
 .card-text {
    max-width: 1000px;
    text-align: justify;
-   margin: auto;
+   margin: auto auto 60px auto;
    font-size: 1.7rem;
    border-top: 1px solid var(--light-grey);
    padding: 1rem;
@@ -184,12 +222,38 @@ h5 {
    padding: 5px;
 }
 
-
 .row {
-   background-color: black;
    width: 100vw; 
    margin: 0;
    padding: 0;
    --bs-gutter-x: 0;
+}
 
+/* card footer */
+.card-footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: var(--primary);
+   color: var(--secondary);
+   height: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
+-webkit-box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
+-moz-box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
+}
+
+.card-footer:last-child {
+   border-radius: 0;
+}
+
+h6 {
+   font-size: 2rem;
+   margin: auto;
+   padding: 0 30px;
+}
+
+.nav-button {
+   font-size: 1.5rem;
 }

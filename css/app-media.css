@@ -1,10 +1,13 @@
-:root {
-   --dark-grey: rgb(84, 84, 84);
-   --light-grey: rgb(206, 206, 206);
-}
+
 
 /* Desktop version */
 @media (min-width:768px) {
+
+   /* base for rem */
+html{
+   font-size: 10px;
+}
+
    /* disable accordion button */
     .accordion-button {
        cursor: default;
@@ -52,6 +55,5 @@
         padding-bottom: 10px;
         padding-top: 25px;
     }
-
      
 }
