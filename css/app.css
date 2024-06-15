@@ -1,5 +1,5 @@
 :root {
-   --dark-grey: rgb(84, 84, 84);
+   --dark-grey: rgb(191, 47, 47);
    --light-grey: rgb(206, 206, 206);
 }
 
@@ -9,7 +9,7 @@ html{
 }
 
 body {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
   background-color: rgb(255, 255, 255);
   color: var(--dark-grey);
   margin: 0;
@@ -27,7 +27,7 @@ scroll-behavior: smooth;
 h2 {
    text-align: center;
    font-size: 3.5rem;
-   font-weight: 800;
+   font-weight: 400;
    padding: 1rem;
    margin: 0;
 }
@@ -46,12 +46,12 @@ h2 {
    font-size: 2.5rem;
    padding: 20px 15px;
    text-align: center;
-   font-weight: 700;
+   font-weight: 500;
    color: var(--dark-grey);
 }
 
 .card-body {
-   padding-top: 0;
+   padding: 0;
 
 }
 
@@ -113,6 +113,13 @@ a {
    /* filter: invert(1) sepia(1) saturate(10000%) hue-rotate(0deg); */
 
   
+
+}
+
+/* Accordion */
+
+.accordion {
+   --bs-accordion-bg: black;
 }
 
 .accordion-body {
@@ -137,6 +144,8 @@ a {
 .table {
    margin: 0;
    width: 100%;
+   --bs-table-bg: transparent;
+   border: none
 }
 
 .table th, .table td {
@@ -153,11 +162,12 @@ tbody {
 
 th {
    vertical-align: middle;
+   font-weight: 400;
 }
 
 /* info box */
 h5 {
-   font-size: 2.5rem;
+   font-size: 2rem;
 }
 
 .card-text {
@@ -172,4 +182,14 @@ h5 {
 /* Modal */
 .modal-body {
    padding: 5px;
+}
+
+
+.row {
+   background-color: black;
+   width: 100vw; 
+   margin: 0;
+   padding: 0;
+   --bs-gutter-x: 0;
+
 }
