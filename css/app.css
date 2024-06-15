@@ -212,7 +212,7 @@ h5 {
    max-width: 1000px;
    text-align: justify;
    margin: auto auto 60px auto;
-   font-size: 1.7rem;
+   font-size: 2rem;
    border-top: 1px solid var(--light-grey);
    padding: 1rem;
 }
@@ -229,7 +229,7 @@ h5 {
    --bs-gutter-x: 0;
 }
 
-/* card footer */
+/* Nav bar bottom */
 .card-footer {
    position: fixed;
    bottom: 0;
@@ -242,6 +242,7 @@ h5 {
    box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
 -webkit-box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
 -moz-box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
+  z-index: 1000;
 }
 
 .card-footer:last-child {
