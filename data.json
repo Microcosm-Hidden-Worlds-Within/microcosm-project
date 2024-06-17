@@ -159,7 +159,7 @@
         },
         "subjectData": {
             "type": "Bacterium",
-            "system": "Digestive System, Respiratory system, Genitourinary system",
+            "system": "Digestive System, Respiratory system, Urinary system",
             "dimensions": "3-8µm"
         }
     },
@@ -264,7 +264,7 @@
         },
         "subjectData": {
             "type": "Cell",
-            "system": "Circlatory System, Immune System",
+            "system": "Circulatory System, Immune System",
             "dimensions": "7-8μm"
         }
     },
