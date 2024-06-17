@@ -76,6 +76,7 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
 .hero-title {
   font-weight: 700;
   color: white;
@@ -120,4 +121,50 @@ h4 {
 
 #address .container {
   padding: 1rem;
+}
+
+
+/* Narrative page */
+/* Background images for the card */
+
+.card-img-bg-1 {
+  background-image: url("../pics/pic-9.jpg");
+}
+
+.card-img-bg-2 {
+  background-image: url("../pics/pic-10.jpg");
+}
+
+.card-img-bg-3 {
+  background-image: url("../pics/pic-12.jpg");
+}
+
+.card-img-bg-4 {
+  background-image: url("../pics/pic-13.jpg");
+}
+
+.card-img-bg-5 {
+  background-image: url("../pics/pic-14.jpg");
+}
+
+.card-img-bg-6 {
+  background-image: url("../pics/pic-15.jpeg");
+}
+
+.card-img-bg-7 {
+  background-image: url("../pics/pic-11.jpg");
+}
+
+.card-img-bg-8 {
+  background-image: url("../pics/pic-5.jpeg");
+}
+
+.card-img-bg-9 {
+  background-image: url("../pics/pic-18.jpeg");
+}
+
+[class*="card-img-bg-"] {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
 }
