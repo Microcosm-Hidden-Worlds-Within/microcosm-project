@@ -1,7 +1,5 @@
-
-
 /* base for rem */
-html{
+html {
    font-size: 10px;
 }
 
@@ -20,7 +18,7 @@ body {
    color: var(--secondary);
 }
 
-/* title */
+/* titles */
 h2 {
    text-align: center;
    font-size: 3.5rem;
@@ -36,6 +34,26 @@ h3 {
    background-color: var(--primary);
 }
 
+h5 {
+   font-size: 2.5rem;
+   padding: 1rem;
+}
+
+h6 {
+   font-size: 2rem;
+   margin: auto;
+   padding: 0 30px;
+}
+
+/* Modal */
+.modal-body {
+   padding: 5px;
+}
+
+
+
+/* cards */
+
 .card {
    border: 0
 }
@@ -44,6 +62,23 @@ h3 {
    padding: 0;
    border: 0;
    background-color: transparent;
+}
+
+.card-body {
+   padding: 0;
+}
+
+.row {
+   width: 100vw; 
+   margin: 0;
+   padding: 0;
+   --bs-gutter-x: 0;
+}
+
+/* accordions */
+
+.data-container {
+   padding: 0 20px;
 }
 
 .accordion-header {
@@ -60,8 +95,28 @@ h3 {
    background-color: var(--primary);
 }
 
-.card-body {
-   padding: 0;
+.accordion {
+   --bs-accordion-bg: var(--primary);
+}
+
+.accordion-body {
+   padding: 0 !important;
+   font-size: 2rem;
+   border: 0; 
+}
+
+.table>:not(caption)>*>* {
+   color: var(--secondary);
+}
+
+.accordion-item {
+   color: var(--dark-grey);
+}
+
+
+/* image */
+.figure-container {
+   height: 80vh;
 }
 
 figure {
@@ -70,9 +125,6 @@ figure {
    position: relative;
 }
 
-.figure-container {
-   height: 80vh;
-}
 
 img {
    object-fit: cover;
@@ -98,6 +150,7 @@ figcaption {
    border-radius: 0 5px 0 0;
 }
 
+/* narrative buttons */
 .narrative-button {
    display: inline-block;
    background-color: var(--tertiary);
@@ -125,32 +178,10 @@ a {
    height: 5rem;
    width: auto;
    /* filter: invert(1) sepia(1) saturate(10000%) hue-rotate(0deg); */
-
-  
-
 }
 
-/* Accordion */
 
-.accordion {
-   --bs-accordion-bg: var(--primary);
-}
-
-.accordion-body {
-   padding: 0 !important;
-   font-size: 2rem;
-   border: 0; 
-}
-
-.table>:not(caption)>*>* {
-   color: var(--secondary);
-}
-
-.accordion-item {
-   color: var(--dark-grey);
-}
-
-/* table */
+/* tables */
 .table p {
    display: inline;
 }
@@ -203,10 +234,6 @@ th {
       background-color: var(--secondary);
    color: var(--primary)
 }
-h5 {
-   font-size: 2.5rem;
-   padding: 1rem;
-}
 
 .card-text {
    max-width: 1000px;
@@ -217,19 +244,9 @@ h5 {
    padding: 1rem;
 }
 
-/* Modal */
-.modal-body {
-   padding: 5px;
-}
 
-.row {
-   width: 100vw; 
-   margin: 0;
-   padding: 0;
-   --bs-gutter-x: 0;
-}
 
-/* Nav bar bottom */
+/* Bottom Navbar */
 .card-footer {
    position: fixed;
    bottom: 0;
@@ -247,12 +264,6 @@ h5 {
 
 .card-footer:last-child {
    border-radius: 0;
-}
-
-h6 {
-   font-size: 2rem;
-   margin: auto;
-   padding: 0 30px;
 }
 
 .nav-button {

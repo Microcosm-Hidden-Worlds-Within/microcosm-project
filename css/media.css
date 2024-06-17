@@ -1,12 +1,10 @@
 /* Media Queries */
-@media (max-width:768px) {
+/* Desktop Version */
+@media (min-width:768px) {
   html {
-    font-size: 7px;
+    font-size: 10px;
   }
   
-  body {
-    font-size: 3rem;
-  }
 
   section {
     margin-left: 5vw;
