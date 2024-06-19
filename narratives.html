@@ -6,32 +6,36 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-
+        rel="stylesheet">
+    
+        <!--Javascript for navbar-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-
+        rel="stylesheet">
+    
         <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/colors.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/media.css">
-
+    
         <!-- Javascript -->
         <script type="text/javascript" src="#"></script>
-
+    
         <title>Microcosm: Hidden Worlds Within</title>
     </head>
 
@@ -39,256 +43,306 @@
         <header>
             <!-- Documentation for navbar at https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">COOL LOGO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="icons/logo/logo.png" alt="Logo" style="height: 40px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal"
+                    aria-controls="navbarModal" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="narratives.html">Narratives</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Documentation</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </nav>
         </header>
-        <main>
-            <h1>Narratives</h1>
-            <div class="container-fluid">
-                <h2>Systems</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-1"></div>
-                            <div class="card-body">
+        
+        <!-- Modal Structure -->
+        <div class="modal fade" id="navbarModal" tabindex="-1" aria-labelledby="navbarModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                <a class="modal-title" id="navbarModalLabel" href="#">
+                    <img src="icons/logo/logo_full.png" alt="Logo" style="height: 40px;">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <!-- Navbar content duplicated inside the modal -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="narratives.html">Narratives</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Map</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Documentation</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
+            <main>
+                <h1>Narratives</h1>
+                <div class="container-fluid">
+                    <h2>Systems</h2>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-1"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Circulatory system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The circulatory system moves blood, delivering oxygen and nutrients while removing waste.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-2"></div>
-                            <div class="card-body">
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-2"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Digestive system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The digestive system breaks down food into nutrients and eliminates waste.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-3"></div>
-                            <div class="card-body">
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-3"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Immune system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The immune system defends against infections and diseases by identifying and destroying harmful invaders.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-4"></div>
-                            <div class="card-body">
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-4"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Integumentary system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The integumentary system includes the skin, hair, and nails, providing protection and helping regulate temperature.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-5"></div>
-                            <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-5"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Muscular system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The muscular system enables movement and maintains posture through muscle contractions.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-6"></div>
-                            <div class="card-body">
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-6"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Nervous system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The nervous system controls and coordinates activities by transmitting signals to and from different parts of the body.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-7"></div>
-                            <div class="card-body">
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-7"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Respiratory system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The respiratory system facilitates breathing, taking in oxygen and expelling carbon dioxide.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-8"></div>
-                            <div class="card-body">
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-8"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Skeletal system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The skeletal system provides structure, protects organs, and supports movement.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-9"></div>
-                            <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                        <div class="card h-100 d-flex flex-column">
+                          <div class="card-img-bg-9"></div>
+                          <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Urinary system</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text flex-grow-1">The urinary system removes waste from the blood and regulates water and electrolyte balance.</p>
+                            <div class="mt-auto">
+                              <a href="#" class="btn btn-primary">Learn more</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                           
+                  
+                <div class="container-fluid">
+                    <h2>Types</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-10"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Bacterium</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-11"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Cell</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-12"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Organ</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
-            </div>
-            <div class="container-fluid">
-                <h2>Types</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-10"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">Bacterium</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="container-fluid">
+                    <h2>Techniques</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-10"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Litograph</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-11"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">Cell</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-11"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Scanning Electron Microscopy (SEM)</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-12"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">Organ</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-12"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">SEM colorized</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>    
-            </div>
-            <div class="container-fluid">
-                <h2>Techniques</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-10"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">Litograph</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-12"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Transmission Electron Microscopy (TEM)</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-11"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">Scanning Electron Microscopy (SEM)</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>    
+                </div>
+                <div class="container-fluid">
+                    <h2>Period</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-10"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Historical</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-12"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">SEM colorized</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-11"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Contemporary</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-12"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">Transmission Electron Microscopy (TEM)</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>    
+                </div>
+                <div class="container-fluid">
+                    <h2>Dimensions</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <div class="card">
+                                <div class="card-img-bg-10"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">From the smallest to the biggest</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>    
-            </div>
-            <div class="container-fluid">
-                <h2>Period</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-10"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">Historical</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-11"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">Contemporary</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-            <div class="container-fluid">
-                <h2>Dimensions</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 p-4">
-                        <div class="card">
-                            <div class="card-img-bg-10"></div>
-                            <div class="card-body">
-                            <h5 class="card-title">From the smallest to the biggest</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-        </main>
-        <footer>
+                    </div>    
+                </div>
+            </main>
+            <footer>
 
-        </footer>
+            </footer>
     </body>
 </html>
 
