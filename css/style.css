@@ -111,6 +111,7 @@ h4 {
 
 .carousel {
   height: 60vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Example shadow style */
 }
 
 .carousel-inner {
@@ -131,6 +132,15 @@ h4 {
   bottom:0;
   background-color:rgba(0,0,0,0.4);
 }
+
+.carousel-caption {
+  font-size: 1.6rem;
+}
+
+.carousel-title {
+  font-size: 2rem;
+}
+
 
 
 /* Alberto */
@@ -200,10 +210,34 @@ h4 {
   background-image: url("../pics/pic-8.jpg");
 }
 
+.card-img-bg-tem {
+  background-image: url("../pics/pic-12.jpg");
+}
+
 [class*="card-img-bg-"] {
   height: 50vh;
   background-size: cover;
   background-position: center;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.6rem;
+}
+
+.btn-primary {
+  background-color: var(--tertiary);
+}
+
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* The modal window covers the full screen */
