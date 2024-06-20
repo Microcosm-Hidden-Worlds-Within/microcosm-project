@@ -240,7 +240,7 @@ h4 {
   padding: 10px;
 }
 .container img {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
 }
 @media (min-width: 768px) {
@@ -250,4 +250,8 @@ h4 {
   .container > div {
       flex: 1;
   }
+}
+.text {
+  display: none;
+  margin-top: 10px;
 }
