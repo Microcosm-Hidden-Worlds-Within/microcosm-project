@@ -225,3 +225,29 @@ h4 {
   flex: 1 1 auto;
   overflow-y: auto;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.container > div {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 10px;
+}
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .container {
+      flex-direction: row;
+  }
+  .container > div {
+      flex: 1;
+  }
+}
