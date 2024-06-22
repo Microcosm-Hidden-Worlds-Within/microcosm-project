@@ -160,41 +160,57 @@ h4 {
 
 
 /* Narrative page */
+/* The nav for scrolling */
+.nav-pills {
+  flex-wrap: nowrap;
+  overflow-x: auto
+}
+
+.nav .nav-item {
+  background-color: var(--tertiary);
+}
+
+.narrative-item a {
+  color: var(--primary);
+}
+
+
+/* The cards */
 /* Background images for the card */
 
-.card-img-bg-1 {
-  background-image: url("../pics/pic-9.jpg");
+.card-img-bg-circulatory {
+  background-image: url("../pics/systems/circulatory-system.png");
 }
 
-.card-img-bg-2 {
-  background-image: url("../pics/pic-10.jpg");
+.card-img-bg-digestive {
+  background-image: url("../pics/systems/digestive-system.png");
 }
 
-.card-img-bg-3 {
-  background-image: url("../pics/pic-12.jpg");
+.card-img-bg-immune {
+  background-image: url("../pics/systems/immune-system.jpg");
 }
 
-.card-img-bg-4 {
-  background-image: url("../pics/pic-13.jpg");
+.card-img-bg-integumentary {
+  background-image: url("../pics/systems/integumentary-system.png");
 }
 
-.card-img-bg-5 {
+.card-img-bg-muscular {
   background-image: url("../pics/pic-14.jpg");
 }
 
-.card-img-bg-6 {
+.card-img-bg-nervous {
   background-image: url("../pics/pic-15.jpeg");
 }
 
-.card-img-bg-7 {
+.card-img-bg-respiratory {
   background-image: url("../pics/pic-11.jpg");
 }
 
-.card-img-bg-8 {
+.card-img-bg-skeletal {
   background-image: url("../pics/pic-5.jpeg");
 }
 
-.card-img-bg-9 {
+.card-img-bg-urinary {
   background-image: url("../pics/pic-18.jpeg");
 }
 
@@ -214,10 +230,10 @@ h4 {
   background-image: url("../pics/pic-12.jpg");
 }
 
-[class*="card-img-bg-"] {
-  height: 50vh;
+[class^="card-img-bg-"] {
+  height: 40vh;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 
 .card-title {
@@ -230,6 +246,11 @@ h4 {
 
 .btn-primary {
   background-color: var(--tertiary);
+}
+
+.cards-column a {
+  text-decoration: none; 
+  color: var(--secondary);
 }
 
 .card {
@@ -250,7 +271,7 @@ h4 {
   flex-direction: column;
 }
 
-/*Adjust the modal header and body */
+/*Adjust the modal header and body
 .modal-header {
   flex: 0 0 auto;
 }
@@ -277,14 +298,16 @@ h4 {
   max-width: 75%;
   height: auto;
 }
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
   .container {
       flex-direction: row;
   }
   .container > div {
       flex: 1;
   }
-}
+} */
+
 .text {
   display: none;
   margin-top: 10px;
