@@ -179,39 +179,39 @@ h4 {
 /* Background images for the card */
 
 .card-img-bg-circulatory {
-  background-image: url("../pics/systems/circulatory-system.png");
+  background-image: url("pics/pic-9.jpg");
 }
 
 .card-img-bg-digestive {
-  background-image: url("../pics/systems/digestive-system.png");
+  background-image: url("pics/pic-10.jpg");
 }
 
 .card-img-bg-immune {
-  background-image: url("../pics/systems/immune-system.jpg");
+  background-image: url("pics/pic-12.jpg");
 }
 
 .card-img-bg-integumentary {
-  background-image: url("../pics/systems/integumentary-system.png");
+  background-image: url("pics/pic-13.jpg");
 }
 
 .card-img-bg-muscular {
-  background-image: url("../pics/pic-14.jpg");
+  background-image: url("pics/pic-14.jpg");
 }
 
 .card-img-bg-nervous {
-  background-image: url("../pics/pic-15.jpeg");
+  background-image: url("pics/pic-15.jpeg");
 }
 
 .card-img-bg-respiratory {
-  background-image: url("../pics/pic-11.jpg");
+  background-image: url("pics/pic-11.jpg");
 }
 
 .card-img-bg-skeletal {
-  background-image: url("../pics/pic-5.jpeg");
+  background-image: url("pics/pic-5.jpeg");
 }
 
 .card-img-bg-urinary {
-  background-image: url("../pics/pic-18.jpeg");
+  background-image: url("pics/pic-18.jpeg");
 }
 
 .card-img-bg-10 {
@@ -233,7 +233,7 @@ h4 {
 [class^="card-img-bg-"] {
   height: 40vh;
   background-size: cover;
-  background-position: center top;
+  background-position: center;
 }
 
 .card-title {
