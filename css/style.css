@@ -29,8 +29,9 @@ h4 {
   font-size: 3rem;
 }
 
+
 .btn {
-  background-color: #2f2497bc;
+  /* background-color: #2f2497bc; */
   border: 0;
   font-size: 1.5rem;
   padding: 1rem;
@@ -38,9 +39,11 @@ h4 {
   border-radius: 10px;
 }
 
+/* 
 .btn:hover {
-  background-color: #372ba6;
+  background-color: #372ba6; 
 }
+*/
 
 .center {
   text-align: center;
@@ -130,15 +133,21 @@ h4 {
   left:0;
   right:0;
   bottom:0;
-  background-color:rgba(0,0,0,0.4);
+  background-color:rgba(0,0,0,0.5);
 }
 
 .carousel-caption {
   font-size: 1.6rem;
+  text-shadow: 1px 1px white;
+  
 }
 
 .carousel-title {
   font-size: 2rem;
+}
+
+.btn-outline-light {
+  border: 1px solid;
 }
 
 
