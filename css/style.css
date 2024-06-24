@@ -270,6 +270,7 @@ h4 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Nav bar app version */
 /* The modal window covers the full screen */
 .modal-fullscreen .modal-content {
   height: 100vh;
@@ -280,7 +281,7 @@ h4 {
   flex-direction: column;
 }
 
-/*Adjust the modal header and body
+/* Adjust the modal header and body */
 .modal-header {
   flex: 0 0 auto;
 }
@@ -290,7 +291,8 @@ h4 {
   overflow-y: auto;
 }
 
-.container {
+/* Map page */
+.map-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -298,26 +300,34 @@ h4 {
   justify-content: center;
   padding: 20px;
 }
-.container > div {
+.map-container > div {
   flex: 1 1 100%;
   text-align: center;
   padding: 10px;
 }
-.container img {
+.map-container img {
   max-width: 75%;
   height: auto;
 }
 
-/* @media (min-width: 768px) {
-  .container {
+@media (min-width: 768px) {
+  .map-container {
       flex-direction: row;
   }
-  .container > div {
+  .map-container > div {
       flex: 1;
   }
-} */
+} 
 
 .text {
   display: none;
   margin-top: 10px;
+}
+
+/* Home page map section */
+.exhibition-img {
+  max-width: 100%; 
+  width: auto;
+  height: auto;
+  padding: 20px;
 }
