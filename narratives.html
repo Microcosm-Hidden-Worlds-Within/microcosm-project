@@ -54,7 +54,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="narratives.html">Narratives</a>
+                                <a class="nav-link" aria-current="page" href="narratives.html">Narratives</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Map</a>
@@ -104,7 +104,7 @@
                 <div class="nav-for-scroll sticky-top mt-5">
                   <ul class="nav nav-pills nav-justified">
                     <li class="nav-item narrative-item">
-                      <a class="nav-link" href="#systems">Systems</a>
+                      <a class="nav-link active" href="#systems">Systems</a>
                     </li>
                     <li class="nav-item narrative-item">
                       <a class="nav-link" href="#types">Types</a>
@@ -120,7 +120,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="container-fluid mt-5" id="systems">
+                <div class="container-fluid mt-5 section" id="systems">
                   <h2>Systems</h2>
                   <div class="row">
                     <div class="cards-column col-12 col-md-6 col-xl-3 p-4 d-flex">
@@ -228,7 +228,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="container-fluid mt-5" id="types">
+                <div class="container-fluid mt-5 section" id="types">
                   <h2>Types</h2>
                   <div class="row">
                     <div class="cards-column col-12 col-md-6 col-xl-3 p-4 d-flex">
@@ -266,7 +266,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="container-fluid mt-5" id="techniques">
+                <div class="container-fluid mt-5 section" id="techniques">
                   <h2>Techniques</h2>
                   <div class="row">
                     <div class="cards-column col-12 col-md-6 col-xl-3 p-4 d-flex">
@@ -315,7 +315,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="container-fluid mt-5" id="periods">
+                <div class="container-fluid mt-5 section" id="periods">
                   <h2>Period</h2>
                   <div class="row">
                     <div class="col-12 col-md-6 col-lg-3 p-4">
@@ -342,7 +342,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="container-fluid mt-5" id="dimensions">
+                <div class="container-fluid mt-5 section" id="dimensions">
                   <h2>Dimensions</h2>
                   <div class="row">
                     <div class="cards-column col-12 col-md-6 col-xl-3 p-4 d-flex">
@@ -364,6 +364,36 @@
             <footer>
 
             </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+              // Intersection Observer for scroll-based activation
+              const sections = document.querySelectorAll('.section');
+              const navLinks = document.querySelectorAll('.nav .nav-link');
+
+              const isMobile = window.matchMedia("(max-width: 991px)").matches;
+              const threshold = isMobile ? 0.1 : 0.5;
+
+              const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: threshold
+              };
+
+              const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                      link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+                    });
+                  }
+                });
+              }, observerOptions);
+
+              sections.forEach(section => {
+                observer.observe(section);
+              });
+
+            </script>
     </body>
 </html>
 

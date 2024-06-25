@@ -175,12 +175,16 @@ h4 {
   overflow-x: auto;
 }
 
-.nav .nav-item {
+.nav-for-scroll {
   background-color: var(--tertiary);
 }
 
 .narrative-item a {
   color: var(--primary);
+}
+
+.nav .nav-link.active {
+  background-color: var(--secondary);
 }
 
 .narrative-item a:hover {
