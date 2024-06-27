@@ -11,6 +11,32 @@
             {"name": "Skeletal system", "icon": "icons/systems/skeletal.png"},
             {"name": "Urinary system", "icon": "icons/systems/urinary.png"}
     ]
+    },
+    {"name": "Types",
+        "subnarratives": [
+            {"name": "Bacterium", "icon": "icons/type/bacterium.png"},
+            {"name": "Cell", "icon": "icons/type/cell.png"},
+            {"name": "Organ", "icon": "icons/type/organ.png"}
+    ]
+    },
+    {"name": "Techniques",
+        "subnarratives": [
+            {"name": "Litography", "icon": "icons/technique.png"},
+            {"name": "Scanning Electron Microscopy (SEM)", "icon": "icons/technique.png"},
+            {"name": "SEM colorized", "icon": "icons/technique.png"},
+            {"name": "Transmission Electron Microscopy (TEM)", "icon": "icons/technique.png"}
+    ]
+    },
+    {"name": "Periods",
+        "subnarratives": [
+            {"name": "Historical", "icon": "icons/period.png"},
+            {"name": "Contemporary", "icon": "icons/period.png"}
+    ]
+    },
+    {"name": "Dimensions",
+        "subnarratives": [
+            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png"}
+    ]
     }
 ]
 }
