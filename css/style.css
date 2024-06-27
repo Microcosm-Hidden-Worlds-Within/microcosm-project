@@ -264,7 +264,17 @@ h4 {
 
 .btn-primary {
   background-color: var(--tertiary);
+  color: var(--primary);
+  border: 2px solid var(--tertiary);
 }
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  border: 2px solid var(--tertiary);
+  transition: all 0.3s ease-out;
+}
+
 
 .cards-column a {
   text-decoration: none; 

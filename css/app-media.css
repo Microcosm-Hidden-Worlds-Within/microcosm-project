@@ -1,59 +1,88 @@
-
-
 /* Desktop version */
 @media (min-width:768px) {
 
    /* base for rem */
-html{
-   font-size: 10px;
-}
+   html {
+      font-size: 10px;
+   }
+
+   .figure-container {
+      height: 80vh;
+   }
 
    /* disable accordion button */
-    .accordion-button {
-       cursor: default;
-       pointer-events: none;
-    }
+   .accordion-button {
+      cursor: default;
+      pointer-events: none;
+   }
 
    /* all accordion content visible */
-    .accordion-collapse {
-       display: block !important; /* Forza la visualizzazione di tutti i contenuti */
-       visibility: visible !important; /* Assicura che siano visibili */
-       height: auto !important; /* Assicura che l'altezza sia automatica */
-    }
+   .accordion-collapse {
+      display: block !important;
+      /* Forza la visualizzazione di tutti i contenuti */
+      visibility: visible !important;
+      /* Assicura che siano visibili */
+      height: auto !important;
+      /* Assicura che l'altezza sia automatica */
+   }
 
    /* Avoid "show" classes behaviour */
-    .accordion-collapse.collapse:not(.show) {
-       display: block !important; /* Forza la visualizzazione anche se non ha la classe "show" */
-       height: auto !important; /* Assicura che l'altezza sia automatica */
-    }
+   .accordion-collapse.collapse:not(.show) {
+      display: block !important;
+      /* Forza la visualizzazione anche se non ha la classe "show" */
+      height: auto !important;
+      /* Assicura che l'altezza sia automatica */
+   }
 
-    .accordion-body {
-       padding: 1rem;
-  
-    }
-    
+   .accordion-body {
+      padding: 1rem;
+
+   }
+
 
    /* Remove bootstrap accordion arrow */
-    .accordion-button::after {
-       content: none !important; /* Rimuove il contenuto pseudo-elemento (la freccia) */
-    }
-   
-   /* Remove accordion border */
-    .accordion .accordion-item {
-        border: 0;
-    }
+   .accordion-button::after {
+      content: none !important;
+      /* Rimuove il contenuto pseudo-elemento (la freccia) */
+   }
 
-    /* remove background color */
-    .accordion-button:not(.collapsed)  {
-        background-color: transparent;
-        color: var(--dark-grey);
-        box-shadow: none;
-    }
-    
-    /* make h3 title of the tables closer to the table */
-    .accordion-button {
-        padding-bottom: 10px;
-        padding-top: 25px;
-    }
-     
+   /* Remove accordion border */
+   .accordion .accordion-item {
+      border: 0;
+   }
+
+   /* remove background color */
+   .accordion-button:not(.collapsed) {
+      background-color: transparent;
+      color: var(--secondary);
+      box-shadow: none;
+   }
+
+   .accordion-header {
+      padding-bottom: 10px;
+
+   }
+
+   .accordion-header::before {
+      bottom: 7px;
+      width: 80px;
+      height: 4px;
+      content: "";
+      left: 50%;
+      margin-left: -40px;
+      background-color: var(--tertiary);
+      z-index: 100;
+
+   }
+
+   /* make h3 title of the tables closer to the table */
+   .accordion-button {
+      padding-bottom: 10px;
+      padding-top: 25px;
+   }
+
+   /*padding to data*/
+   .data-container {
+      padding: 0 20px;
+   }
 }

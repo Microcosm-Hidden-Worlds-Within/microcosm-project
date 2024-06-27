@@ -4,14 +4,20 @@ html {
 }
 
 body {
-  scroll-behavior: smooth;
-  background-color: var(--primary);
-  color: var(--secondary);
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
+   scroll-behavior: smooth;
+   background-color: var(--primary);
+   color: var(--secondary);
+   margin: 0;
+   padding: 0;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+   font-size: 2rem;
+
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
 }
 
 .card {
@@ -69,7 +75,7 @@ h6 {
 }
 
 .row {
-   width: 100vw; 
+   width: 100vw;
    margin: 0;
    padding: 0;
    --bs-gutter-x: 0;
@@ -77,13 +83,31 @@ h6 {
 
 /* accordions */
 
-.data-container {
-   padding: 0 20px;
-}
+
 
 .accordion-header {
    text-align: right;
+   position: relative;
+   background-color: var(--primary);
+
 }
+
+
+
+.accordion-header::before {
+   position: absolute;
+   bottom: 10px;
+   width: 80px;
+   height: 4px;
+   content: "";
+   left: 50%;
+   margin-left: -40px;
+   background-color: var(--tertiary);
+   z-index: 100;
+
+}
+
+
 
 .accordion-button {
    font-size: 2.5rem;
@@ -95,6 +119,23 @@ h6 {
    background-color: var(--primary);
 }
 
+.accordion-button:not(.collapsed) {
+   background-color: transparent;
+   color: var(--secondary);
+   box-shadow: none;
+}
+
+.accordion-button:focus {
+
+   box-shadow: none;
+
+}
+
+.accordion-button::after {
+   position: absolute;
+   right: 3%;
+}
+
 .accordion {
    --bs-accordion-bg: var(--primary);
 }
@@ -102,7 +143,7 @@ h6 {
 .accordion-body {
    padding: 0 !important;
    font-size: 2rem;
-   border: 0; 
+   border: 0;
 }
 
 .table>:not(caption)>*>* {
@@ -116,7 +157,7 @@ h6 {
 
 /* image */
 .figure-container {
-   height: 80vh;
+   height: 50vh;
 }
 
 figure {
@@ -138,7 +179,7 @@ img {
 
 
 figcaption {
-   color: var(--secondary);
+   color: #383838;
    font-size: 1.5rem;
    position: absolute;
    bottom: 0;
@@ -153,32 +194,53 @@ figcaption {
 /* narrative buttons */
 .narrative-button {
    display: inline-block;
-   background-color: var(--tertiary);
+   background-color: transparent;
+   border: 2px solid var(--secondary);
    padding: 7px;
    margin-right: 1rem;
-   border-radius: 20px;
-   box-shadow: 3px 3px 0px -1px rgba(0,0,0,0.46);
-   -webkit-box-shadow: 3px 3px 0px -1px rgba(0,0,0,0.46);
-   -moz-box-shadow: 3px 3px 0px -1px rgba(0,0,0,0.46);
-
-}
-
-a {
-   text-decoration: none;
-   color: inherit;
+   border-radius: 12px;
 }
 
 .narrative-button p {
    margin-left: 5px;
    margin-right: 5px;
-   color: var(--secondary)
+   color: inherit;
+
 }
 
 .narrative-icon {
-   height: 5rem;
+   height: 4.2rem;
    width: auto;
-   /* filter: invert(1) sepia(1) saturate(10000%) hue-rotate(0deg); */
 }
+
+/* hover behaviour on narrative buttons */
+.narrative-button:hover {
+   border: 2px solid var(--tertiary);
+   color: var(--tertiary);
+   transition: all 0.3s ease-out;
+}
+
+.narrative-button:hover img {
+   filter: brightness(0) saturate(100%) invert(23%) sepia(83%) saturate(2388%) hue-rotate(213deg) brightness(81%) contrast(98%);
+   transition: all 0.3s ease-out;
+}
+
+
+/* active narrative button */
+.narrative-button.active-narrative {
+   background-color: var(--tertiary);
+   border: 2px solid var(--tertiary);
+   color: var(--primary);
+}
+
+.narrative-button.active-narrative img {
+   -webkit-filter: invert(100%);
+   filter: invert(100%);
+}
+
+
+
+
 
 
 /* tables */
@@ -193,19 +255,33 @@ a {
    border: none
 }
 
-.table th, .table td {
-  padding: 10px;
+.table th,
+.table td {
+   padding: 10px;
+}
+
+.table th {
+   width: 30%;
 }
 
 .table td {
    width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 5px;
 }
 
 tbody {
    width: 100%;
 }
 
-tbody, td, tfoot, th, thead, tr {
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
    border: 0px;
 }
 
@@ -217,10 +293,26 @@ tr {
 tr::before {
    content: '';
    position: absolute;
-   width: 85%; /* Adjust this width as needed */
+   width: 85%;
+   /* Adjust this width as needed */
    border-top: solid var(--secondary) 1px;
-   left: 50%; /* Position at the horizontal center */
-  transform: translateX(-50%); /* Adjust to center horizontally */
+   left: 50%;
+   /* Position at the horizontal center */
+   transform: translateX(-50%);
+   /* Adjust to center horizontally */
+}
+
+tr:first-child::before {
+   content: '';
+   position: absolute;
+   width: 85%;
+   /* Adjust this width as needed */
+   border-top: solid var(--secondary) 0px;
+   left: 50%;
+   /* Position at the horizontal center */
+   transform: translateX(-50%);
+   /* Adjust to center horizontally */
+
 }
 
 th {
@@ -231,7 +323,7 @@ th {
 /* info box */
 
 .card-title {
-      background-color: var(--secondary);
+   background-color: var(--secondary);
    color: var(--primary)
 }
 
@@ -240,13 +332,14 @@ th {
    text-align: justify;
    margin: auto auto 60px auto;
    font-size: 2rem;
-   border-top: 1px solid var(--light-grey);
-   padding: 1rem;
+   padding: 1.5rem;
 }
 
 
 
 /* Bottom Navbar */
+
+
 .card-footer {
    position: fixed;
    bottom: 0;
@@ -256,16 +349,31 @@ th {
    height: 50px;
    left: 50%;
    transform: translateX(-50%);
-   box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
--webkit-box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
--moz-box-shadow: 0px -3px 16px -1px rgba(0,0,0,0.46);
-  z-index: 1000;
+   box-shadow: 0px -3px 16px -1px rgba(0, 0, 0, 0.46);
+   -webkit-box-shadow: 0px -3px 16px -1px rgba(0, 0, 0, 0.46);
+   -moz-box-shadow: 0px -3px 16px -1px rgba(0, 0, 0, 0.46);
+   z-index: 1000;
 }
 
 .card-footer:last-child {
    border-radius: 0;
 }
 
+
+.btn-primary {
+   background-color: var(--tertiary);
+   color: var(--primary);
+   border: 2px solid var(--tertiary);
+}
+
+.btn-primary:hover {
+   background-color: var(--primary);
+   color: var(--tertiary);
+   border: 2px solid var(--tertiary);
+   transition: all 0.3s ease-out;
+}
+
 .nav-button {
    font-size: 1.5rem;
+   border-radius: 12px;
 }
