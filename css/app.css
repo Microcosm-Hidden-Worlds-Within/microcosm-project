@@ -338,8 +338,6 @@ th {
 
 
 /* Bottom Navbar */
-
-
 .card-footer {
    position: fixed;
    bottom: 0;
@@ -376,4 +374,19 @@ th {
 .nav-button {
    font-size: 1.5rem;
    border-radius: 12px;
+}
+
+.narrative-info {
+   position: fixed;
+   z-index: 999;
+   background-color: var(--primary);
+   width: 100vw;
+   height: 100vh;
+   padding: 2rem;
+   text-align: justify;
+   overflow: scroll;
+}
+
+.narrative-info.displayed {
+   bottom: 0
 }
