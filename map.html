@@ -103,10 +103,66 @@
             <div class="text-center">
                 <h1>Map<h2>
             </div>
+            <div class="nav-for-scroll sticky-top mt-5">
+                <ul class="nav nav-pills nav-justified">
+                  <li class="nav-item narrative-item">
+                    <a class="nav-link active">Systems</a>
+                  </li>
+                  <li class="nav-item narrative-item">
+                    <a class="nav-link">Types</a>
+                  </li>
+                  <li class="nav-item narrative-item">
+                    <a class="nav-link">Techniques</a>
+                  </li>
+                  <li class="nav-item narrative-item">
+                    <a class="nav-link">Periods</a>
+                  </li>
+                  <li class="nav-item narrative-item">
+                    <a class="nav-link">Dimensions</a>
+                  </li>
+                </ul>
+            </div>
 
-            <div class="map-container">
-                <img id="image" src="plan of museum/map.png" alt="Switched picture">
-                <p id="text" class="text">Narrative blablablabla room 1</p>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="map-container">
+                        <img id="image" src="plan of museum/map.png" alt="Switched picture">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="nav-for-scroll mt-5">
+                        <ul class="nav nav-pills nav-justified">
+                          <li class="nav-item narrative-item">
+                            <a class="nav-link"><img src="icons/systems/circulatory.png" style="height: 20px;"></a>
+                          </li>
+                          <li class="nav-item narrative-item">
+                            <a class="nav-link">Types</a>
+                          </li>
+                          <li class="nav-item narrative-item">
+                            <a class="nav-link">Techniques</a>
+                          </li>
+                          <li class="nav-item narrative-item">
+                            <a class="nav-link">Periods</a>
+                          </li>
+                          <li class="nav-item narrative-item">
+                            <a class="nav-link">Dimensions</a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    <ul>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                        <li>Narrative blablablabla room 1</li>
+                    </ul>
+                </div>
             </div>
             
                 
@@ -114,7 +170,26 @@
         <footer>
         </footer>
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            let narrativeList = []
+
+            document.addEventListener("DOMContentLoaded", async function(event) {
+                console.log("Starting the narratives")
+                fetch("narrative-data.json")
+                .then(response => response.json())
+                .then(data => {
+                    narrativesObjects = data.narratives;
+                    for (let x in narrativeObjects) {
+                        narrativeName = narrativeObjects[x]["name"];
+                        narrativeList.push(narrativeName)
+                    }
+                    narrativeString = narrativeList.join(" ")
+                    alert(narrativeString)
+
+                })
+            });
+
+
+            /* document.addEventListener('DOMContentLoaded', function() {
                 const image = document.getElementById('image');
                 const text = document.getElementById('text');
                 let currentImageIndex = 0;
@@ -136,7 +211,7 @@
                     text.textContent = images[currentImageIndex].text;
                     text.style.display = images[currentImageIndex].text ? 'block' : 'none';
                 });
-            });
+            }); */
         </script>
 </body>
 </html>

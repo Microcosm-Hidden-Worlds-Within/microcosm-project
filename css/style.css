@@ -301,32 +301,9 @@ h4 {
 }
 
 /* Map page */
-.map-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.map-container > div {
-  flex: 1 1 100%;
-  text-align: center;
-  padding: 10px;
-}
 .map-container img {
-  max-width: 75%;
-  height: auto;
+  width: 100%;
 }
-
-@media (min-width: 768px) {
-  .map-container {
-      flex-direction: row;
-  }
-  .map-container > div {
-      flex: 1;
-  }
-} 
 
 .text {
   display: none;
