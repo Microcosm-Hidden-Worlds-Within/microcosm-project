@@ -1,26 +1,5 @@
 [
 {
-    "id": "",
-    "name": "",
-    "image": "",
-    "data": {
-        "picData": {
-            "title": "",
-            "author": "",
-            "period": "",
-            "technique": ""
-        },
-        "subjectData": {
-            "type": "",
-            "system": "",
-            "dimensions": ""
-        }
-    },
-    "shortInfo": "",
-    "longerInfo": "",
-    "fullInfo": ""
-},
-{
     "id": "1",
     "name": "The eye, as seen through a microscope: two figures",
     "image": "pics/pic-1.jpg",
@@ -28,7 +7,7 @@
         "picData": {
             "title": "The eye, as seen through a microscope: two figures",
             "author": "Liebreich, Richard",
-            "period": "",
+            "period": "historical",
             "technique": "Litography"
         },
         "subjectData": {
@@ -49,7 +28,7 @@
         "picData": {
             "title": "The eye, as seen through a microscope: two figures",
             "author": "Liebreich, Richard",
-            "period": "",
+            "period": "historical",
             "technique": "Litography"
         },
         "subjectData": {
@@ -70,7 +49,7 @@
         "picData": {
             "title": "Healthy hair Bulb",
             "author": "Glaister, John",
-            "period": "",
+            "period": "historical",
             "technique": ""
         },
         "subjectData": {
@@ -91,7 +70,7 @@
         "picData": {
             "title": "MRSA",
             "author": "Annie Cavanagh",
-            "period": "",
+            "period": "contemporary",
             "technique": null
         },
         "subjectData": {
@@ -112,7 +91,7 @@
         "picData": {
             "title": "SEM tooth showing rods in plaque",
             "author": "David Gregory, Debbie Marshall",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -133,7 +112,7 @@
         "picData": {
             "title": "Microplasma",
             "author": "Kevin Mackenzie",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM), Colorized"
         },
         "subjectData": {
@@ -154,7 +133,7 @@
         "picData": {
             "title": "Clostridium difficile colony",
             "author": "David Goulding",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -175,7 +154,7 @@
         "picData": {
             "title": "Ruptured blood vessel",
             "author": "Anne Weston",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -196,7 +175,7 @@
         "picData": {
             "title": "Blood Cells, SEM",
             "author": "Anne Weston",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -217,7 +196,7 @@
         "picData": {
             "title": "Villus from the small intestine",
             "author": "S. Schuller",
-            "period": "",
+            "period": "contemporary",
             "technique": ""
         },
         "subjectData": {
@@ -238,7 +217,7 @@
         "picData": {
             "title": "SEM alveoli in the lung",
             "author": "David Gregory, Debbie Marshall",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -259,7 +238,7 @@
         "picData": {
             "title": "Massed small stromal lymphocytes - coloured",
             "author": "Rob Young",
-            "period": "",
+            "period": "contemporary",
             "technique": "Transmission Electron Microscopy (TEM)"
         },
         "subjectData": {
@@ -280,7 +259,7 @@
         "picData": {
             "title": "Split end of a human hair",
             "author": "Liz Hirst",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -301,7 +280,7 @@
         "picData": {
             "title": "SEM of collagen",
             "author": "David Gregory, Debbie Marshall",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -322,7 +301,7 @@
         "picData": {
             "title": "Purkinje neurons in culture",
             "author": "Annie Cavanagh",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -343,7 +322,7 @@
         "picData": {
             "title": "Blood vessels emerging from the optic disc",
             "author": "Freya Mowat",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -364,7 +343,7 @@
         "picData": {
             "title": "Tongue, taste bud on fungiform papilla. SEM",
             "author": "David Gregory, Debbie Marshall",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -385,7 +364,7 @@
         "picData": {
             "title": "Human proximal tubule, tubular structure, SEM",
             "author": "David Gregory, Debbie Marshall",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {
@@ -406,7 +385,7 @@
         "picData": {
             "title": "Blood vessel in a melanoma, SEM",
             "author": "S. Gschmeissner, K. Hodivala-Dilke, M. Stone",
-            "period": "",
+            "period": "contemporary",
             "technique": "Scanning Electron Microscopy (SEM)"
         },
         "subjectData": {

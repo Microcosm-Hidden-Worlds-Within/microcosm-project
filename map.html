@@ -170,7 +170,8 @@
         </footer>
         <script>
 
-            let narrativeList = []
+            let narrativesObject = {}
+            let subNarrativesList = []
 
             document.addEventListener("DOMContentLoaded", async function(event) {
                 console.log("Starting the narratives");
@@ -187,18 +188,20 @@
                         // dataArray contains the parsed JSON data from each file
                         console.log(dataArray); // This will log the structure shown above
                         
-                        const narrativesObjects = dataArray[0].narratives;
-                        for (let x in narrativesObjects) {
-                            let narrativeName = narrativesObjects[x]["name"];
+                        let narrativesObject = dataArray[0];
+                        for (let x in narrativesObject) {
+                            let narrativeName = narrativesObject[x]["name"];
                             narrativeList.push(narrativeName);
                         };
 
-                        let narrativeString = narrativeList.join(" ");
-                        alert(narrativeString);
+
+
                     })
                     .catch(error => {
                         console.error("Error fetching one of the JSON files:", error);
                     });
+
+
             });
 
 
