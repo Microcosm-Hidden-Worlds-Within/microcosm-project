@@ -170,23 +170,41 @@
         </footer>
         <script>
 
-            let narrativeList = []
+            let narrativesObject = {}
+            let subNarrativesList = []
 
             document.addEventListener("DOMContentLoaded", async function(event) {
-                console.log("Starting the narratives")
-                fetch("narrative-data.json")
-                .then(response => response.json())
-                .then(data => {
-                    const narrativeObjects = data.narratives;
-                    for (let x in narrativeObjects) {
-                        narrativeName = narrativeObjects[x]["name"];
-                        narrativeList.push(narrativeName)
-                    }
-                    narrativeString = narrativeList.join(" ")
-                    alert(narrativeString)
+                console.log("Starting the narratives");
 
-                })
+                // Define the URLs of the JSON files
+                const urls = [
+                    "narrative-data.json",
+                    "data.json"
+                ];
+
+                // Use Promise.all to fetch all JSON files concurrently
+                Promise.all(urls.map(url => fetch(url).then(response => response.json())))
+                    .then(dataArray => {
+                        // dataArray contains the parsed JSON data from each file
+                        console.log(dataArray); // This will log the structure shown above
+                        
+                        let narrativesObject = dataArray[0];
+                        for (let x in narrativesObject) {
+                            let narrativeName = narrativesObject[x]["name"];
+                            narrativeList.push(narrativeName);
+                        };
+
+
+
+                    })
+                    .catch(error => {
+                        console.error("Error fetching one of the JSON files:", error);
+                    });
+
+
             });
+
+
 
 
             /* document.addEventListener('DOMContentLoaded', function() {

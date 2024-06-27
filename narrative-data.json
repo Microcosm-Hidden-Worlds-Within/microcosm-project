@@ -1,6 +1,6 @@
 {
     "narratives": [{
-        "name": "Systems",
+        "name": "System",
         "subnarratives": [
             {"name": "Circulatory system", "icon": "icons/systems/circulatory.png"},
             {"name": "Digestive system", "icon": "icons/systems/digestive.png"},
@@ -10,6 +10,32 @@
             {"name": "Respiratory system", "icon": "icons/systems/respiratory.png"},
             {"name": "Skeletal system", "icon": "icons/systems/skeletal.png"},
             {"name": "Urinary system", "icon": "icons/systems/urinary.png"}
+    ]
+    },
+    {"name": "Type",
+        "subnarratives": [
+            {"name": "Bacterium", "icon": "icons/type/bacterium.png"},
+            {"name": "Cell", "icon": "icons/type/cell.png"},
+            {"name": "Organ", "icon": "icons/type/organ.png"}
+    ]
+    },
+    {"name": "Technique",
+        "subnarratives": [
+            {"name": "Litography", "icon": "icons/technique.png"},
+            {"name": "Scanning Electron Microscopy (SEM)", "icon": "icons/technique.png"},
+            {"name": "SEM colorized", "icon": "icons/technique.png"},
+            {"name": "Transmission Electron Microscopy (TEM)", "icon": "icons/technique.png"}
+    ]
+    },
+    {"name": "Period",
+        "subnarratives": [
+            {"name": "Historical", "icon": "icons/period.png"},
+            {"name": "Contemporary", "icon": "icons/period.png"}
+    ]
+    },
+    {"name": "Dimension",
+        "subnarratives": [
+            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png"}
     ]
     }
 ]
