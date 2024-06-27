@@ -177,7 +177,7 @@
                 fetch("narrative-data.json")
                 .then(response => response.json())
                 .then(data => {
-                    narrativesObjects = data.narratives;
+                    const narrativesObjects = data.narratives;
                     for (let x in narrativeObjects) {
                         narrativeName = narrativeObjects[x]["name"];
                         narrativeList.push(narrativeName)
