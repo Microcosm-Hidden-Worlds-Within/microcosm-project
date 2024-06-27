@@ -34,7 +34,6 @@
         <link rel="stylesheet" type="text/css" href="css/media.css">
     
         <!-- Javascript -->
-        <script type="text/javascript" src="#"></script>
     
         <title>Microcosm: Hidden Worlds Within</title>
     </head>
@@ -178,7 +177,7 @@
                 fetch("narrative-data.json")
                 .then(response => response.json())
                 .then(data => {
-                    const narrativesObjects = data.narratives;
+                    const narrativeObjects = data.narratives;
                     for (let x in narrativeObjects) {
                         narrativeName = narrativeObjects[x]["name"];
                         narrativeList.push(narrativeName)
