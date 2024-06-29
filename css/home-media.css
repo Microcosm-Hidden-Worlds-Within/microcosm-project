@@ -4,12 +4,16 @@
   html {
     font-size: 10px;
   }
-  
+
 
   section {
     margin-left: 5vw;
     margin-right: 5vw;
   }
 
-  
+  .hero-title {
+    width: 50%;
+  }
+
+
 }
