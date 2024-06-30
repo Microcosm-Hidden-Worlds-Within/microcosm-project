@@ -407,7 +407,7 @@ th {
    overflow: scroll;
    text-align: right;
    transition: all 1.5s ease-in-out;
-   bottom: -100vh;
+   top: 100vh;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
 }
@@ -420,11 +420,9 @@ th {
    height: 5rem;
    width: auto;
    padding: 10px;
-
-
 }
 
 .narrative-info.displayed {
-   bottom: 0;
+   top: 0;
    padding-bottom: 6.5rem;
 }
