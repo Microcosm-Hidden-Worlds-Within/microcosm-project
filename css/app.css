@@ -295,6 +295,7 @@ tr {
 tr::before {
    content: '';
    position: absolute;
+   top: 0px;
    width: 85%;
    /* Adjust this width as needed */
    border-top: solid var(--secondary) 1px;
