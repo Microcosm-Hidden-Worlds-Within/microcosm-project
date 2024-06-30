@@ -270,7 +270,8 @@ figcaption {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   gap: 5px;
+   column-gap: 15px;
+   row-gap: 5px;
 }
 
 tbody {
