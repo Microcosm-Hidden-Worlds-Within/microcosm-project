@@ -24,7 +24,7 @@
       rel="stylesheet">
 
    <!-- JS -->
-   <script src=""></script>
+   <script src="script.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                <div class="modal-body">
-                  <img src="pics/pic-8.jpg" class="img-fluid" alt="Ruptured blood vessel">
+                  <img id="modal" src="pics/pic-8.jpg" class="img-fluid" alt="Ruptured blood vessel">
                </div>
             </div>
          </div>
@@ -48,7 +48,7 @@
       <div class="card" id="mainCard">
          <!-- Header Card-->
          <div class="card-header">
-            <h2>Blood Vessel</h2>
+            <h2 id="header"></h2>
          </div>
          <!-- Body Card-->
          <div class="card-body">
@@ -57,7 +57,7 @@
                   <figure>
                      <img id="img" src="pics/pic-8.jpg" class=" m-auto" alt="" data-bs-toggle="modal"
                         data-bs-target="#imageModal">
-                     <figcaption><i>Ruptured blood vessel</i>, Anne Weston</figcaption>
+                     <figcaption id="caption"></figcaption>
                   </figure>
 
                   <!-- card-img-top - rounded borders?? --> <!-- there was limitHeight, don't know if it is useful -->
@@ -178,7 +178,7 @@
             <button href="#" type="button" class="btn btn-primary nav-button" id="buttonPrevious">Previous</button>
             <div>
                <img class="rotated" src="icons/arrow.svg">
-               <h6 id="narrative">Circulatory System</h6>
+               <h6 id="narrative"></h6>
             </div>
             <button href="#" type="button" class="btn btn-primary nav-button" id="buttonNext">Next</button>
          </div>

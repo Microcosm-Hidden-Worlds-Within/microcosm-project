@@ -3,7 +3,7 @@
 
    /* base for rem */
    html {
-      font-size: 10px;
+      font-size: 12px;
    }
 
    .figure-container {
@@ -84,5 +84,11 @@
    /*padding to data*/
    .data-container {
       padding: 0 20px;
+   }
+
+   /* narrative text bigger  */
+   h6 {
+      font-size: 2rem;
+
    }
 }

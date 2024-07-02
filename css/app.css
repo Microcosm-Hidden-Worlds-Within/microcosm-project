@@ -11,7 +11,7 @@ body {
    padding: 0;
    font-family: "Montserrat", sans-serif;
    font-weight: 400;
-   font-size: 2rem;
+   font-size: 1rem;
 
 }
 
@@ -46,9 +46,9 @@ h5 {
 }
 
 h6 {
-   font-size: 2rem;
-   margin: auto;
-   padding: 0;
+   font-size: 1.8rem;
+   margin: 0 auto;
+   text-align: center;
 }
 
 /* Modal */
@@ -110,7 +110,7 @@ h6 {
 
 
 .accordion-button {
-   font-size: 2.5rem;
+   font-size: 2.3rem;
    padding: 20px 15px;
    text-align: center;
    font-weight: 500;
@@ -142,7 +142,7 @@ h6 {
 
 .accordion-body {
    padding: 0 !important;
-   font-size: 2rem;
+   font-size: 1.5rem;
    border: 0;
 }
 
@@ -210,7 +210,7 @@ figcaption {
 }
 
 .narrative-icon {
-   height: 4.2rem;
+   height: 3.5rem;
    width: auto;
 }
 
@@ -334,7 +334,7 @@ th {
    max-width: 1000px;
    text-align: justify;
    margin: auto auto 60px auto;
-   font-size: 2rem;
+   font-size: 1.5rem;
    padding: 1.5rem;
 }
 
@@ -365,8 +365,8 @@ th {
 
 .card-footer div img {
    transform: none;
-   width: 2rem;
-   height: 2rem;
+   width: 1.5rem;
+   height: 1.5rem;
    transition: all 0.5s ease-in-out;
 }
 
@@ -393,8 +393,25 @@ th {
 }
 
 .nav-button {
-   font-size: 1.5rem;
+
+   font-size: 1.3rem;
    border-radius: 12px;
+   min-width: fit-content;
+   width: 10%;
+}
+
+.btn:disabled,
+fieldset:disabled {
+   font-size: 1.3rem;
+   border-radius: 12px;
+   min-width: fit-content;
+   width: 10%;
+
+   color: inherit;
+   pointer-events: none;
+   background-color: inherit;
+   border-color: var(--tertiary);
+   opacity: inherit
 }
 
 .narrative-info {
@@ -413,7 +430,9 @@ th {
 }
 
 .narrative-info p {
+   font-size: 1.5rem;
    text-align: justify;
+   padding: 1rem 2rem;
 }
 
 .narrative-info img {
