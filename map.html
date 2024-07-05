@@ -189,7 +189,7 @@
 
             function showItems(param) {
                 buttonText = String(param.firstChild.alt);
-                itemList = people.filter( i => 
+                itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText))
                 byId("list-items").innerHTML = "";
                 for (x in itemList) {
