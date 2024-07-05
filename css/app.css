@@ -378,7 +378,7 @@ th {
    border-radius: 0;
 }
 
-
+/* buttons */
 .btn-primary {
    background-color: var(--tertiary);
    color: var(--primary);
@@ -390,6 +390,22 @@ th {
    color: var(--tertiary);
    border: 2px solid var(--tertiary);
    transition: all 0.3s ease-out;
+}
+
+.info-button {
+   display: block;
+   width: fit-content;
+   margin: 5px;
+   background-color: var(--primary);
+   color: var(--tertiary);
+   border: 2px solid var(--tertiary);
+   transition: all 0.3s ease-out;
+}
+
+.info-button:hover {
+   background-color: var(--tertiary);
+   color: var(--primary);
+   border: 2px solid var(--tertiary);
 }
 
 .nav-button {
@@ -413,6 +429,17 @@ fieldset:disabled {
    border-color: var(--tertiary);
    opacity: inherit
 }
+
+/* clicked nav button */
+:not(.btn-check)+.btn:active {
+   background-color: var(--primary);
+   color: var(--tertiary);
+   border: 2px solid var(--tertiary);
+   transition: all 0.3s ease-out;
+}
+
+
+/* narrative info */
 
 .narrative-info {
    position: fixed;

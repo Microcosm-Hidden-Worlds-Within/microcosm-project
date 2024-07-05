@@ -1,0 +1,31 @@
+{
+    "System": {
+        "Circulatory System": "icons/systems/circulatory.png",
+        "Digestive System": "icons/systems/digestive.png",
+        "Immune System": "icons/systems/immune.png",
+        "Integumentary System": "icons/systems/integumentary.png",
+        "Nervous System": "icons/systems/nervous.png",
+        "Respiratory System": "icons/systems/respiratory.png",
+        "Skeletal System": "icons/systems/skeletal.png",
+        "Urinary System": "icons/systems/urinary.png",
+        "Muscular System": "icons/systems/muscular.png"
+    },
+    "Type": {
+        "Bacterium": "icons/type/bacterium.png",
+        "Cell": "icons/type/cell.png",
+        "Organ": "icons/type/organ.png"
+    },
+    "Technique": {
+        "Litography": "icons/technique.png",
+        "SEM": "icons/technique.png",
+        "Colorized": "icons/technique.png",
+        "TEM": "icons/technique.png"
+    },
+    "Period": {
+        "Historical": "icons/period.png",
+        "Contemporary": "icons/period.png"
+    },
+    "Dimensions": {
+        "From the smallest to the biggest": "icons/dimension.png"
+    }
+}

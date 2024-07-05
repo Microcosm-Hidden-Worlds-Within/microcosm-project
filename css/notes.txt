@@ -42,3 +42,5 @@ Some CSS for the button:
 	<a href="https://www.flaticon.com/free-icons/hourglass" title="hourglass icons">Hourglass icons created by prettycons - Flaticon</a>
 
 	<a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by joalfa - Flaticon</a>
+
+	<a href="https://www.flaticon.com/free-icons/muscle" title="muscle icons">Muscle icons created by Freepik - Flaticon</a>

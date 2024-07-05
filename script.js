@@ -4,14 +4,33 @@ var currentSelection = []
 var currentNarrative = ""
 var currentValue= ""
 var currentSort = ""
-
+var narrativeIcons = {}
 
 document.addEventListener("DOMContentLoaded", async function(event) {
-	console.log("Ready to start with phase 4");
 	
+	// parse NARRATIVE JSON
+	fetch('narrative-data.json')
+	.then(response => response.json())
+	.then(data => {	
+		originalData = data
+
+		originalData.narratives.forEach(narrative => {
+    		const subnarrativesMap = {};
+   		narrative.subnarratives.forEach(sub => {
+         	subnarrativesMap[sub.name] = sub.icon;
+    		});
+    		narrativeIcons[narrative.name] = subnarrativesMap;
+		});
+
+console.log(JSON.stringify(narrativeIcons, null, 4));
+	});
+	
+
+	// parse DATA JSON
 	fetch('data.json')
 	.then(response => response.json())
 	.then(data => {	
+
 		objects = data.objects;
 		var startWith = data.meta.startWith;
 		var object = objects[startWith];
@@ -22,10 +41,12 @@ document.addEventListener("DOMContentLoaded", async function(event) {
    
 		prepareNarratives();
 	});
+
+	
 });
 
 function prepareNarratives() {
-	if (currentNarrative == "dimensions") {
+	if (currentNarrative == "Dimensions") {
       currentSelection = objects
    } else {
       currentSelection = objects.filter( i => 
@@ -64,7 +85,7 @@ function showInfo(index) {
 	createInfoLabel(object)
 	createInfoTable(object)
 	// info
-	inner("shortInfo", object.shortInfo + '<a type="button" class="btn btn-outline-primary btn-sm" onclick="more()">Tell me more...</a>'); 
+	inner("shortInfo", object.shortInfo + '<a type="button" class="btn info-button" onclick="more()">Tell me more...</a>'); 
 	//inner("longerInfo","<p>"+object.longerInfo.join("</p><p>")+ '<a type="button" class="btn btn-outline-primary btn-sm" onclick="less()">Tell me less</a> or <a type="button" class="btn btn-outline-primary btn-sm" onclick="muchMore()">Tell me even more...</a></p>'); 
 	byId("fullInfo").dataset['uri'] = object.fullInfo
 	
@@ -108,27 +129,44 @@ function createInfoLabel(object) {
 function createInfoTable(object) {
 	inner("infoTable1","",true) ;
 	for (i in object.data.subjectData) {
+		var mainNarrative = i
+		// check if the narrative has a value
 		if (object.data.subjectData[i] !== null) {
+			// check if i is a narrative
 			if (narratives.includes(i)) {
 				var items = object.data.subjectData[i].split(", ")
 				var val = []
-				for (j in items) {
-					val.push('<a class="button" role="button" href="#" onclick="changeNarrative(\''+i+'\',\''+items[j]+'\')">'+items[j]+'</a>')
+				if (mainNarrative !== 'Dimensions') {
+					for (j in items) {
+						var subNarrative = items[j]
+						var icon = narrativeIcons[mainNarrative][subNarrative];
+						//val.push('<a class="button" role="button" href="#" onclick="changeNarrative(\''+i+'\',\''+items[j]+'\')">'+items[j]+'</a>')
+						// creating narrative buttons 
+						val.push(`<a class="narrative-button" role="button" href="#" onclick="changeNarrative('${mainNarrative}', '${subNarrative}')"><img src="${icon}" class="narrative-icon"></a>`)
+					}
+				} else {	
+					// create dimensions button
+					val.push(`<a class="narrative-button" role="button" href="#" onclick="changeNarrative('${mainNarrative}', '${mainNarrative}')"><img src="icons/dimension.png" class="narrative-icon"><p>${items[0]}</p></a>`)
 				}
-			inner("infoTable1","<tr><th>"+i+"</th><td>"+val.join(", ")+"</td></tr>", false)
+			inner("infoTable1","<tr><th>"+mainNarrative+"</th><td>"+val.join("")+"</td></tr>", false)
 			}
 		}
 	}
 	inner("infoTable2","",true) ;
 	for (i in object.data.picData) {
+		var mainNarrative = i
 		if (object.data.picData[i] !== null) {
 			if (narratives.includes(i)) {
 				var items = object.data.picData[i].split(", ")
 				var val = []
 				for (j in items) {
-					val.push('<a class="button" role="button" href="#" onclick="changeNarrative(\''+i+'\',\''+items[j]+'\')">'+items[j]+'</a>')
+					var subNarrative = items[j]
+					var icon = narrativeIcons[mainNarrative][subNarrative];
+					// val.push('<a class="button" role="button" href="#" onclick="changeNarrative(\''+i+'\',\''+items[j]+'\')">'+items[j]+'</a>')
+
+					val.push(`<a class="narrative-button" role="button" href="#" onclick="changeNarrative('${mainNarrative}', '${subNarrative}')"><img src="${icon}" class="narrative-icon"><p>${items[j]}</p></a>`)
 				}
-			inner("infoTable2","<tr><th>"+i+"</th><td>"+val.join(", ")+"</td></tr>", false)
+			inner("infoTable2","<tr><th>"+i+"</th><td>"+val.join("")+"</td></tr>", false)
 			}
 		}
 	}
@@ -154,14 +192,14 @@ function prepareNavigationButtons(index) {
 		byId("buttonNext").onclick = null
 		byId("buttonNext").innerHTML = "--"
 	}
-	if (currentNarrative == "dimensions") {
+	if (currentNarrative == "Dimensions") {
 		inner("narrative", currentNarrative, true)
 	} else {
 		inner("narrative", currentValue, true)
 	}
 }
 
-function changeNarrative(narrative,value) {
+function changeNarrative(narrative, value) {
 		currentNarrative = narrative
 		currentValue = value
 		prepareNarratives()

@@ -1,14 +1,14 @@
 {
     "meta": {
     "startWith": 0,
-    "startNarrative": "dimensions",
+    "startNarrative": "Dimensions",
     "startValue": "",
     "narratives": [
-      "system",
-      "type",
-      "dimensions",
-      "technique",
-      "period"
+      "System",
+      "Type",
+      "Dimensions",
+      "Technique",
+      "Period"
     ]
   },
     
@@ -21,13 +21,13 @@
         "picData": {
             "title": "The eye, as seen through a microscope: two figures",
             "author": "Liebreich, Richard",
-            "period": "historical",
-            "technique": "Litography"
+            "Period": "Historical",
+            "Technique": "Litography"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "nervous system",
-            "dimensions": ""
+            "Type": "Organ",
+            "System": "Nervous System",
+            "Dimensions": "ccc"
         }
     },
     "shortInfo": "",
@@ -42,13 +42,13 @@
         "picData": {
             "title": "The eye, as seen through a microscope: two figures",
             "author": "Liebreich, Richard",
-            "period": "historical",
-            "technique": "Litography"
+            "Period": "Historical",
+            "Technique": "Litography"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "nervous system",
-            "dimensions": ""
+            "Type": "Organ",
+            "System": "Nervous System",
+            "Dimensions": ""
         }
     },
     "shortInfo": "",
@@ -63,13 +63,13 @@
         "picData": {
             "title": "Healthy hair Bulb",
             "author": "Glaister, John",
-            "period": "historical",
-            "technique": ""
+            "Period": "Historical",
+            "Technique": ""
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "integumentary system",
-            "dimensions": ""
+            "Type": "Organ",
+            "System": "Integumentary System",
+            "Dimensions": ""
         }
     },
     "shortInfo": "",
@@ -84,13 +84,13 @@
         "picData": {
             "title": "MRSA",
             "author": "Annie Cavanagh",
-            "period": "contemporary",
-            "technique": null
+            "Period": "Contemporary",
+            "Technique": null
         },
         "subjectData": {
-            "type": "Bacterium",
-            "system": "Integumentary System, Respiratory system, Circulatory System",
-            "dimensions": ""
+            "Type": "Bacterium",
+            "System": "Integumentary System, Respiratory System, Circulatory System",
+            "Dimensions": ""
         }
     },
     "shortInfo": "Clusters of methicillin-resistant Staphylococcus aureus (MRSA) bacteria.",
@@ -105,13 +105,13 @@
         "picData": {
             "title": "SEM tooth showing rods in plaque",
             "author": "David Gregory, Debbie Marshall",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Bacterium",
-            "system": "Skeletal System",
-            "dimensions": "0.2-10µm"
+            "Type": "Bacterium",
+            "System": "Skeletal System",
+            "Dimensions": "0.2-10µm"
         }
     },
     "shortInfo": "Scanning electron microscope image of tooth, showing rod-like bacteria in plaque.",
@@ -126,13 +126,13 @@
         "picData": {
             "title": "Microplasma",
             "author": "Kevin Mackenzie",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM), Colorized"
+            "Period": "Contemporary",
+            "Technique": "SEM, Colorized"
         },
         "subjectData": {
-            "type": "Bacterium",
-            "system": "Skeletal System, Respiratory system, Urinary system",
-            "dimensions": "0.2-1µm"
+            "Type": "Bacterium",
+            "System": "Skeletal System, Respiratory System, Urinary System",
+            "Dimensions": "0.2-1µm"
         }
     },
     "shortInfo": "This scanning electron micrograph shows microplasma, a genus of bacteria that lack a cell wall. Without a cell wall they are unaffected by many common antibiotics, such as penicillin, or other beta-lactam antibiotics that work by targeting cell wall synthesis. These microplasma are shown on the surface of osteoblast cells, cells that are involved in the creation of new bone.",
@@ -147,13 +147,13 @@
         "picData": {
             "title": "Clostridium difficile colony",
             "author": "David Goulding",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Bacterium",
-            "system": "Digestive System, Respiratory system, Urinary system",
-            "dimensions": "3-8µm"
+            "Type": "Bacterium",
+            "System": "Digestive System, Respiratory System, Urinary System",
+            "Dimensions": "3-8µm"
         }
     },
     "shortInfo": "Clostridium difficile is a major cause of antibiotic-associated diarrheal disease. This false-coloured scanning electron micrograph shows part of the expanding edge of a bacterial colony in situ on an agar plate. Both vegetative cells and spores are visible. In order to study and accurately profile an intact colony it has been essential to minimise the disturbance of the cells. In this way it has been possible to optimise conditions for spore formation, characterise different cell morphologies across the colony and to study biofilm formation directly.",
@@ -168,13 +168,13 @@
         "picData": {
             "title": "Ruptured blood vessel",
             "author": "Anne Weston",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "Circulatory System",
-            "dimensions": "8µm-25mm"
+            "Type": "Organ",
+            "System": "Circulatory System",
+            "Dimensions": "8µm-25mm"
         }
     },
     "shortInfo": "Colour-enhanced image of red blood cells leaking out of a ruptured blood vessel. This is due to a mutation that causes the blood vessels to be more fragile than normal leading to an increased rate of haemorrhaging.",
@@ -189,13 +189,13 @@
         "picData": {
             "title": "Blood Cells, SEM",
             "author": "Anne Weston",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Cell",
-            "system": "Circulatory System",
-            "dimensions": "7.5-8.5µm"
+            "Type": "Cell",
+            "System": "Circulatory System",
+            "Dimensions": "7.5-8.5µm"
         }
     },
     "shortInfo": "",
@@ -210,13 +210,13 @@
         "picData": {
             "title": "Villus from the small intestine",
             "author": "S. Schuller",
-            "period": "contemporary",
-            "technique": ""
+            "Period": "Contemporary",
+            "Technique": ""
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "Digestive System",
-            "dimensions": "0.5–1.6 mm"
+            "Type": "Organ",
+            "System": "Digestive System",
+            "Dimensions": "0.5–1.6 mm"
         }
     },
     "shortInfo": "A villus from the human small intestine. The finger-like shape increases the surface area of the intestine improving the efficiency of food absorption.",
@@ -231,13 +231,13 @@
         "picData": {
             "title": "SEM alveoli in the lung",
             "author": "David Gregory, Debbie Marshall",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "Respiratory System",
-            "dimensions": "0.2mm"
+            "Type": "Organ",
+            "System": "Respiratory System",
+            "Dimensions": "0.2mm"
         }
     },
     "shortInfo": "",
@@ -252,13 +252,13 @@
         "picData": {
             "title": "Massed small stromal lymphocytes - coloured",
             "author": "Rob Young",
-            "period": "contemporary",
-            "technique": "Transmission Electron Microscopy (TEM)"
+            "Period": "Contemporary",
+            "Technique": "TEM"
         },
         "subjectData": {
-            "type": "Cell",
-            "system": "Circulatory System, Immune System",
-            "dimensions": "7-8μm"
+            "Type": "Cell",
+            "System": "Circulatory System, Immune System",
+            "Dimensions": "7-8μm"
         }
     },
     "shortInfo": "Colour-enhanced, transmission electron micrograph of a mass of small lymphocytes in the conjunctiva of a patient with an autoimmune ulceration of the cornea. The cells have large nuclei and numerous mitochondria. A centriole can be seen towards the centre left of the centre top cell. Collagen fibrils (red) are visible in the stroma between the cells.",
@@ -273,13 +273,13 @@
         "picData": {
             "title": "Split end of a human hair",
             "author": "Liz Hirst",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "Integumentary system",
-            "dimensions": "0.017-0.18mm"
+            "Type": "Organ",
+            "System": "Integumentary System",
+            "Dimensions": "0.017-0.18mm"
         }
     },
     "shortInfo": "Colour-enhanced scanning electron microgaph of the split end of a human hair showing the outer cuticle layer surrounding the inner cortical layer.",
@@ -294,13 +294,12 @@
         "picData": {
             "title": "SEM of collagen",
             "author": "David Gregory, Debbie Marshall",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "",
-            "system": "Integumentary system, Skeletal system, Muscular system",
-            "dimensions": "300 nm"
+            "System": "Integumentary System, Skeletal System, Muscular System",
+            "Dimensions": "300 nm"
         }
     },
     "shortInfo": "",
@@ -315,13 +314,13 @@
         "picData": {
             "title": "Purkinje neurons in culture",
             "author": "Annie Cavanagh",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Cell",
-            "system": "nervous system",
-            "dimensions": "20-40µm"
+            "Type": "Cell",
+            "System": "Nervous System",
+            "Dimensions": "20-40µm"
         }
     },
     "shortInfo": "This scanning electron micrograph, shows differentiating neurons grown in culture.",
@@ -336,13 +335,13 @@
         "picData": {
             "title": "Blood vessels emerging from the optic disc",
             "author": "Freya Mowat",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "Circulatory System",
-            "dimensions": "120-200µm"
+            "Type": "Organ",
+            "System": "Circulatory System",
+            "Dimensions": "120-200µm"
         }
     },
     "shortInfo": "Blood vessels in the retina emerging from the optic disc (black). The optic disc is the area of the retina where the optic nerve and retinal blood vessels leave the back of the eye.",
@@ -357,13 +356,13 @@
         "picData": {
             "title": "Tongue, taste bud on fungiform papilla. SEM",
             "author": "David Gregory, Debbie Marshall",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "Digestive system, Muscular system, Respiratory system",
-            "dimensions": "50-100µm"
+            "Type": "Organ",
+            "System": "Digestive System, Muscular System, Respiratory System",
+            "Dimensions": "50-100µm"
         }
     },
     "shortInfo": "Scanning electron micrograph of fungiform papilla on tongue, showing taste bud.",
@@ -378,13 +377,13 @@
         "picData": {
             "title": "Human proximal tubule, tubular structure, SEM",
             "author": "David Gregory, Debbie Marshall",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "Urinary System",
-            "dimensions": "14-18mm"
+            "Type": "Organ",
+            "System": "Urinary System",
+            "Dimensions": "14-18mm"
         }
     },
     "shortInfo": "Scanning electron micrograph of human proximal tubule, showing tubular structure.",
@@ -399,13 +398,13 @@
         "picData": {
             "title": "Blood vessel in a melanoma, SEM",
             "author": "S. Gschmeissner, K. Hodivala-Dilke, M. Stone",
-            "period": "contemporary",
-            "technique": "Scanning Electron Microscopy (SEM)"
+            "Period": "Contemporary",
+            "Technique": "SEM"
         },
         "subjectData": {
-            "type": "Organ",
-            "system": "Circulatory system, Integumentary system",
-            "dimensions": ""
+            "Type": "Organ",
+            "System": "Circulatory System, Integumentary System",
+            "Dimensions": ""
         }
     },
     "shortInfo": "Colour-enhanced, freeze-fracture scanning electron micrograph of a blood vessel that has grown into a melanoma and is providing nourishment to it.",

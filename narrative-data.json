@@ -2,14 +2,15 @@
     "narratives": [{
         "name": "System",
         "subnarratives": [
-            {"name": "Circulatory system", "icon": "icons/systems/circulatory.png"},
-            {"name": "Digestive system", "icon": "icons/systems/digestive.png"},
-            {"name": "Immune system", "icon": "icons/systems/immune.png"},
-            {"name": "Integumentary system", "icon": "icons/systems/integumentary.png"},
-            {"name": "Nervous system", "icon": "icons/systems/nervous.png"},
-            {"name": "Respiratory system", "icon": "icons/systems/respiratory.png"},
-            {"name": "Skeletal system", "icon": "icons/systems/skeletal.png"},
-            {"name": "Urinary system", "icon": "icons/systems/urinary.png"}
+            {"name": "Circulatory System", "icon": "icons/systems/circulatory.png"},
+            {"name": "Digestive System", "icon": "icons/systems/digestive.png"},
+            {"name": "Immune System", "icon": "icons/systems/immune.png"},
+            {"name": "Integumentary System", "icon": "icons/systems/integumentary.png"},
+            {"name": "Nervous System", "icon": "icons/systems/nervous.png"},
+            {"name": "Respiratory System", "icon": "icons/systems/respiratory.png"},
+            {"name": "Skeletal System", "icon": "icons/systems/skeletal.png"},
+            {"name": "Urinary System", "icon": "icons/systems/urinary.png"},
+            {"name": "Muscular System", "icon": "icons/systems/muscular.png"}
     ]
     },
     {"name": "Type",
@@ -22,9 +23,9 @@
     {"name": "Technique",
         "subnarratives": [
             {"name": "Litography", "icon": "icons/technique.png"},
-            {"name": "Scanning Electron Microscopy (SEM)", "icon": "icons/technique.png"},
-            {"name": "SEM colorized", "icon": "icons/technique.png"},
-            {"name": "Transmission Electron Microscopy (TEM)", "icon": "icons/technique.png"}
+            {"name": "SEM", "icon": "icons/technique.png"},
+            {"name": "Colorized", "icon": "icons/technique.png"},
+            {"name": "TEM", "icon": "icons/technique.png"}
     ]
     },
     {"name": "Period",
@@ -33,7 +34,7 @@
             {"name": "Contemporary", "icon": "icons/period.png"}
     ]
     },
-    {"name": "Dimension",
+    {"name": "Dimensions",
         "subnarratives": [
             {"name": "From the smallest to the biggest", "icon": "icons/dimension.png"}
     ]
