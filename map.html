@@ -130,6 +130,7 @@
         <footer>
         </footer>
         <script>
+            let narratives = {}
             let narrativeData = {};
             let objectData = {};
 
@@ -153,7 +154,7 @@
                         showNarrativesNav();
                     })
                     .catch(error => {
-                        console.error("Error fetching one of the JSON files:", error);
+                        console.error("Error:", error);
                     });
             });
 
@@ -161,9 +162,33 @@
                 narratives = narrativeData.narratives;
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
-                    byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\">" + narrativeName + "</a></li>";
+                    byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link\">" + narrativeName + "</a></li>";
                 }
             }
+
+            function showSubnarrativesNav(param) {
+                buttonText = param.innerText;
+                for (let i in narratives) {
+                    let narrativeName = narratives[i]["name"];
+                    if (narrativeName == buttonText) {
+                        subnarrativesList = narratives[i]["subnarratives"];
+                    }
+                }
+                document.getElementById("nav-subnarratives").innerHTML = "";
+                for (let x in subnarrativesList) {
+                        subnarrativeName = subnarrativesList[x]["name"];
+                        subnarrativeIcon = subnarrativesList[x]["icon"];
+                        byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\"><img src=\"" + subnarrativeIcon + " style=\"height: 20px;\"></a></li> ";
+
+                    }
+
+            }
+
+            function inner(id,content, emptyFirst=true) {
+	            if(emptyFirst) document.getElementById(id).innerHTML = "" ; 
+	            document.getElementById(id).innerHTML += content ; 
+            }
+
 
             function byId(id) {
                 return document.getElementById(id)
