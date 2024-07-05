@@ -133,6 +133,7 @@
             let narratives = {}
             let narrativeData = {};
             let objectData = {};
+            let currentNarrative = "";
 
             document.addEventListener("DOMContentLoaded", async function(event) {
                 console.log("Starting the narratives");
@@ -181,12 +182,21 @@
                         byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
 
                     }
+                
+                currentNarrative = buttonText
 
             }
 
             function showItems(param) {
                 buttonText = String(param.firstChild.alt);
-                console.log(buttonText)
+                itemList = people.filter( i => 
+		            i.data.subjectData[currentNarrative]?.includes(buttonText))
+                byId("list-items").innerHTML = "";
+                for (x in itemList) {
+                    itemId = itemList[x]["id"];
+                    itemName = itemList[x]["name"];
+                    byId("list-items").innerHTML += "<li>" + itemId + " " + itemName + "</li>";
+                }
                 
             }
 
@@ -199,6 +209,8 @@
             function byId(id) {
                 return document.getElementById(id)
             }
+
+
 
 
 
