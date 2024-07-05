@@ -178,10 +178,16 @@
                 for (let x in subnarrativesList) {
                         subnarrativeName = subnarrativesList[x]["name"];
                         subnarrativeIcon = subnarrativesList[x]["icon"];
-                        byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\"><img src=\"" + subnarrativeIcon + "\" style=\"height: 20px;\"></a></li> ";
+                        byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
 
                     }
 
+            }
+
+            function showItems(param) {
+                buttonText = String(param.img.alt);
+                console.log(buttonText)
+                
             }
 
             function inner(id,content, emptyFirst=true) {
