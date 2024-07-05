@@ -2,41 +2,41 @@
     "narratives": [{
         "name": "System",
         "subnarratives": [
-            {"name": "Circulatory System", "icon": "icons/systems/circulatory.png"},
-            {"name": "Digestive System", "icon": "icons/systems/digestive.png"},
-            {"name": "Immune System", "icon": "icons/systems/immune.png"},
-            {"name": "Integumentary System", "icon": "icons/systems/integumentary.png"},
-            {"name": "Nervous System", "icon": "icons/systems/nervous.png"},
-            {"name": "Respiratory System", "icon": "icons/systems/respiratory.png"},
-            {"name": "Skeletal System", "icon": "icons/systems/skeletal.png"},
-            {"name": "Urinary System", "icon": "icons/systems/urinary.png"},
-            {"name": "Muscular System", "icon": "icons/systems/muscular.png"}
+            {"name": "Circulatory System", "icon": "microcosm-project/icons/systems/circulatory.png"},
+            {"name": "Digestive System", "icon": "microcosm-project/icons/systems/digestive.png"},
+            {"name": "Immune System", "icon": "microcosm-project/icons/systems/immune.png"},
+            {"name": "Integumentary System", "icon": "microcosm-project/icons/systems/integumentary.png"},
+            {"name": "Nervous System", "icon": "microcosm-project/icons/systems/nervous.png"},
+            {"name": "Respiratory System", "icon": "microcosm-project/icons/systems/respiratory.png"},
+            {"name": "Skeletal System", "icon": "microcosm-project/icons/systems/skeletal.png"},
+            {"name": "Urinary System", "icon": "microcosm-project/icons/systems/urinary.png"},
+            {"name": "Muscular System", "icon": "microcosm-project/icons/systems/muscular.png"}
     ]
     },
     {"name": "Type",
         "subnarratives": [
-            {"name": "Bacterium", "icon": "icons/type/bacterium.png"},
-            {"name": "Cell", "icon": "icons/type/cell.png"},
-            {"name": "Organ", "icon": "icons/type/organ.png"}
+            {"name": "Bacterium", "icon": "microcosm-project/icons/type/bacterium.png"},
+            {"name": "Cell", "icon": "microcosm-project/icons/type/cell.png"},
+            {"name": "Organ", "icon": "microcosm-project/icons/type/organ.png"}
     ]
     },
     {"name": "Technique",
         "subnarratives": [
-            {"name": "Litography", "icon": "icons/technique.png"},
-            {"name": "SEM", "icon": "icons/technique.png"},
-            {"name": "Colorized", "icon": "icons/technique.png"},
-            {"name": "TEM", "icon": "icons/technique.png"}
+            {"name": "Litography", "icon": "microcosm-project/icons/technique.png"},
+            {"name": "SEM", "icon": "microcosm-project/icons/technique.png"},
+            {"name": "Colorized", "icon": "microcosm-project/icons/technique.png"},
+            {"name": "TEM", "icon": "microcosm-project/icons/technique.png"}
     ]
     },
     {"name": "Period",
         "subnarratives": [
-            {"name": "Historical", "icon": "icons/period.png"},
-            {"name": "Contemporary", "icon": "icons/period.png"}
+            {"name": "Historical", "icon": "microcosm-project/icons/period.png"},
+            {"name": "Contemporary", "icon": "microcosm-project/icons/period.png"}
     ]
     },
     {"name": "Dimensions",
         "subnarratives": [
-            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png"}
+            {"name": "From the smallest to the biggest", "icon": "microcosm-project/icons/dimension.png"}
     ]
     }
 ]
