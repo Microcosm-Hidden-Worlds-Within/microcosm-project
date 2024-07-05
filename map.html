@@ -31,8 +31,7 @@
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/colors.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/media.css">
-    
+
         <!-- Javascript -->
     
         <title>Microcosm: Hidden Worlds Within</title>
@@ -103,22 +102,8 @@
                 <h1>Map<h2>
             </div>
             <div class="nav-for-scroll sticky-top mt-5">
-                <ul class="nav nav-pills nav-justified">
-                  <li class="nav-item narrative-item">
-                    <a class="nav-link active">Systems</a>
-                  </li>
-                  <li class="nav-item narrative-item">
-                    <a class="nav-link">Types</a>
-                  </li>
-                  <li class="nav-item narrative-item">
-                    <a class="nav-link">Techniques</a>
-                  </li>
-                  <li class="nav-item narrative-item">
-                    <a class="nav-link">Periods</a>
-                  </li>
-                  <li class="nav-item narrative-item">
-                    <a class="nav-link">Dimensions</a>
-                  </li>
+                <ul class="nav nav-pills nav-justified nav-narratives">
+                  
                 </ul>
             </div>
 
@@ -130,36 +115,12 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="nav-for-scroll mt-5">
-                        <ul class="nav nav-pills nav-justified">
-                          <li class="nav-item narrative-item">
-                            <a class="nav-link"><img src="icons/systems/circulatory.png" style="height: 20px;"></a>
-                          </li>
-                          <li class="nav-item narrative-item">
-                            <a class="nav-link">Types</a>
-                          </li>
-                          <li class="nav-item narrative-item">
-                            <a class="nav-link">Techniques</a>
-                          </li>
-                          <li class="nav-item narrative-item">
-                            <a class="nav-link">Periods</a>
-                          </li>
-                          <li class="nav-item narrative-item">
-                            <a class="nav-link">Dimensions</a>
-                          </li>
+                        <ul class="nav nav-pills nav-justified nav-subnarratives">
+                          
                         </ul>
                       </div>
                       
-                    <ul>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
-                        <li>Narrative blablablabla room 1</li>
+                    <ul class="list-items">
                     </ul>
                 </div>
             </div>
@@ -169,6 +130,8 @@
         <footer>
         </footer>
         <script>
+            let narrativeData = {};
+            let objectData = {};
 
             document.addEventListener("DOMContentLoaded", async function(event) {
                 console.log("Starting the narratives");
@@ -183,15 +146,28 @@
                 Promise.all(urls.map(url => fetch(url).then(response => response.json())))
                     .then(dataArray => {
                         // Process the data from each JSON file
-                        const narrativeData = dataArray[0];
-                        const objectData = dataArray[1].objects
-                        console.log(narrativeData)
-                        console.log(objectData)
+                        narrativeData = dataArray[0];
+                        objectData = dataArray[1].objects;
+                        console.log(narrativeData);
+                        console.log(objectData);
+                        showNarrativesNav();
                     })
                     .catch(error => {
                         console.error("Error fetching one of the JSON files:", error);
                     });
             });
+
+            function showNarrativesNav() {
+                narratives = narrativeData.narratives;
+                for (let i in narratives) {
+                    let narrativeName = narratives[i]["name"];
+                    byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\">" + narrativeName + "</a></li>";
+                }
+            }
+
+            function byId(id) {
+                return document.getElementById(id)
+            }
 
 
 
