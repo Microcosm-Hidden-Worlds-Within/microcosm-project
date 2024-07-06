@@ -175,7 +175,8 @@
                         subnarrativesList = narratives[i]["subnarratives"];
                     }
                 }
-                document.getElementById("nav-subnarratives").innerHTML = "";
+                clearSubnarrativesNav()
+                clearItemsList()
                 for (let x in subnarrativesList) {
                         subnarrativeName = subnarrativesList[x]["name"];
                         subnarrativeIcon = subnarrativesList[x]["icon"];
@@ -192,13 +193,21 @@
                 buttonText = String(param.firstChild.alt);
                 itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText))
-                byId("list-items").innerHTML = "";
+                clearItemList()
                 for (x in itemList) {
                     itemId = itemList[x]["id"];
                     itemName = itemList[x]["name"];
                     byId("list-items").innerHTML += "<li>" + itemId + " " + itemName + "</li>";
                 }
                 
+            }
+
+            function clearSubnarrativesNav() {
+                byId("nav-subnarratives").innerHTML = "";
+            }
+
+            function clearItemsList () {
+                byId("list-items").innerHTML = "";
             }
 
             function inner(id,content, emptyFirst=true) {
