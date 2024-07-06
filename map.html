@@ -166,7 +166,7 @@
                     let narrativeName = narratives[i]["name"];
                     byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link\">" + narrativeName + "</a></li>";
                     if (i == 0) {
-                        activeElement(("nav-narratives").firstChild)
+                        activateElement(("nav-narratives").firstChild)
                         showSubnarrativesNav(("nav-narratives").firstChild)
                     }
                     
@@ -234,11 +234,11 @@
                 return document.getElementById(id)
             }
 
-            function activeElement(elem) {
+            function activateElement(elem) {
                 elem.classList.add("active");
             }
 
-            function deactiveElement() {
+            function deactivateElement() {
                 activeElement.classList.remove("active");
             }
 
