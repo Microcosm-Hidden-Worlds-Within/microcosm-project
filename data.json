@@ -25,8 +25,8 @@
             "Technique": "Litography"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Nervous System",
+            "Type": "Organ",
             "Dimensions": "ccc"
         }
     },
@@ -46,8 +46,8 @@
             "Technique": "Litography"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Nervous System",
+            "Type": "Organ",
             "Dimensions": ""
         }
     },
@@ -67,8 +67,8 @@
             "Technique": ""
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Integumentary System",
+            "Type": "Organ",
             "Dimensions": ""
         }
     },
@@ -88,8 +88,8 @@
             "Technique": null
         },
         "subjectData": {
-            "Type": "Bacterium",
             "System": "Integumentary System, Respiratory System, Circulatory System",
+            "Type": "Bacterium",
             "Dimensions": ""
         }
     },
@@ -109,8 +109,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Bacterium",
             "System": "Skeletal System",
+            "Type": "Bacterium",
             "Dimensions": "0.2-10µm"
         }
     },
@@ -130,8 +130,8 @@
             "Technique": "SEM, Colorized"
         },
         "subjectData": {
-            "Type": "Bacterium",
             "System": "Skeletal System, Respiratory System, Urinary System",
+            "Type": "Bacterium",
             "Dimensions": "0.2-1µm"
         }
     },
@@ -151,8 +151,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Bacterium",
             "System": "Digestive System, Respiratory System, Urinary System",
+            "Type": "Bacterium",
             "Dimensions": "3-8µm"
         }
     },
@@ -172,8 +172,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Circulatory System",
+            "Type": "Organ",
             "Dimensions": "8µm-25mm"
         }
     },
@@ -193,8 +193,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Cell",
             "System": "Circulatory System",
+            "Type": "Cell",
             "Dimensions": "7.5-8.5µm"
         }
     },
@@ -214,8 +214,8 @@
             "Technique": ""
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Digestive System",
+            "Type": "Organ",
             "Dimensions": "0.5–1.6 mm"
         }
     },
@@ -235,8 +235,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Respiratory System",
+            "Type": "Organ",
             "Dimensions": "0.2mm"
         }
     },
@@ -256,8 +256,8 @@
             "Technique": "TEM"
         },
         "subjectData": {
-            "Type": "Cell",
             "System": "Circulatory System, Immune System",
+            "Type": "Cell",
             "Dimensions": "7-8μm"
         }
     },
@@ -277,8 +277,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Integumentary System",
+            "Type": "Organ",
             "Dimensions": "0.017-0.18mm"
         }
     },
@@ -318,8 +318,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Cell",
             "System": "Nervous System",
+            "Type": "Cell",
             "Dimensions": "20-40µm"
         }
     },
@@ -339,8 +339,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Circulatory System",
+            "Type": "Organ",
             "Dimensions": "120-200µm"
         }
     },
@@ -360,8 +360,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Digestive System, Muscular System, Respiratory System",
+            "Type": "Organ",
             "Dimensions": "50-100µm"
         }
     },
@@ -381,8 +381,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Urinary System",
+            "Type": "Organ",
             "Dimensions": "14-18mm"
         }
     },
@@ -402,8 +402,8 @@
             "Technique": "SEM"
         },
         "subjectData": {
-            "Type": "Organ",
             "System": "Circulatory System, Integumentary System",
+            "Type": "Organ",
             "Dimensions": ""
         }
     },
