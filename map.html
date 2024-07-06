@@ -193,7 +193,7 @@
                 buttonText = String(param.firstChild.alt);
                 itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
-                clearItemList();
+                clearItemsList();
                 for (x in itemList) {
                     itemId = itemList[x]["id"];
                     itemName = itemList[x]["name"];
