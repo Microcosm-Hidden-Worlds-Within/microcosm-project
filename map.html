@@ -167,7 +167,7 @@
                     byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link\">" + narrativeName + "</a></li>";
                     if (i == 0) {
                         console.log(byId("nav-narratives").firstChild)
-                        activateElement(byId("nav-narratives").firstChild)
+                        byId("nav-narratives").firstChild.classList.add("active")
                         showSubnarrativesNav(("nav-narratives").firstChild)
                     }
                     
