@@ -190,16 +190,23 @@
             }
 
             function showItems(param) {
+                clearItemsList();
                 buttonText = String(param.firstChild.alt);
                 itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
-                clearItemsList();
+                if (itemList.length==0) {
+		            itemList = objectData.filter( i => 
+		            i.data.picData[currentNarrative]?.includes(buttonText));
+                };
+                if (itemList.length==0) {
+		            ItemList = objectData
+                };
                 for (x in itemList) {
                     itemId = itemList[x]["id"];
                     itemName = itemList[x]["name"];
                     byId("list-items").innerHTML += "<li>" + itemId + " " + itemName + "</li>";
-                }
-                console.log(buttonText)
+                };
+                console.log(buttonText);
             }
 
             function clearSubnarrativesNav() {
