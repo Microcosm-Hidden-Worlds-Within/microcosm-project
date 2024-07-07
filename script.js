@@ -86,6 +86,7 @@ function showInfo(index) {
 	createInfoTable(object)
 	// info
 	inner("shortInfo", object.shortInfo + '<a type="button" class="btn info-button" onclick="more()">Tell me more...</a>'); 
+	inner("longerInfo", object.longerInfo + '<a type="button" class="btn info-button" onclick="less()">Tell me less...</a>'); 
 	//inner("longerInfo","<p>"+object.longerInfo.join("</p><p>")+ '<a type="button" class="btn btn-outline-primary btn-sm" onclick="less()">Tell me less</a> or <a type="button" class="btn btn-outline-primary btn-sm" onclick="muchMore()">Tell me even more...</a></p>'); 
 	byId("fullInfo").dataset['uri'] = object.fullInfo
 	

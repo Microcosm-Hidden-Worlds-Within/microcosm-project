@@ -94,7 +94,7 @@
         }
     },
     "shortInfo": "Clusters of methicillin-resistant Staphylococcus aureus (MRSA) bacteria.",
-    "longerInfo": "",
+    "longerInfo": "MRSA is a type of Staphylococcus aureus, a Gram-positive bacterium commonly found on the skin and in the noses of healthy individuals. What sets MRSA apart is its resistance to methicillin and other beta-lactam antibiotics, a resistance acquired through the mecA gene. This gene produces an altered penicillin-binding protein, PBP2a, which prevents antibiotics from effectively targeting the bacterial cell wall. This makes the bacterium highly concerning in both healthcare and community settings.",
     "fullInfo": ""
 },
 {
@@ -114,8 +114,8 @@
             "Dimensions": "0.2-10µm"
         }
     },
-    "shortInfo": "Scanning electron microscope image of tooth, showing rod-like bacteria in plaque.",
-    "longerInfo": "",
+    "shortInfo": "Scanning electron microscope image of tooth, showing rod-like bacteria in plaque. Dental plaque is a biofilm that forms on the surface of teeth, harboring a diverse community of microorganisms, including bacteria.",
+    "longerInfo": "This scanning electron microscope image provides a highly detailed view of the surface of a tooth coated with dental plaque, focusing on the rod-like bacteria embedded within it. These bacteria, classified as bacilli, are distinguished by their elongated, cylindrical shape, which allows them to efficiently adhere to the tooth's surface and integrate into the plaque biofilm. <p>The SEM image captures their dense, interwoven clustering, forming a resilient matrix on the enamel. The high magnification reveals the fine details of the bacterial cell walls and their spatial arrangement, illustrating how these microorganisms interact within the biofilm. This visualization offers a closer look at the structural characteristics of the bacilli, including their size, shape, and adherence properties, which play a crucial role in the formation and persistence of dental plaque. Understanding these characteristics is essential for developing strategies to prevent and manage plaque-related dental issues, highlighting the importance of maintaining effective oral hygiene to control bacterial growth and ensure oral health.</p>",
     "fullInfo": ""
 }, 
 {
@@ -136,7 +136,7 @@
         }
     },
     "shortInfo": "This scanning electron micrograph shows microplasma, a genus of bacteria that lack a cell wall. Without a cell wall they are unaffected by many common antibiotics, such as penicillin, or other beta-lactam antibiotics that work by targeting cell wall synthesis. These microplasma are shown on the surface of osteoblast cells, cells that are involved in the creation of new bone.",
-    "longerInfo": "",
+    "longerInfo": "The absence of a cell wall in microplasma is a significant evolutionary adaptation that allows these bacteria to survive in environments where other bacteria might be eliminated by antibiotics. <p>Without a cell wall, microplasma have a flexible and pleomorphic shape, enabling them to adhere closely to host cells and evade immune responses more effectively. This resistance to beta-lactam antibiotics poses a challenge in clinical settings, as infections caused by microplasma require alternative treatment strategies.</p>",
     "fullInfo": ""
 }, 
 {
@@ -157,7 +157,7 @@
         }
     },
     "shortInfo": "Clostridium difficile is a major cause of antibiotic-associated diarrheal disease. This false-coloured scanning electron micrograph shows part of the expanding edge of a bacterial colony in situ on an agar plate. Both vegetative cells and spores are visible. In order to study and accurately profile an intact colony it has been essential to minimise the disturbance of the cells. In this way it has been possible to optimise conditions for spore formation, characterise different cell morphologies across the colony and to study biofilm formation directly.",
-    "longerInfo": "",
+    "longerInfo": "The micrograph highlights the importance of studying an intact bacterial colony with minimal disturbance to the cells. By carefully preserving the colony structure, researchers have been able to optimize the conditions necessary for spore formation, a key factor in the bacterium's persistence and transmission. Spores are highly resistant to environmental stresses, including antibiotic treatment, making them crucial targets for understanding and controlling C. difficile infections.<p>Additionally, this careful approach has enabled the characterization of different cell morphologies across the colony. Clostridium difficile exhibits a range of shapes and sizes, reflecting its adaptability and the various stages of its life cycle. The detailed visualization provided by the SEM image allows for a deeper understanding of how these morphological changes contribute to the bacterium's survival and pathogenicity.</p>",
     "fullInfo": ""
 },
 {
@@ -178,7 +178,7 @@
         }
     },
     "shortInfo": "Colour-enhanced image of red blood cells leaking out of a ruptured blood vessel. This is due to a mutation that causes the blood vessels to be more fragile than normal leading to an increased rate of haemorrhaging.",
-    "longerInfo": "",
+    "longerInfo": "This mutation affects the structural proteins or regulatory factors responsible for maintaining the integrity and strength of blood vessel walls.<p>One of the notable aspects of this disease is its variability in presentation and severity. Some individuals may experience mild symptoms with occasional minor bleeding episodes, while others may face more frequent and severe hemorrhages that pose significant health risks. The location and extent of bleeding can vary widely, affecting different organs and tissues throughout the body.</p>",
     "fullInfo": ""
 },
 {
@@ -198,8 +198,8 @@
             "Dimensions": "7.5-8.5µm"
         }
     },
-    "shortInfo": "",
-    "longerInfo": "",
+    "shortInfo": "Red blood cells, also known as erythrocytes, are the cells depicted in this image. These specialized cells are responsible for transporting oxygen from the lungs to tissues throughout the body. <p>Their distinctive red colour is due to the presence of hemoglobin, a protein that binds and carries oxygen. This image emphasizes the critical role of red blood cells in oxygen delivery and underscores their importance in maintaining physiological balance.</p>",
+    "longerInfo": "Each red blood cell contains millions of hemoglobin molecules, which efficiently bind to oxygen in the lungs due to their high affinity for this gas. As blood circulates through the body, oxygen is released to tissues in response to local metabolic demands, ensuring adequate oxygen supply for cellular functions. The image captures this essential process, emphasizing the critical role of red blood cells in sustaining life-sustaining functions.<p>Beyond oxygen transport, red blood cells also play a vital role in maintaining acid-base balance and regulating blood viscosity. Their ability to deform and squeeze through capillaries ensures they can reach every cell in the body, delivering oxygen and collecting carbon dioxide for exhalation.</p>",
     "fullInfo": ""
 },
 {

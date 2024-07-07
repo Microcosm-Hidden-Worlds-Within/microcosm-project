@@ -333,7 +333,7 @@ th {
 .card-text {
    max-width: 1000px;
    text-align: justify;
-   margin: auto auto 60px auto;
+   margin: auto auto 80px auto;
    font-size: 1.5rem;
    padding: 1.5rem;
 }
@@ -393,9 +393,10 @@ th {
 }
 
 .info-button {
+
    display: block;
    width: fit-content;
-   margin: 5px;
+   margin: 10px auto;
    background-color: var(--primary);
    color: var(--tertiary);
    border: 2px solid var(--tertiary);
