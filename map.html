@@ -176,7 +176,6 @@
             }
 
             function showSubnarrativesNav(param) {
-                console.log(typeof param);
                 if (typeof param === "string") {
                     buttonText = param;
                 } else {
@@ -209,11 +208,12 @@
             }
 
             function showItems(param) {
-                clearItemsList();
+                console.log(typeof param);
                 if (typeof param === "string") {
                    let buttonText = param;
                 } else {
                     let buttonText = String(param.firstChild.alt);
+                    clearItemsList();
                 };
                 let itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
