@@ -30,7 +30,7 @@
             "Dimensions": "ccc"
         }
     },
-    "shortInfo": "",
+    "shortInfo": "Before the invention of microscopic photography, the dissemination of microscopic images had to occur through manual printing techniques. In this case, the author uses lithography to represent an eye seen under a microscope.",
     "longerInfo": "",
     "fullInfo": ""
 },
@@ -51,8 +51,8 @@
             "Dimensions": ""
         }
     },
-    "shortInfo": "",
-    "longerInfo": "",
+    "shortInfo": "Before the invention of microscopic photography, the dissemination of microscopic images had to occur through manual printing techniques. In this case, the author uses lithography to represent an eye seen under a microscope.",
+    "longerInfo": "Lithography is a printing process that involves etching a drawing onto a limestone or treated metal plate. This method allows for the creation of images with a remarkable amount of detail and shading, essential for conveying the complex structures observed under a microscope. The technique exploits the principle that oil and water do not mix: the drawing is traced with an oily substance on a treated surface, then the stone is moistened, and subsequently, ink is applied that adheres only to the oily parts of the drawing.",
     "fullInfo": ""
 },
 {
@@ -63,8 +63,7 @@
         "picData": {
             "title": "Healthy hair Bulb",
             "author": "Glaister, John",
-            "Period": "Historical",
-            "Technique": ""
+            "Period": "Historical"
         },
         "subjectData": {
             "System": "Integumentary System",
@@ -72,8 +71,8 @@
             "Dimensions": ""
         }
     },
-    "shortInfo": "",
-    "longerInfo": "",
+    "shortInfo": "This image of the bulb of a healthy hair was taken from the book <i>A Study of Hairs and Wools Belonging to the Mammalian Group of Animals</i>. It is one of the earliest examples of microscopic photography.",
+    "longerInfo": "The hair bulb is a vital structure located at the base of the hair follicle, responsible for the growth and development of hair. It is a rounded, bulbous part of the follicle where hair cells are produced and is embedded deeply in the dermis layer of the skin. The hair bulb plays a crucial role in the hair growth cycle and overall hair health.",
     "fullInfo": ""
 },
 {
