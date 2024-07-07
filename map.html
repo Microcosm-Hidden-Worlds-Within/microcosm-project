@@ -161,15 +161,16 @@
 
             function showNarrativesNav() {
                 narratives = narrativeData.narratives;
+                let firstNarrativeName = "";
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
                     if (i == 0) {
                         byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
-                        let firstNarrativeName = narrativeName;
-                        showSubnarrativesNav(firstNarrativeName);
+                        firstNarrativeName = narrativeName;
                     } else {
                         byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link\">" + narrativeName + "</a></li>";
                     };
+                    showSubnarrativesNav(firstNarrativeName);
                 };
             }
 
