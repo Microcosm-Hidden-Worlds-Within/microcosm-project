@@ -165,8 +165,7 @@
                     let narrativeName = narratives[i]["name"];
                     if (i == 0) {
                         byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
-                        firstNarrativeName = narrativeName
-                        console.log(typeof firstNarrativeName)
+                        let firstNarrativeName = narrativeName;
                     } else {
                         byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link\">" + narrativeName + "</a></li>";
                     };
@@ -179,31 +178,41 @@
                     buttonText = param;
                 } else {
                     buttonText = param.innerText;
-                }
+                };
+                console.log(typeof param);
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
                     if (narrativeName == buttonText) {
                         subnarrativesList = narratives[i]["subnarratives"];
-                    }
-                }
+                    };
+                };
                 clearSubnarrativesNav();
                 clearItemsList();
                 for (let x in subnarrativesList) {
-                        subnarrativeName = subnarrativesList[x]["name"];
-                        subnarrativeIcon = subnarrativesList[x]["icon"];
-                        byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
-
-                    }
+                        let subnarrativeName = subnarrativesList[x]["name"];
+                        let subnarrativeIcon = subnarrativesList[x]["icon"];
+                        if (x == 0) {
+                            byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link active\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
+                            let firstSubnarrative = subnarrativeName;
+                        } else {                            
+                            byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
+                        }
+                    };
                 
                 currentNarrative = buttonText;
-                console.log(currentNarrative);
+                showItems(subNarrativeName)
+                
 
             }
 
             function showItems(param) {
                 clearItemsList();
-                buttonText = String(param.firstChild.alt);
-                itemList = objectData.filter( i => 
+                if (typeof param === "string") {
+                   let buttonText = param;
+                } else {
+                    let buttonText = String(param.firstChild.alt);
+                };
+                let itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
                 if (itemList.length==0) {
 		            itemList = objectData.filter( i => 
