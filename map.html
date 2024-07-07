@@ -177,9 +177,9 @@
 
             function showSubnarrativesNav(param) {
                 if (typeof param === "string") {
-                    buttonText = param;
+                    let buttonText = param;
                 } else {
-                    buttonText = param.innerText;
+                    let buttonText = param.innerText;
                 };
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
@@ -208,7 +208,6 @@
             }
 
             function showItems(param) {
-                console.log(typeof param);
                 if (typeof param === "string") {
                    let buttonText = param;
                 } else {
