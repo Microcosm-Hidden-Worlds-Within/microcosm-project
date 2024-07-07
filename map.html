@@ -190,12 +190,13 @@
                 };
                 clearSubnarrativesNav();
                 clearItemsList();
+                let firstSubnarrative = "";
                 for (let x in subnarrativesList) {
                         let subnarrativeName = subnarrativesList[x]["name"];
                         let subnarrativeIcon = subnarrativesList[x]["icon"];
                         if (x == 0) {
                             byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link active\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
-                            let firstSubnarrative = subnarrativeName;
+                            firstSubnarrative = subnarrativeName;
                         } else {                            
                             byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
                         }
