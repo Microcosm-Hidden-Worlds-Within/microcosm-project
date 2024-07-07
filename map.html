@@ -164,16 +164,22 @@
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
                     if (i == 0) {
-                        byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link active\">" + narrativeName + "</a></li>";
+                        byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
+                        firstNarrativeName = narrativeName
+                        console.log(typeof firstNarrativeName)
                     } else {
                         byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link\">" + narrativeName + "</a></li>";
-                    }
-
-                }
+                    };
+                };
+                showSubnarrativesNav(firstNarrativeName);
             }
 
             function showSubnarrativesNav(param) {
-                buttonText = param.innerText;
+                if (typeof param === "string") {
+                    buttonText = param;
+                } else {
+                    buttonText = param.innerText;
+                }
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
                     if (narrativeName == buttonText) {
