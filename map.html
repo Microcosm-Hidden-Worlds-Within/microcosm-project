@@ -176,12 +176,12 @@
             }
 
             function showSubnarrativesNav(param) {
+                console.log(typeof param);
                 if (typeof param === "string") {
                     buttonText = param;
                 } else {
                     buttonText = param.innerText;
                 };
-                console.log(typeof param);
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
                     if (narrativeName == buttonText) {
@@ -199,7 +199,7 @@
                             firstSubnarrative = subnarrativeName;
                         } else {                            
                             byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
-                        }
+                        };
                     };
                 
                 currentNarrative = buttonText;
@@ -221,7 +221,7 @@
 		            itemList = objectData.filter( i => 
 		            i.data.picData[currentNarrative]?.includes(buttonText));
                 };
-                console.log(objectData.length)
+                console.log(objectData.length);
                 if (itemList.length==0) {
 		            itemList = objectData;
                 };
