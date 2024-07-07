@@ -176,10 +176,11 @@
             }
 
             function showSubnarrativesNav(param) {
+                let buttonText = "";
                 if (typeof param === "string") {
-                    let buttonText = param;
+                    buttonText = param;
                 } else {
-                    let buttonText = param.innerText;
+                    buttonText = param.innerText;
                 };
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
@@ -208,10 +209,11 @@
             }
 
             function showItems(param) {
+                let buttonText = "";
                 if (typeof param === "string") {
-                   let buttonText = param;
+                   buttonText = param;
                 } else {
-                    let buttonText = String(param.firstChild.alt);
+                    buttonText = String(param.firstChild.alt);
                     clearItemsList();
                 };
                 let itemList = objectData.filter( i => 
