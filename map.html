@@ -241,7 +241,8 @@
                 console.log(nodes);
                 for (let i = 0; i < nodes.length; i++) {
                     if (nodes[i].nodeType === Node.ELEMENT_NODE) {
-                        nodes[i].classList.remove("active");
+                        let son = nodes[i].firstChild;
+                        son.classList.remove("active");
                     }
                 }
                 param.classList.add("active");
