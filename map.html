@@ -237,7 +237,11 @@
             }
 
             function changeActiveNarrative(param) {
-                
+                const nodes = byId("nav-narratives").childNodes;
+                console.log(nodes);
+                for (let i in nodes) {
+                    nodes[i].classList.add("active");
+                }
                 param.classList.add("active");
             }
 
