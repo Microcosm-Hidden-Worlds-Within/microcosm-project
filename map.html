@@ -217,6 +217,7 @@
                 } else {
                     buttonText = String(param.firstChild.alt);
                     clearItemsList();
+                    changeActiveSubnarrative();
                 };
                 let itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
@@ -238,6 +239,18 @@
 
             function changeActiveNarrative(param) {
                 const nodes = byId("nav-narratives").childNodes;
+                console.log(nodes);
+                for (let i = 0; i < nodes.length; i++) {
+                    if (nodes[i].nodeType === Node.ELEMENT_NODE) {
+                        let son = nodes[i].firstChild;
+                        son.classList.remove("active");
+                    }
+                }
+                param.classList.add("active");
+            }
+
+            function changeActiveSubnarrative(param) {
+                const nodes = byId("nav-subnarratives").childNodes;
                 console.log(nodes);
                 for (let i = 0; i < nodes.length; i++) {
                     if (nodes[i].nodeType === Node.ELEMENT_NODE) {
