@@ -133,7 +133,8 @@
             let narrativeData = {};
             let objectData = {};
             let currentNarrative = "";
-            let activeElement = "";
+            let activeNarrative = "";
+            let activeSubnarrative = "";
 
             document.addEventListener("DOMContentLoaded", async function(event) {
                 console.log("Starting the narratives");
@@ -181,6 +182,7 @@
                     buttonText = param;
                 } else {
                     buttonText = param.innerText;
+                    changeActiveNarrative(param);
                 };
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
@@ -232,6 +234,14 @@
                     byId("list-items").innerHTML += "<li>" + itemId + " " + itemName + "</li>";
                 };
                 console.log(buttonText);
+            }
+
+            function changeActiveNarrative(param) {
+                const nodes = byId("nav-narratives").childNodes;
+                for (let i in nodes) {
+                    nodes[i].classList.remove("active");
+                }
+                param.classList.add("active");
             }
 
             function clearSubnarrativesNav() {
