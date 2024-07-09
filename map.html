@@ -217,7 +217,7 @@
                 } else {
                     buttonText = String(param.firstChild.alt);
                     clearItemsList();
-                    changeActiveSubnarrative();
+                    changeActiveSubnarrative(param);
                 };
                 let itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
@@ -244,8 +244,8 @@
                     if (nodes[i].nodeType === Node.ELEMENT_NODE) {
                         let son = nodes[i].firstChild;
                         son.classList.remove("active");
-                    }
-                }
+                    };
+                };
                 param.classList.add("active");
             }
 
@@ -256,8 +256,8 @@
                     if (nodes[i].nodeType === Node.ELEMENT_NODE) {
                         let son = nodes[i].firstChild;
                         son.classList.remove("active");
-                    }
-                }
+                    };
+                };
                 param.classList.add("active");
             }
 
