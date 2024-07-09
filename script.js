@@ -5,6 +5,7 @@ var currentNarrative = ""
 var currentValue= ""
 var currentSort = ""
 var narrativeIcons = {}
+var narrativeDesc = {}
 
 document.addEventListener("DOMContentLoaded", async function(event) {
 	
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	.then(data => {	
 		originalData = data
 
+		// populate narrativeIcons 
 		originalData.narratives.forEach(narrative => {
     		const subnarrativesMap = {};
    		narrative.subnarratives.forEach(sub => {
@@ -22,7 +24,14 @@ document.addEventListener("DOMContentLoaded", async function(event) {
     		narrativeIcons[narrative.name] = subnarrativesMap;
 		});
 
-console.log(JSON.stringify(narrativeIcons, null, 4));
+		// populate narrativeDesc
+		originalData.narratives.forEach(narrative => {
+    		const subnarrativesMap = {};
+   		narrative.subnarratives.forEach(sub => {
+         	subnarrativesMap[sub.name] = sub.description;
+    		});
+    		narrativeDesc[narrative.name] = subnarrativesMap;
+		});
 	});
 	
 
@@ -38,6 +47,7 @@ console.log(JSON.stringify(narrativeIcons, null, 4));
 		narratives = data.meta.narratives;
 		currentNarrative = data.meta.startNarrative;
 		currentValue = data.meta.startValue;
+		console.log(currentValue);
    
 		prepareNarratives();
 	});
@@ -86,11 +96,22 @@ function showInfo(index) {
 	createInfoTable(object)
 	// info
 	inner("shortInfo", object.shortInfo + '<a type="button" class="btn info-button" onclick="more()">Tell me more...</a>'); 
-	inner("longerInfo", object.longerInfo + '<a type="button" class="btn info-button" onclick="less()">Tell me less...</a>'); 
-	//inner("longerInfo","<p>"+object.longerInfo.join("</p><p>")+ '<a type="button" class="btn btn-outline-primary btn-sm" onclick="less()">Tell me less</a> or <a type="button" class="btn btn-outline-primary btn-sm" onclick="muchMore()">Tell me even more...</a></p>'); 
+	//inner("longerInfo", object.longerInfo + '<a type="button" class="btn info-button" onclick="less()">Tell me less...</a>'); 
+	inner("longerInfo","<p>"+object.longerInfo.join("</p><p>")+ '<a type="button" class="btn info-button" onclick="less()">Tell me less</a> or <a type="button" class="btn info-button" onclick="muchMore()">Tell me even more...</a></p>'); 
 	byId("fullInfo").dataset['uri'] = object.fullInfo
 	
+	changeNarrativeDescription()
 	prepareNavigationButtons(index)
+}
+
+function changeNarrativeDescription() {
+	if (currentNarrative == "Dimensions") {
+		var desc = narrativeDesc[currentNarrative]["From the smallest to the biggest"]
+	} else {
+		var desc = narrativeDesc[currentNarrative][currentValue]
+	};
+	console.log(desc);
+	inner("narrative-info", desc)
 }
 
 function more() {
@@ -163,7 +184,6 @@ function createInfoTable(object) {
 				for (j in items) {
 					var subNarrative = items[j]
 					var icon = narrativeIcons[mainNarrative][subNarrative];
-					// val.push('<a class="button" role="button" href="#" onclick="changeNarrative(\''+i+'\',\''+items[j]+'\')">'+items[j]+'</a>')
 
 					val.push(`<a class="narrative-button" role="button" href="#" onclick="changeNarrative('${mainNarrative}', '${subNarrative}')"><img src="${icon}" class="narrative-icon"><p>${items[j]}</p></a>`)
 				}
@@ -171,6 +191,25 @@ function createInfoTable(object) {
 			}
 		}
 	}
+	setActiveNarrative(currentValue)
+}
+
+
+// change color of the active icon
+function setActiveNarrative(currentValue) {
+	console.log(currentValue);
+	let buttons = document.querySelectorAll('.narrative-button');
+	buttons.forEach(button => {
+    // Extract the value of the onclick attribute
+    let onclickValue = button.getAttribute('onclick');
+    
+    // Check if the onclick attribute contains "ciao" as the value for ${subNarrative}
+    if (onclickValue.includes(currentValue)) {
+        button.classList.add('active-narrative');
+		  
+ 
+    }
+});
 }
 
 // navigation buttons

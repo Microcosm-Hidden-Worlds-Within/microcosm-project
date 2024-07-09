@@ -5,7 +5,7 @@
             {"name": "Circulatory System", "icon": "icons/systems/circulatory.png"},
             {"name": "Digestive System", "icon": "icons/systems/digestive.png"},
             {"name": "Immune System", "icon": "icons/systems/immune.png"},
-            {"name": "Integumentary System", "icon": "icons/systems/integumentary.png"},
+            {"name": "Integumentary System", "icon": "icons/systems/integumentary.png", "description": "test test test"},
             {"name": "Nervous System", "icon": "icons/systems/nervous.png"},
             {"name": "Respiratory System", "icon": "icons/systems/respiratory.png"},
             {"name": "Skeletal System", "icon": "icons/systems/skeletal.png"},
@@ -36,7 +36,7 @@
     },
     {"name": "Dimensions",
         "subnarratives": [
-            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png"}
+            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png", "description": "test test test dimension"}
     ]
     }
 ]

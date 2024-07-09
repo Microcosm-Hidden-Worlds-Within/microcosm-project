@@ -72,6 +72,7 @@ h6 {
 
 .card-body {
    padding: 0;
+   margin-bottom: 6rem;
 }
 
 .row {
@@ -222,7 +223,7 @@ figcaption {
 }
 
 .narrative-button:hover img {
-   filter: brightness(0) saturate(100%) invert(23%) sepia(83%) saturate(2388%) hue-rotate(213deg) brightness(81%) contrast(98%);
+   filter: brightness(0) saturate(100%) invert(17%) sepia(80%) saturate(4825%) hue-rotate(355deg) brightness(84%) contrast(87%);
    transition: all 0.3s ease-out;
 }
 
@@ -433,6 +434,13 @@ fieldset:disabled {
 
 /* clicked nav button */
 :not(.btn-check)+.btn:active {
+   background-color: var(--primary);
+   color: var(--tertiary);
+   border: 2px solid var(--tertiary);
+   transition: all 0.3s ease-out;
+}
+
+.btn:first-child:active {
    background-color: var(--primary);
    color: var(--tertiary);
    border: 2px solid var(--tertiary);
