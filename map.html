@@ -239,8 +239,10 @@
             function changeActiveNarrative(param) {
                 const nodes = byId("nav-narratives").childNodes;
                 console.log(nodes);
-                for (let i in nodes) {
-                    nodes[i].classList.add("active");
+                for (let i = 0; i < nodes.length; i++) {
+                    if (nodes[i].nodeType === Node.ELEMENT_NODE) {
+                        nodes[i].classList.remove("active");
+                    }
                 }
                 param.classList.add("active");
             }
@@ -263,13 +265,6 @@
                 return document.getElementById(id)
             }
 
-            function activateElement(elem) {
-                elem.classList.add("active");
-            }
-
-            function deactivateElement() {
-                activeElement.classList.remove("active");
-            }
 
 
 
