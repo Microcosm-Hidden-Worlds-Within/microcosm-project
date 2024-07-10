@@ -161,15 +161,15 @@
 
                     let result = ""
                     for (let i = 0; i < param.length; i++) {
-                        let subnarrativesName = param[i]["name"];
-                        let subnarrativesPic = param[i]["icon"];
-                        let subnarrativesDesc = param[i]["short-desc"];
-                        let backgroundImageClass = "card-img-bg-" + subnarrativesName.replaceAll(" ", "-");
+                        let subnarrativeName = param[i]["name"];
+                        let subnarrativePic = param[i]["icon"];
+                        let subnarrativeDesc = param[i]["short-desc"];
+                        let backgroundImageClass = "card-img-bg-" + subnarrativeName.replaceAll(" ", "-");
                         result += `<a href="#">
                         <div class="card h-100">
                         <div class="${backgroundImageClass}"></div>
                         <div class="card-body">
-                            <h5 class="card-title">${subnarrativesName}</h5>
+                            <h5 class="card-title">${subnarrativeName}</h5>
                             <p class="card-text">${subnarrativeDesc}</p>
                         </div>
                         </div>
