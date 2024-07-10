@@ -148,13 +148,35 @@
                         let narrativeName = narratives[i]["name"];
                         let narrativeId = "#" + narratives[i]["name"];
                         let main = document.getElementsByTagName("main");
-                        main.innerHTML += "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"d-flex flex-row\">" + generateCards() + "</div>"
+                        let subnarratives = narratives[i]["subnarratives"];
+                        main.innerHTML += "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"d-flex flex-row\">" + generateCards(subnarratives) + "</div>";
 
-                    }
+                    };
                 }
 
-                function generateCards() {
-                    return "";
+                
+                function generateCards(param) {
+                    mySheet = document.styleSheets[5];
+                    console.log(mySheet.title);
+
+                    let result = ""
+                    for (let i = 0; i < param.length; i++) {
+                        let subnarrativesName = param[i]["name"];
+                        let subnarrativesPic = param[i]["icon"];
+                        let subnarrativesDesc = param[i]["short-desc"];
+                        let backgroundImageClass = "card-img-bg-" + subnarrativesName.replaceAll(" ", "-");
+                        result += `<a href="#">
+                        <div class="card h-100">
+                        <div class="${backgroundImageClass}"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">${subnarrativesName}</h5>
+                            <p class="card-text">${subnarrativeDesc}</p>
+                        </div>
+                        </div>
+                    </a>`;
+
+
+                    }
                 }
                 
             
