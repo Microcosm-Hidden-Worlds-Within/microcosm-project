@@ -157,7 +157,7 @@
                 
                 function generateCards(param) {
                     mySheet = document.styleSheets[5];
-                    console.log(mySheet.title);
+                    console.log(mySheet);
 
                     let result = ""
                     for (let i = 0; i < param.length; i++) {
@@ -175,7 +175,7 @@
                         </div>
                     </a>`;
 
-
+                    return result;
                     }
                 }
 
