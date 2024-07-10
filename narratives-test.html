@@ -175,7 +175,16 @@
                         </div>
                         </div>
                         </a>`;
+
+                        let newRule = `
+                            .${backgroundImageClass} {
+                                background-image: url("${subnarrativePic}");
+                            }
+                            `
+                        mySheet.insertRule(newRule, mySheet.cssRules.length);
                     };
+                    
+                    
 
                     return result;
                 }
