@@ -149,7 +149,8 @@
                         let narrativeId = "#" + narratives[i]["name"];
                         let main = document.getElementsByTagName("main");
                         let subnarratives = narratives[i]["subnarratives"];
-                        main.innerHTML += "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"d-flex flex-row\">" + generateCards(subnarratives) + "</div>";
+                        let cards = generateCards(subnarratives);
+                        main.innerHTML += "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"d-flex flex-row\">" + cards + "</div>";
 
                     };
                 }
