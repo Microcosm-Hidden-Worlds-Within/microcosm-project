@@ -158,7 +158,6 @@
                 
                 function generateCards(param) {
                     mySheet = document.styleSheets[5];
-                    console.log(mySheet);
 
                     let result = ""
                     for (let i = 0; i < param.length; i++) {
@@ -174,10 +173,10 @@
                             <p class="card-text">${subnarrativeDesc}</p>
                         </div>
                         </div>
-                    </a>`;
-
+                        </a>`;
+                    };
+                    
                     return result;
-                    }
                 }
 
                 function byId(id) {
