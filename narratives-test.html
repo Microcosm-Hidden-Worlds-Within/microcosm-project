@@ -124,6 +124,9 @@
                         narrativeData = data;
                         showNarrativesNav();
                     })
+                    .catch(error => {
+                        console.error("Error:", error);
+                    });
                 });
 
                 function showNarrativesNav() {
