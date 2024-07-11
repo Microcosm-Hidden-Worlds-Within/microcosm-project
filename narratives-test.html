@@ -150,7 +150,7 @@
                         let main = byId("my-main");
                         let subnarratives = narratives[i]["subnarratives"];
                         let cards = generateCards(subnarratives);
-                        let newCode = "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"w-100 d-flex flex-row flex-wrap align-items-center\">" + cards + "</div></div>";
+                        let newCode = "<div class=\"container-fluid mt-5 vh-20 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"w-100 d-flex flex-row flex-wrap align-items-center\">" + cards + "</div></div>";
                         console.log(newCode);
                         main.innerHTML += newCode;
                     };
