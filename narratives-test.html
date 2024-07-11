@@ -150,7 +150,7 @@
                         let main = byId("my-main");
                         let subnarratives = narratives[i]["subnarratives"];
                         let cards = generateCards(subnarratives);
-                        let newCode = "<div class=\"container-fluid mt-5 vh-20 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"w-100 d-flex flex-row flex-wrap align-items-center\">" + cards + "</div></div>";
+                        let newCode = "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2>" + cards + "</div>";
                         console.log(newCode);
                         main.innerHTML += newCode;
                     };
@@ -166,22 +166,35 @@
                         let subnarrativePic = "../" + param[i]["icon"];
                         let subnarrativeDesc = param[i]["short-desc"];
                         let backgroundImageClass = "card-img-bg-" + subnarrativeName.replaceAll(" ", "-");
-                        result += `<a href="#">
-                        <div class="card m-4">
-                        <div class="${backgroundImageClass}"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">${subnarrativeName}</h5>
-                            <p class="card-text">${subnarrativeDesc}</p>
-                        </div>
-                        </div>
-                        </a>`;
+                        let lastRowItem = i + 1;
+                        if (i % 4 == 0) {
+                            result += "<div class=\"row\">";
+                        };
+                        result += `
+                        <div class="col-12 col-md-6 col-lg-3 p-4 d-flex">
+                            <a href="#">
+                            <div class="card h-100">
+                            <div class="${backgroundImageClass}"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">${subnarrativeName}</h5>
+                                <p class="card-text">${subnarrativeDesc}</p>
+                            </div>
+                            </div>
+                            </a>
+                            </div>
+                            `;
 
                         let newRule = `
-                            .${backgroundImageClass} {
-                                background-image: url("${subnarrativePic}");
-                            }
-                            `;
+                        .${backgroundImageClass} {
+                            background-image: url("${subnarrativePic}");
+                        }
+                        `;
+
                         let ruleIndex = mySheet.insertRule(newRule, mySheet.cssRules.length);
+
+                        if (lastRowItem % 4 == 0) {
+                            result += "</div>";
+                        };
                     };
                     
 
