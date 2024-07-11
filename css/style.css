@@ -293,6 +293,7 @@ h4 {
 
 .card {
   width: 400px;
+  height: 100%;
   transition: box-shadow 0.3s ease;
 }
 
