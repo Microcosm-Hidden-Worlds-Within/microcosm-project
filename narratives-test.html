@@ -150,7 +150,7 @@
                         let main = byId("my-main");
                         let subnarratives = narratives[i]["subnarratives"];
                         let cards = generateCards(subnarratives);
-                        let newCode = "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"w-100 d-flex flex-row flex-wrap justify-content-evenly\">" + cards + "</div></div>";
+                        let newCode = "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2><div class=\"w-100 d-flex flex-row flex-wrap\">" + cards + "</div></div>";
                         console.log(newCode);
                         main.innerHTML += newCode;
                     };
@@ -167,7 +167,7 @@
                         let subnarrativeDesc = param[i]["short-desc"];
                         let backgroundImageClass = "card-img-bg-" + subnarrativeName.replaceAll(" ", "-");
                         result += `<a href="#">
-                        <div class="card">
+                        <div class="card m-4">
                         <div class="${backgroundImageClass}"></div>
                         <div class="card-body">
                             <h5 class="card-title">${subnarrativeName}</h5>
