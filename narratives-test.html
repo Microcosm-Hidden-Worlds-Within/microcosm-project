@@ -181,7 +181,7 @@
                                 background-image: url("${subnarrativePic}");
                             }
                             `;
-                        mySheet.insertRule(newRule, mySheet.cssRules.length);
+                        let ruleIndex = mySheet.insertRule(newRule, mySheet.cssRules.length);
                     };
                     
                     let generalNewRule = `
@@ -191,7 +191,7 @@
                             background-position: center;
                         }
                         `;
-                    mySheet.insertRule(generalNewRule, mySheet.cssRules.length);
+                    let generalRuleIndex = mySheet.insertRule(generalNewRule, mySheet.cssRules.length);
 
                     return result;
                 }
