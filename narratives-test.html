@@ -133,12 +133,12 @@
                     `
                     for (let i in narratives) {
                         let narrativeName = narratives[i]["name"];
-                        let narrativeId = "#" + narratives[i]["name"];
+                        let narrativeId = narratives[i]["name"];
                         if (i == 0) {
-                            newElements += "<li class=\"nav-item narrative-item\"><a href=\"" + narrativeId +"\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
+                            newElements += "<li class=\"nav-item narrative-item\"><a href=\"#" + narrativeId +"\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
                             firstNarrativeName = narrativeName;
                         } else {
-                            newElements += "<li class=\"nav-item narrative-item\"><a href=\"" + narrativeId + "\" class=\"nav-link\">" + narrativeName + "</a></li>";
+                            newElements += "<li class=\"nav-item narrative-item\"><a href=\"#" + narrativeId + "\" class=\"nav-link\">" + narrativeName + "</a></li>";
                         };
                     
                     };
@@ -153,7 +153,7 @@
                 function showCards() {
                     for (let i = 0; i < narratives.length; i++) {
                         let narrativeName = narratives[i]["name"];
-                        let narrativeId = "#" + narratives[i]["name"];
+                        let narrativeId = narrativeName;
                         let main = byId("my-main");
                         let subnarratives = narratives[i]["subnarratives"];
                         let cards = generateCards(subnarratives);
