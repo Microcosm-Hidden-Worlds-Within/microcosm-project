@@ -210,7 +210,7 @@ h4 {
 
 
 /* The cards */
-/* Background images for the card */
+/* Background images for the card
 
 .card-img-bg-circulatory {
   background-image: url("../pics/pic-9.jpg");
@@ -263,6 +263,7 @@ h4 {
 .card-img-bg-tem {
   background-image: url("../pics/pic-12.jpg");
 }
+   */
 
 [class^="card-img-bg-"] {
   height: 40vh;
@@ -293,7 +294,7 @@ h4 {
 
 .card {
   width: 400px;
-  height: 100%;
+  height: 40vh;
   transition: box-shadow 0.3s ease;
 }
 
