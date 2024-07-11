@@ -100,10 +100,7 @@
                     <div class="text-center">
                         <h1>Narratives</h1>
                     </div>
-                <div class="mt-5">
-                    <ul class="nav nav-pills nav-justified nav-for-scroll sticky-top" id="nav-narratives">
-                    </ul>
-                </div>  
+                
               
             </main>
             <footer>
@@ -129,17 +126,27 @@
                 function showNarrativesNav() {
                     narratives = narrativeData.narratives;
                     let firstNarrativeName = "";
+                    let newElements = "";
+                    newElements += `
+                    <div class="nav-for-scroll sticky-top mt-5">
+                        <ul class="nav nav-pills nav-justified">
+                    `
                     for (let i in narratives) {
                         let narrativeName = narratives[i]["name"];
                         let narrativeId = "#" + narratives[i]["name"];
                         if (i == 0) {
-                            byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a href=\"" + narrativeId +"\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
+                            newElements += "<li class=\"nav-item narrative-item\"><a href=\"" + narrativeId +"\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
                             firstNarrativeName = narrativeName;
                         } else {
-                            byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a href=\"" + narrativeId + "\" class=\"nav-link\">" + narrativeName + "</a></li>";
+                            newElements += "<li class=\"nav-item narrative-item\"><a href=\"" + narrativeId + "\" class=\"nav-link\">" + narrativeName + "</a></li>";
                         };
                     
                     };
+                    newElements += `
+                        </ul>
+                    </div>
+                    `
+                    byId("my-main").innerHTML += newElements;
                     showCards();
                 }
 

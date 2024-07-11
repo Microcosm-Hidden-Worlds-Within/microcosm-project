@@ -2,42 +2,42 @@
     "narratives": [{
         "name": "System",
         "subnarratives": [
-            {"name": "Circulatory System", "icon": "icons/systems/circulatory.png", "short-desc": "The circulatory system moves blood, delivering oxygen and nutrients while removing waste."},
-            {"name": "Digestive System", "icon": "icons/systems/digestive.png", "short-desc": "The digestive system breaks down food into nutrients and eliminates waste."},
-            {"name": "Immune System", "icon": "icons/systems/immune.png", "short-desc": "The immune system defends against infections and diseases by identifying and destroying harmful invaders."},
-            {"name": "Integumentary System", "icon": "icons/systems/integumentary.png", "short-desc": "The integumentary system includes the skin, hair, and nails, providing protection and helping regulate temperature.", "description": "test test test"},
-            {"name": "Nervous System", "icon": "icons/systems/nervous.png", "short-desc": "The nervous system controls and coordinates activities by transmitting signals to and from different parts of the body."},
-            {"name": "Respiratory System", "icon": "icons/systems/respiratory.png", "short-desc": "The nervous system controls and coordinates activities by transmitting signals to and from different parts of the body."},
-            {"name": "Skeletal System", "icon": "icons/systems/skeletal.png", "short-desc": "The skeletal system provides structure, protects organs, and supports movement."},
-            {"name": "Urinary System", "icon": "icons/systems/urinary.png", "short-desc": "The urinary system removes waste from the blood and regulates water and electrolyte balance."},
-            {"name": "Muscular System", "icon": "icons/systems/muscular.png", "short-desc": "The muscular system enables movement and maintains posture through muscle contractions."}
-    ]
+            {"name": "Circulatory System", "icon": "icons/systems/circulatory.png", "pic": "pics/pic-9.jpg", "short-desc": "The circulatory system moves blood, delivering oxygen and nutrients while removing waste."},
+            {"name": "Digestive System", "icon": "icons/systems/digestive.png", "pic": "pics/pic-10.jpg", "short-desc": "The digestive system breaks down food into nutrients and eliminates waste."},
+            {"name": "Immune System", "icon": "icons/systems/immune.png", "pic": "pics/pic-12.jpg", "short-desc": "The immune system defends against infections and diseases by identifying and destroying harmful invaders."},
+            {"name": "Integumentary System", "icon": "icons/systems/integumentary.png", "pic": "pics/pic-13.jpg", "short-desc": "The integumentary system includes the skin, hair, and nails, providing protection and helping regulate temperature.", "description": "test test test"},
+            {"name": "Nervous System", "icon": "icons/systems/nervous.png", "pic": "pics/pic-15.jpeg", "short-desc": "The nervous system controls and coordinates activities by transmitting signals to and from different parts of the body."},
+            {"name": "Respiratory System", "icon": "icons/systems/respiratory.png", "pic": "pics/pic-11.jpg", "short-desc": "The nervous system controls and coordinates activities by transmitting signals to and from different parts of the body."},
+            {"name": "Skeletal System", "icon": "icons/systems/skeletal.png", "pic": "pics/pic-5.jpeg", "short-desc": "The skeletal system provides structure, protects organs, and supports movement."},
+            {"name": "Urinary System", "icon": "icons/systems/urinary.png", "pic": "pics/pic-18.jpeg", "short-desc": "The urinary system removes waste from the blood and regulates water and electrolyte balance."},
+            {"name": "Muscular System", "icon": "icons/systems/muscular.png", "pic": "pics/pic-14.jpg", "short-desc": "The muscular system enables movement and maintains posture through muscle contractions."}
+        ]
     },
     {"name": "Type",
         "subnarratives": [
-            {"name": "Bacterium", "icon": "icons/type/bacterium.png", "short-desc": "A bacterium is a single-celled microorganism that can exist either as an independent organism or as a parasite."},
-            {"name": "Cell", "icon": "icons/type/cell.png", "short-desc": "A cell is the basic building block of all living organisms, capable of independent function and reproduction."},
-            {"name": "Organ", "icon": "icons/type/organ.png", "short-desc": "An organ is a group of tissues that work together to perform a specific function in the body."}
-    ]
+            {"name": "Bacterium", "icon": "icons/type/bacterium.png", "pic": "pics/", "short-desc": "A bacterium is a single-celled microorganism that can exist either as an independent organism or as a parasite."},
+            {"name": "Cell", "icon": "icons/type/cell.png", "pic": "pics/", "short-desc": "A cell is the basic building block of all living organisms, capable of independent function and reproduction."},
+            {"name": "Organ", "icon": "icons/type/organ.png", "pic": "pics/", "short-desc": "An organ is a group of tissues that work together to perform a specific function in the body."}
+        ]
     },
     {"name": "Technique",
         "subnarratives": [
-            {"name": "Litography", "icon": "icons/technique.png", "short-desc": "Lithography is a printing technique that uses a flat surface treated so that ink adheres only to the design to be printed."},
-            {"name": "SEM", "icon": "icons/technique.png", "short-desc": "SEM is a technique that uses electrons to create detailed images of the surfaces of materials at high magnifications."},
-            {"name": "Colorized", "icon": "icons/technique.png", "short-desc": "Colorized SEM involves adding color to SEM images to highlight specific features or for aesthetic purposes."},
-            {"name": "TEM", "icon": "icons/technique.png", "short-desc": "Transmission Electron Microscopy (TEM) uses a beam of electrons passing through an ultra-thin specimen to create detailed images of its internal structure."}
-    ]
+            {"name": "Litography", "icon": "icons/technique.png", "pic": "pics/", "short-desc": "Lithography is a printing technique that uses a flat surface treated so that ink adheres only to the design to be printed."},
+            {"name": "SEM", "icon": "icons/technique.png", "pic": "pics/", "short-desc": "SEM is a technique that uses electrons to create detailed images of the surfaces of materials at high magnifications."},
+            {"name": "Colorized", "icon": "icons/technique.png", "pic": "pics/", "short-desc": "Colorized SEM involves adding color to SEM images to highlight specific features or for aesthetic purposes."},
+            {"name": "TEM", "icon": "icons/technique.png", "pic": "pics/", "short-desc": "Transmission Electron Microscopy (TEM) uses a beam of electrons passing through an ultra-thin specimen to create detailed images of its internal structure."}
+        ]
     },
     {"name": "Period",
         "subnarratives": [
-            {"name": "Historical", "icon": "icons/period.png", "short-desc": "Explore lithographs and pictures taken before the 1930s, showcasing the early methods and discoveries."},
-            {"name": "Contemporary", "icon": "icons/period.png", "short-desc": "Modern SEM pictures taken after the 1930s, reflecting the advancements in microscopy and imaging techniques."}
-    ]
+            {"name": "Historical", "icon": "icons/period.png", "pic": "pics/", "short-desc": "Explore lithographs and pictures taken before the 1930s, showcasing the early methods and discoveries."},
+            {"name": "Contemporary", "icon": "icons/period.png", "pic": "pics/", "short-desc": "Modern SEM pictures taken after the 1930s, reflecting the advancements in microscopy and imaging techniques."}
+        ]
     },
     {"name": "Dimensions",
         "subnarratives": [
-            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png", "short-desc": "See all the pictures ordered by the dimension of the subject, showcasing the fascinating scale from microscopic to larger structures.", "description": "test test test dimension"}
-    ]
+            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png", "pic": "pics/", "short-desc": "See all the pictures ordered by the dimension of the subject, showcasing the fascinating scale from microscopic to larger structures.", "description": "test test test dimension"}
+        ]
     }
-]
+    ]
 }
