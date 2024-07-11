@@ -22,21 +22,21 @@
     },
     {"name": "Technique",
         "subnarratives": [
-            {"name": "Litography", "icon": "icons/technique.png", "short-desc": ""},
-            {"name": "SEM", "icon": "icons/technique.png", "short-desc": ""},
-            {"name": "Colorized", "icon": "icons/technique.png", "short-desc": ""},
-            {"name": "TEM", "icon": "icons/technique.png", "short-desc": ""}
+            {"name": "Litography", "icon": "icons/technique.png", "short-desc": "Lithography is a printing technique that uses a flat surface treated so that ink adheres only to the design to be printed."},
+            {"name": "SEM", "icon": "icons/technique.png", "short-desc": "SEM is a technique that uses electrons to create detailed images of the surfaces of materials at high magnifications."},
+            {"name": "Colorized", "icon": "icons/technique.png", "short-desc": "Colorized SEM involves adding color to SEM images to highlight specific features or for aesthetic purposes."},
+            {"name": "TEM", "icon": "icons/technique.png", "short-desc": "Transmission Electron Microscopy (TEM) uses a beam of electrons passing through an ultra-thin specimen to create detailed images of its internal structure."}
     ]
     },
     {"name": "Period",
         "subnarratives": [
-            {"name": "Historical", "icon": "icons/period.png", "short-desc": ""},
-            {"name": "Contemporary", "icon": "icons/period.png", "short-desc": ""}
+            {"name": "Historical", "icon": "icons/period.png", "short-desc": "Explore lithographs and pictures taken before the 1930s, showcasing the early methods and discoveries."},
+            {"name": "Contemporary", "icon": "icons/period.png", "short-desc": "Modern SEM pictures taken after the 1930s, reflecting the advancements in microscopy and imaging techniques."}
     ]
     },
     {"name": "Dimensions",
         "subnarratives": [
-            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png", "short-desc": "", "description": "test test test dimension"}
+            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png", "short-desc": "See all the pictures ordered by the dimension of the subject, showcasing the fascinating scale from microscopic to larger structures.", "description": "test test test dimension"}
     ]
     }
 ]
