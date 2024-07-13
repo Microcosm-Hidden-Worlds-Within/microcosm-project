@@ -182,6 +182,7 @@
                     buttonText = param.innerText;
                     changeActiveState("nav-narratives", param);
                 };
+                let subnarrativesList = "";
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
                     if (narrativeName == buttonText) {
