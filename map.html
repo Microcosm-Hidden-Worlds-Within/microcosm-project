@@ -224,7 +224,8 @@
                 const currentNarrativeObject = narratives.filter( i => i["name"] == currentNarrative);
                 const currentSubnarrativeObject = currentNarrativeObject[0]["subnarratives"].filter ( i => i["name"] == buttonText );
                 const mapUrl = currentSubnarrativeObject[0]["map"];
-                showMap(map, param);
+                console.log(mapUrl);
+                showMap(mapUrl, param);
 
                 let itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
