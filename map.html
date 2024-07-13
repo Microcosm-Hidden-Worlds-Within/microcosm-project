@@ -196,7 +196,7 @@
                         let subnarrativeName = subnarrativesList[x]["name"];
                         let subnarrativeIcon = subnarrativesList[x]["icon"];
                         if (x == subnarrativesList.length - 1) {
-                            byId("subnarratives-buttons").innerHTML += `<a class="narrative-button" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
+                            byId("subnarratives-buttons").innerHTML += `<a class="narrative-button active-narrative" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
                             firstSubnarrative = subnarrativeName;
                         } else {                            
                             byId("subnarratives-buttons").innerHTML += `<a class="narrative-button" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
