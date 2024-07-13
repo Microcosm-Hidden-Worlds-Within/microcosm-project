@@ -235,18 +235,28 @@
                 console.log(buttonText);
             }
 
-            function changeActiveState(objectToAdd, idToRemove=null) {
-                if (IdToRemove != null) {  
+            function changeActiveState(objectToAdd, idToRemove, isSubnarrativeButton=false) {
+                if (isSubnarrativeButton == true) {  
+                    const nodes = byId(idToRemove).childNodes;
+                    console.log(nodes);
+                    for (let i = 0; i < nodes.length; i++) {
+                        if (nodes[i].nodeType === Node.ELEMENT_NODE) {
+                            nodes[i].classList.remove("active-narrative");
+                        };
+                    };
+                    objectToAdd.classList.add("active-narrative");
+                } else {
                     const nodes = byId(idToRemove).childNodes;
                     console.log(nodes);
                     for (let i = 0; i < nodes.length; i++) {
                         if (nodes[i].nodeType === Node.ELEMENT_NODE) {
                             let son = nodes[i].firstChild;
-                            son.classList.remove("active");
+                            son.classList.remove("active-narrative");
                         };
                     };
+                    objectToAdd.classList.add("active")
                 }
-                objectToAdd.classList.add("active");
+                
             }
 
             function clearElement(elem) {
