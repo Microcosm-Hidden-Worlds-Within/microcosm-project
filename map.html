@@ -163,7 +163,7 @@
                 let firstNarrativeName = "";
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
-                    if (i == narratives.length) {
+                    if (i == narratives.length - 1) {
                         byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesButtons(this)\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
                         firstNarrativeName = narrativeName;
                     } else {
@@ -180,7 +180,7 @@
                     buttonText = param;
                 } else {
                     buttonText = param.innerText;
-                    changeActiveState("nav-narratives", param);
+                    changeActiveState(param, "nav-narratives");
                 };
                 let subnarrativesList = "";
                 for (let i in narratives) {
@@ -195,7 +195,7 @@
                 for (let x in subnarrativesList) {
                         let subnarrativeName = subnarrativesList[x]["name"];
                         let subnarrativeIcon = subnarrativesList[x]["icon"];
-                        if (x == subnarrativesList.length) {
+                        if (x == subnarrativesList.length - 1) {
                             byId("subnarratives-buttons").innerHTML += `<a class="narrative-button" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
                             firstSubnarrative = subnarrativeName;
                         } else {                            
@@ -235,15 +235,17 @@
                 console.log(buttonText);
             }
 
-            function changeActiveState(idToRemove, objectToAdd) {
-                const nodes = byId(idToRemove).childNodes;
-                console.log(nodes);
-                for (let i = 0; i < nodes.length; i++) {
-                    if (nodes[i].nodeType === Node.ELEMENT_NODE) {
-                        let son = nodes[i].firstChild;
-                        son.classList.remove("active");
+            function changeActiveState(objectToAdd, idToRemove=null) {
+                if (IdToRemove != null) {  
+                    const nodes = byId(idToRemove).childNodes;
+                    console.log(nodes);
+                    for (let i = 0; i < nodes.length; i++) {
+                        if (nodes[i].nodeType === Node.ELEMENT_NODE) {
+                            let son = nodes[i].firstChild;
+                            son.classList.remove("active");
+                        };
                     };
-                };
+                }
                 objectToAdd.classList.add("active");
             }
 
