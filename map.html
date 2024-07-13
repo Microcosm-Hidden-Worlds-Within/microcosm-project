@@ -101,7 +101,7 @@
             <div class="text-center">
                 <h1>Map<h2>
             </div>
-            <div class="nav-for-scroll sticky-top mt-5">
+            <div class="nav-for-scroll mt-5">
                 <ul class="nav nav-pills nav-justified" id="nav-narratives">
                 </ul>
             </div>
@@ -113,10 +113,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="nav-for-scroll mt-5">
-                        <ul class="nav nav-pills nav-justified" id="nav-subnarratives">
-                          
-                        </ul>
+                    <div class="subnarratives-buttons">
+                        
                       </div>
                       
                     <ul id="list-items">
@@ -133,7 +131,7 @@
             let narrativeData = {};
             let objectData = {};
             let currentNarrative = "";
-            let activeNarrative = "";
+            let activeState = "";
             let activeSubnarrative = "";
 
             document.addEventListener("DOMContentLoaded", async function(event) {
@@ -165,24 +163,24 @@
                 let firstNarrativeName = "";
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
-                    if (i == 0) {
-                        byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
+                    if (i == narratives.length) {
+                        byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesButtons(this)\" class=\"nav-link active\" id=\"first-narrative\">" + narrativeName + "</a></li>";
                         firstNarrativeName = narrativeName;
                     } else {
-                        byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesNav(this)\" class=\"nav-link\">" + narrativeName + "</a></li>";
+                        byId("nav-narratives").innerHTML += "<li class=\"nav-item narrative-item\"><a onClick=\"showSubnarrativesButtons(this)\" class=\"nav-link\">" + narrativeName + "</a></li>";
                     };
                    
                 };
-                showSubnarrativesNav(firstNarrativeName);
+                showSubnarrativesButtons(firstNarrativeName);
             }
 
-            function showSubnarrativesNav(param) {
+            function showSubnarrativesButtons(param) {
                 let buttonText = "";
                 if (typeof param === "string") {
                     buttonText = param;
                 } else {
                     buttonText = param.innerText;
-                    changeActiveNarrative(param);
+                    changeActiveState("nav-narratives", param);
                 };
                 for (let i in narratives) {
                     let narrativeName = narratives[i]["name"];
@@ -190,17 +188,17 @@
                         subnarrativesList = narratives[i]["subnarratives"];
                     };
                 };
-                clearSubnarrativesNav();
-                clearItemsList();
+                clearElement(byId("subnarratives-buttons"));
+                clearElement(byId("list-items"));
                 let firstSubnarrative = "";
                 for (let x in subnarrativesList) {
                         let subnarrativeName = subnarrativesList[x]["name"];
                         let subnarrativeIcon = subnarrativesList[x]["icon"];
-                        if (x == 0) {
-                            byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link active\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
+                        if (x == subnarrativesList.length) {
+                            byId("subnarratives-buttons").innerHTML += `<a class="narrative-button" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
                             firstSubnarrative = subnarrativeName;
                         } else {                            
-                            byId("nav-subnarratives").innerHTML += "<li class=\"nav-item narrative-item\"><a class=\"nav-link\" onClick=\"showItems(this)\"><img src=\"" + subnarrativeIcon + "\" alt=\"" + subnarrativeName + "\" style=\"height: 20px;\"></a></li> ";
+                            byId("subnarratives-buttons").innerHTML += `<a class="narrative-button" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
                         };
                     };
                 
@@ -216,8 +214,7 @@
                    buttonText = param;
                 } else {
                     buttonText = String(param.firstChild.alt);
-                    clearItemsList();
-                    changeActiveSubnarrative(param);
+                    clearElement(byId("list-items"));
                 };
                 let itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
@@ -237,8 +234,8 @@
                 console.log(buttonText);
             }
 
-            function changeActiveNarrative(param) {
-                const nodes = byId("nav-narratives").childNodes;
+            function changeActiveState(idToRemove, objectToAdd) {
+                const nodes = byId(idToRemove).childNodes;
                 console.log(nodes);
                 for (let i = 0; i < nodes.length; i++) {
                     if (nodes[i].nodeType === Node.ELEMENT_NODE) {
@@ -246,27 +243,11 @@
                         son.classList.remove("active");
                     };
                 };
-                param.classList.add("active");
+                objectToAdd.classList.add("active");
             }
 
-            function changeActiveSubnarrative(param) {
-                const nodes = byId("nav-subnarratives").childNodes;
-                console.log(nodes);
-                for (let i = 0; i < nodes.length; i++) {
-                    if (nodes[i].nodeType === Node.ELEMENT_NODE) {
-                        let son = nodes[i].firstChild;
-                        son.classList.remove("active");
-                    };
-                };
-                param.classList.add("active");
-            }
-
-            function clearSubnarrativesNav() {
-                byId("nav-subnarratives").innerHTML = "";
-            }
-
-            function clearItemsList() {
-                byId("list-items").innerHTML = "";
+            function clearElement(elem) {
+                elem.innerHTML = "";
             }
 
             function inner(id,content, emptyFirst=true) {
