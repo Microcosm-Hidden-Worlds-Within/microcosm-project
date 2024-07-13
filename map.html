@@ -216,6 +216,7 @@
                 } else {
                     buttonText = String(param.firstChild.alt);
                     clearElement(byId("list-items"));
+                    changeActiveState(param, "subnarratives-buttons", true)
                 };
                 let itemList = objectData.filter( i => 
 		            i.data.subjectData[currentNarrative]?.includes(buttonText));
@@ -251,7 +252,7 @@
                     for (let i = 0; i < nodes.length; i++) {
                         if (nodes[i].nodeType === Node.ELEMENT_NODE) {
                             let son = nodes[i].firstChild;
-                            son.classList.remove("active-narrative");
+                            son.classList.remove("active");
                         };
                     };
                     objectToAdd.classList.add("active")
