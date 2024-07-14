@@ -206,65 +206,10 @@ h4 {
 .narrative-item a:hover {
   color: var(--primary);
   background-color: var(--secondary);
+  cursor: pointer;
 }
-
 
 /* The cards */
-/* Background images for the card
-
-.card-img-bg-circulatory {
-  background-image: url("../pics/pic-9.jpg");
-}
-
-.card-img-bg-digestive {
-  background-image: url("../pics/pic-10.jpg");
-}
-
-.card-img-bg-immune {
-  background-image: url("../pics/pic-12.jpg");
-}
-
-.card-img-bg-integumentary {
-  background-image: url("../pics/pic-13.jpg");
-}
-
-.card-img-bg-muscular {
-  background-image: url("../pics/pic-14.jpg");
-}
-
-.card-img-bg-nervous {
-  background-image: url("../pics/pic-15.jpeg");
-}
-
-.card-img-bg-respiratory {
-  background-image: url("../pics/pic-11.jpg");
-}
-
-.card-img-bg-skeletal {
-  background-image: url("../pics/pic-5.jpeg");
-}
-
-.card-img-bg-urinary {
-  background-image: url("../pics/pic-18.jpeg");
-}
-
-.card-img-bg-10 {
-  background-image: url("../pics/pic-4.jpeg");
-}
-
-.card-img-bg-11 {
-  background-image: url("../pics/pic-18.jpeg");
-}
-
-.card-img-bg-12 {
-  background-image: url("../pics/pic-8.jpg");
-}
-
-.card-img-bg-tem {
-  background-image: url("../pics/pic-12.jpg");
-}
-   */
-
 [class^="card-img-bg-"] {
   height: 40vh;
   background-size: cover;
