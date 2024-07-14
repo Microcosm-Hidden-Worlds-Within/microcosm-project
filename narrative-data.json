@@ -15,28 +15,28 @@
     },
     {"name": "Type",
         "subnarratives": [
-            {"name": "Bacterium", "icon": "icons/type/bacterium.png", "pic": "pics/", "short-desc": "A bacterium is a single-celled microorganism that can exist either as an independent organism or as a parasite.", "map": ""},
-            {"name": "Cell", "icon": "icons/type/cell.png", "pic": "pics/", "short-desc": "A cell is the basic building block of all living organisms, capable of independent function and reproduction.", "map": ""},
-            {"name": "Organ", "icon": "icons/type/organ.png", "pic": "pics/", "short-desc": "An organ is a group of tissues that work together to perform a specific function in the body.", "map": ""}
+            {"name": "Bacterium", "icon": "icons/type/bacterium.png", "pic": "pics/type/bacterium.jpg", "short-desc": "A bacterium is a single-celled microorganism that can exist either as an independent organism or as a parasite.", "map": ""},
+            {"name": "Cell", "icon": "icons/type/cell.png", "pic": "pics/type/cell.jpg", "short-desc": "A cell is the basic building block of all living organisms, capable of independent function and reproduction.", "map": ""},
+            {"name": "Organ", "icon": "icons/type/organ.png", "pic": "pics/type/organ.jpg", "short-desc": "An organ is a group of tissues that work together to perform a specific function in the body.", "map": ""}
         ]
     },
     {"name": "Technique",
         "subnarratives": [
-            {"name": "Litography", "icon": "icons/technique.png", "pic": "pics/", "short-desc": "Lithography is a printing technique that uses a flat surface treated so that ink adheres only to the design to be printed.", "map": ""},
-            {"name": "SEM", "icon": "icons/technique.png", "pic": "pics/", "short-desc": "SEM is a technique that uses electrons to create detailed images of the surfaces of materials at high magnifications.", "map": ""},
-            {"name": "Colorized", "icon": "icons/technique.png", "pic": "pics/", "short-desc": "Colorized SEM involves adding color to SEM images to highlight specific features or for aesthetic purposes.", "map": ""},
-            {"name": "TEM", "icon": "icons/technique.png", "pic": "pics/", "short-desc": "Transmission Electron Microscopy (TEM) uses a beam of electrons passing through an ultra-thin specimen to create detailed images of its internal structure.", "map": ""}
+            {"name": "Litography", "icon": "icons/technique.png", "pic": "pics/technique/litography.jpg", "short-desc": "Lithography is a printing technique that uses a flat surface treated so that ink adheres only to the design to be printed.", "map": ""},
+            {"name": "SEM", "icon": "icons/technique.png", "pic": "pics/technique/SEM.jpg", "short-desc": "SEM is a technique that uses electrons to create detailed images of the surfaces of materials at high magnifications.", "map": ""},
+            {"name": "Colorized", "icon": "icons/technique.png", "pic": "pics/pic-6.jpeg", "short-desc": "Colorized SEM involves adding color to SEM images to highlight specific features or for aesthetic purposes.", "map": ""},
+            {"name": "TEM", "icon": "icons/technique.png", "pic": "pics/technique/TEM.jpg", "short-desc": "Transmission Electron Microscopy (TEM) uses a beam of electrons passing through an ultra-thin specimen to create detailed images of its internal structure.", "map": ""}
         ]
     },
     {"name": "Period",
         "subnarratives": [
-            {"name": "Historical", "icon": "icons/period.png", "pic": "pics/", "short-desc": "Explore lithographs and pictures taken before the 1930s, showcasing the early methods and discoveries.", "map": ""},
-            {"name": "Contemporary", "icon": "icons/period.png", "pic": "pics/", "short-desc": "Modern SEM pictures taken after the 1930s, reflecting the advancements in microscopy and imaging techniques.", "map": ""}
+            {"name": "Historical", "icon": "icons/period.png", "pic": "pics/period/historical.jpg", "short-desc": "Explore lithographs and pictures taken before the 1930s, showcasing the early methods and discoveries.", "map": ""},
+            {"name": "Contemporary", "icon": "icons/period.png", "pic": "pics/pic-10.jpg", "short-desc": "Modern SEM pictures taken after the 1930s, reflecting the advancements in microscopy and imaging techniques.", "map": ""}
         ]
     },
     {"name": "Dimensions",
         "subnarratives": [
-            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png", "pic": "pics/", "short-desc": "See all the pictures ordered by the dimension of the subject, showcasing the fascinating scale from microscopic to larger structures.", "description": "test test test dimension", "map": "plan-of-museum/dimension.png"}
+            {"name": "From the smallest to the biggest", "icon": "icons/dimension.png", "pic": "pics/dimensions/dimensions.jpg", "short-desc": "See all the pictures ordered by the dimension of the subject, showcasing the fascinating scale from microscopic to larger structures.", "description": "test test test dimension", "map": "plan-of-museum/dimension.png"}
         ]
     }
     ]
