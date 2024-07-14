@@ -195,7 +195,7 @@
                 for (let x in subnarrativesList) {
                         let subnarrativeName = subnarrativesList[x]["name"];
                         let subnarrativeIcon = subnarrativesList[x]["icon"];
-                        if (x == subnarrativesList.length - 1) {
+                        if (x == 0) {
                             byId("subnarratives-buttons").innerHTML += `<a class="narrative-button active-narrative mx-3 mb-3" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
                             firstSubnarrative = subnarrativeName;
                         } else {                            
