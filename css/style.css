@@ -278,6 +278,10 @@ h4 {
 
 /* Subnarratives buttons in the map page */
 .narrative-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: 2px solid var(--secondary);
   padding: 7px;
