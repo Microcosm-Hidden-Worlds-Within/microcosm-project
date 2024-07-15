@@ -154,12 +154,13 @@ h4 {
 
 .carousel-caption {
   font-size: 1.6rem;
-  text-shadow: 1px 1px white;
+  font-weight: bold;
 
 }
 
 .carousel-title {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .btn-outline-light {
