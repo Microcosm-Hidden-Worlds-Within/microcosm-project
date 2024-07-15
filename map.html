@@ -245,7 +245,7 @@
                     let itemId = itemList[x]["id"];
                     let itemName = itemList[x]["name"];
                     encodedItemId = encodeURIComponent(itemId);
-                    byId("list-items").innerHTML += `<li><a href="app.html/?id=${encodedItemId}&narrative=${encodedItemNarrative}&subnarrative=${encodedItemSubnarrative}">${itemId} ${itemName}</a></li>;`
+                    byId("list-items").innerHTML += `<li><a href="app.html?id=${encodedItemId}&narrative=${encodedItemNarrative}&subnarrative=${encodedItemSubnarrative}">${itemId} ${itemName}</a></li>`;
                 };
                 console.log(buttonText);
             }
