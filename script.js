@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	const itemSubnarrative = urlParams.get("subnarrative");
 	const itemId = urlParams.get("id");
 	
-	if (itemNarrative) {
+	if (itemNarrative != null) {
 		currentNarrative = decodeURIComponent(itemNarrative);
 	}
 
-	if (itemSubnarrative) {
+	if (itemSubnarrative != null) {
 		currentValue = decodeURIComponent(itemSubnarrative);
 	}
 
-	if (itemId) {
+	if (itemId != null) {
 		currentSort = decodeURIComponent(itemId);
 	}
 
