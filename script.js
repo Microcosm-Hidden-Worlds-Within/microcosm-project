@@ -11,20 +11,20 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 
 	// check if there are information in the query section of the URL
 	const urlParams = new URLSearchParams(document.location.search);
-	const itemNarrative = decodeURIComponent(urlParams.get("narrative"));
-	const itemSubnarrative = decodeURIComponent(urlParams.get("subnarrative"));
-	const itemId = decodeURIComponent(urlParams.get("id"));
+	const itemNarrative = urlParams.get("narrative");
+	const itemSubnarrative = urlParams.get("subnarrative");
+	const itemId = urlParams.get("id");
 	
-	if (itemNarrative != null) {
-		currentNarrative = itemNarrative;
+	if (itemNarrative) {
+		currentNarrative = decodeURIComponent(itemNarrative);
 	}
 
-	if (itemSubnarrative != null) {
-		currentValue = itemSubnarrative;
+	if (itemSubnarrative) {
+		currentValue = decodeURIComponent(itemSubnarrative);
 	}
-	
-	if (itemId != null) {
-		currentSort = itemId;
+
+	if (itemId) {
+		currentSort = decodeURIComponent(itemId);
 	}
 
 	console.log("Current narrative:" + String(currentNarrative));
