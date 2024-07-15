@@ -8,6 +8,22 @@ var narrativeIcons = {}
 var narrativeDesc = {}
 
 document.addEventListener("DOMContentLoaded", async function(event) {
+
+	// check if there are information in the query section of the URL
+	const urlParams = new URLSearchParams(document.location.search);
+	const itemNarrative = decodeURIComponent(urlParams.get("narrative"));
+	const itemSubnarrative = decodeURIComponent(urlParams.get("subnarrative"));
+	const itemId = decodeURIComponent(urlParams.get("id"));
+	
+	if (itemNarrative) {
+		currentNarrative = itemNarrative;
+	}
+	if (itemSubnarrative) {
+		currentValue = itemSubnarrative;
+	}
+	if (itemId) {
+		currentSort = itemId;
+	}
 	
 	// parse NARRATIVE JSON
 	fetch('narrative-data.json')
@@ -45,8 +61,14 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 		var object = objects[startWith];
 
 		narratives = data.meta.narratives;
-		currentNarrative = data.meta.startNarrative;
-		currentValue = data.meta.startValue;
+		
+		if (currentNarrative == "") { 
+			currentNarrative = data.meta.startNarrative;
+		}
+		if (currentValue == "") {
+			currentValue = data.meta.startValue;
+		}
+		
 		console.log(currentValue);
    
 		prepareNarratives();

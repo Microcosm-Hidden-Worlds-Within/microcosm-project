@@ -236,10 +236,16 @@
                 if (itemList.length==0) {
 		            itemList = objectData;
                 };
+
+                const encodedItemNarrative = encodeURIComponent(currentNarrative);
+                const encodedItemSubnarrative = encodeURIComponent(ButtonText);
+                let encodedItemId = "";
+
                 for (x in itemList) {
-                    itemId = itemList[x]["id"];
-                    itemName = itemList[x]["name"];
-                    byId("list-items").innerHTML += "<li>" + itemId + " " + itemName + "</li>";
+                    let itemId = itemList[x]["id"];
+                    let itemName = itemList[x]["name"];
+                    encodedItemId = encodeURIComponent(itemId);
+                    byId("list-items").innerHTML += `<li><a href="app.html/?id=${encodedItemId}&narrative=${encodedItemNarrative}&subnarrative=${encodedItemSubnarrative}">${itemId} ${itemName}</a></li>;`
                 };
                 console.log(buttonText);
             }
