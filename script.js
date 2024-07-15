@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	if (itemId) {
 		currentSort = itemId;
 	}
+
+	console.log("Current narrative:" + String(currentNarrative));
 	
 	// parse NARRATIVE JSON
 	fetch('narrative-data.json')
@@ -68,7 +70,7 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 		if (currentValue == "") {
 			currentValue = data.meta.startValue;
 		}
-		
+
 		console.log(currentValue);
    
 		prepareNarratives();
