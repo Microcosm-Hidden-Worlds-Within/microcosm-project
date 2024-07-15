@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	if (itemNarrative != null) {
 		currentNarrative = itemNarrative;
 	}
+
 	if (itemSubnarrative != null) {
 		currentValue = itemSubnarrative;
 	}
+	
 	if (itemId != null) {
 		currentSort = itemId;
 	}
