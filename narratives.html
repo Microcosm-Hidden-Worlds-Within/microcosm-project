@@ -156,7 +156,7 @@
                         let narrativeId = narrativeName;
                         let main = byId("my-main");
                         let subnarratives = narratives[i]["subnarratives"];
-                        let cards = generateCards(subnarratives);
+                        let cards = generateCards(subnarratives, narrativeName);
                         let newCode = "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2>" + cards + "</div>";
                         console.log(newCode);
                         main.innerHTML += newCode;
@@ -165,22 +165,24 @@
                 }
 
                 
-                function generateCards(param) {
+                function generateCards(param1, param2) {
                     const mySheet = document.styleSheets[5];
 
                     let result = ""
                     for (let i = 0; i < param.length; i++) {
-                        let subnarrativeName = param[i]["name"];
-                        let subnarrativePic = "../" + param[i]["pic"];
-                        let subnarrativeDesc = param[i]["short-desc"];
+                        let subnarrativeName = param1[i]["name"];
+                        let subnarrativePic = "../" + param1[i]["pic"];
+                        let subnarrativeDesc = param1[i]["short-desc"];
                         let backgroundImageClass = "card-img-bg-" + subnarrativeName.replaceAll(" ", "-");
+                        let encodedNarrativeName = encodeURIComponent(param2);
+                        let encodedSubnarrativeName = encodeURIComponent(subnarrativeName);
                         let lastRowItem = i + 1;
                         if (i % 4 == 0) {
                             result += "<div class=\"row\">";
                         };
                         result += `
                         <div class="col-12 col-md-6 col-lg-3 mt-3 d-flex">
-                            <a href="#">
+                            <a href="app.html?narrative=${encodedNarrativeName}&subnarrative=${encodedSubnarrativeName}">
                             <div class="card h-100 mx-3"> 
                             <div class="${backgroundImageClass}"></div>
                             <div class="card-body">
@@ -200,7 +202,7 @@
 
                         let ruleIndex = mySheet.insertRule(newRule, mySheet.cssRules.length);
 
-                        if (lastRowItem % 4 == 0) {
+                        if (lastRowItem % 4 == 0 || i == param.length - 1) {
                             result += "</div>";
                         };
                     };
