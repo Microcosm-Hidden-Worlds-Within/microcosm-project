@@ -1,0 +1,19 @@
+/* Media Queries */
+/* Desktop Version */
+@media (min-width:768px) {
+    html {
+      font-size: 12px;
+    }
+
+
+  
+  
+  }
+
+  @media (min-width: 992px) {
+    .items-container {
+        height: auto;
+        overflow: visible;
+      }
+
+  }

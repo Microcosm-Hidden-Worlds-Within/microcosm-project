@@ -10,13 +10,21 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 section {
   padding: 2rem;
   margin-left: 10vw;
   margin-right: 10vw;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 5.6 rem;
 }
 
 h3 {
@@ -40,7 +48,7 @@ h3::before {
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 
@@ -128,7 +136,7 @@ h4 {
 /* Carousel */
 
 .carousel {
-  height: 60vh;
+  height: 50vh;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   /* Example shadow style */
 }
@@ -159,7 +167,7 @@ h4 {
 }
 
 .carousel-title {
-  font-size: 2rem;
+  font-size: 2.9rem;
   font-weight: bold;
 }
 
@@ -188,6 +196,7 @@ h4 {
 /* Narrative page */
 /* The nav for scrolling */
 .nav-pills {
+  font-size: 2rem;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
@@ -330,6 +339,17 @@ a {
 .narrative-button.active-narrative img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
+}
+
+/* list of items */
+.items-container {
+  border: solid 2px black;
+  height: 25rem;
+  overflow: scroll;
+}
+
+#list-items {
+  list-style-type: none; /* Remove bullets */
 }
 
 /* Home page map section */
