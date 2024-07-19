@@ -1,11 +1,11 @@
-var objects = []
-var narratives = []
-var currentSelection = []
-var currentNarrative = ""
-var currentValue= ""
-var currentSort = ""
-var narrativeIcons = {}
-var narrativeDesc = {}
+var objects = [];
+var narratives = [];
+var currentSelection = [];
+var currentNarrative = "";
+var currentValue= "";
+var currentSort = "";
+var narrativeIcons = {};
+var narrativeDesc = {};
 
 document.addEventListener("DOMContentLoaded", async function(event) {
 
