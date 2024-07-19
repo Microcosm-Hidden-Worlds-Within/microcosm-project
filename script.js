@@ -78,6 +78,11 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 		console.log(currentValue);
    
 		prepareNarratives();
+
+		// Adjust height after content is prepared
+        adjustHeight('data-container', 'figure-container');
+
+		
 	});
 
 	
@@ -130,6 +135,9 @@ function showInfo(index) {
 	
 	changeNarrativeDescription()
 	prepareNavigationButtons(index)
+
+	// Adjust height after showing the info
+   adjustHeight('data-container', 'figure-container');
 }
 
 function changeNarrativeDescription() {
@@ -290,3 +298,20 @@ function inner(id, content, emptyFirst=true) {
 function byId(id) {
 	return document.getElementById(id)
 }
+
+function adjustHeight(referenceId, targetId) {
+    var referenceElement = document.getElementById(referenceId);
+    var targetElement = document.getElementById(targetId);
+
+	 console.log(referenceElement);
+	 console.log(targetElement);
+
+    if (referenceElement && targetElement) {
+        var referenceHeight = referenceElement.offsetHeight;
+        targetElement.style.height = referenceHeight + 'px';
+    }
+}
+
+window.onresize = function() {
+   adjustHeight('data-container', 'figure-container');
+};
