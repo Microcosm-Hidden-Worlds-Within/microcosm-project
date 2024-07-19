@@ -69,6 +69,8 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 		if (currentNarrative == "") { 
 			currentNarrative = data.meta.startNarrative;
 		}
+		console.log(currentNarrative);
+
 		if (currentValue == "") {
 			currentValue = data.meta.startValue;
 		}
