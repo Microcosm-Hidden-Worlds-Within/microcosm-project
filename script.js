@@ -186,6 +186,7 @@ function createInfoTable(object) {
 			if (narratives.includes(i)) {
 				var items = object.data.subjectData[i].split(", ")
 				var val = []
+				console.log(mainNarrative);
 				if (mainNarrative !== 'Dimensions') {
 					for (j in items) {
 						var subNarrative = items[j]
