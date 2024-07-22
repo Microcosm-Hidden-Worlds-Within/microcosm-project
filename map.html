@@ -114,21 +114,23 @@
             </div>
 
             <div class="row general-container w-100">
-                <div class="col-12 col-lg-6">
-                    <div class="map-container" id="map">
-                        
+                <div class="col-12 col-xl-7">
+                    <div class="container-fluid">
+                        <div class="map-container m-0 m-lg-5 m-xl-0" id="map">
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="mt-5 d-flex flex-row flex-wrap" id="subnarratives-buttons">
+                <div class="col-12 col-xl-5">
+                    <div class="mt-5 d-flex flex-row flex-wrap p-3" id="subnarratives-buttons">
                         
                     </div>
-                     
+                    <h4>The pictures</h4>
                     <div class="items-container mt-4">
                         <ul id="list-items">
                         </ul>
                     </div>
                 </div>
+            
             </main>
             
                 
@@ -204,12 +206,17 @@
                 for (let x in subnarrativesList) {
                         let subnarrativeName = subnarrativesList[x]["name"];
                         let subnarrativeIcon = subnarrativesList[x]["icon"];
-                        if (x == 0) {
+                        if (x == 0 && buttonText == "System") {
+                            byId("subnarratives-buttons").innerHTML += `<a class="narrative-button active-narrative mx-3 mb-3" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
+                            firstSubnarrative = subnarrativeName;
+                        } else if (x == 0) {
                             byId("subnarratives-buttons").innerHTML += `<a class="narrative-button active-narrative mx-3 mb-3" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"><p>${subnarrativeName}</p></a>`
                             firstSubnarrative = subnarrativeName;
-                        } else {                            
-                            byId("subnarratives-buttons").innerHTML += `<a class="narrative-button mx-3 mb-3" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"><p>${subnarrativeName}</p></a>`
-                        };
+                        } else if (buttonText == "System") {                            
+                            byId("subnarratives-buttons").innerHTML += `<a class="narrative-button mx-3 mb-3" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"></a>`
+                        } else {
+                            byId("subnarratives-buttons").innerHTML += `<a class="narrative-button mx-3 mb-3" role="button" href="#" onclick="showItems(this)"><img src="${subnarrativeIcon}" alt="${subnarrativeName}" class="narrative-icon"><p>${subnarrativeName}</p></a>`;
+                        }
                     };
                 
                 currentNarrative = buttonText;
