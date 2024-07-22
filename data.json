@@ -13,401 +13,441 @@
   },
     
    "objects": [
-{
+    [
+  {
     "id": 1,
-    "name": "The eye, as seen through a microscope: two figures",
-    "image": "pics/pic-1.jpg",
-    "data": {
-        "picData": {
-            "title": "The eye, as seen through a microscope: two figures",
-            "author": "Liebreich, Richard",
-            "Period": "Historical",
-            "Technique": "Litography"
-        },
-        "subjectData": {
-            "System": "Nervous System",
-            "Type": "Organ",
-            "Dimensions": "ccc"
-        }
-    },
-    "shortInfo": "Before the invention of microscopic photography, the dissemination of microscopic images had to occur through manual printing techniques. In this case, the author uses lithography to represent an eye seen under a microscope.",
-    "longerInfo": [""],
-    "fullInfo": ""
-},
-{
-    "id": 2,
-    "name": "The eye, as seen through a microscope: two figures",
-    "image": "pics/pic-2.jpg",
-    "data": {
-        "picData": {
-            "title": "The eye, as seen through a microscope: two figures",
-            "author": "Liebreich, Richard",
-            "Period": "Historical",
-            "Technique": "Litography"
-        },
-        "subjectData": {
-            "System": "Nervous System",
-            "Type": "Organ",
-            "Dimensions": ""
-        }
-    },
-    "shortInfo": "Before the invention of microscopic photography, the dissemination of microscopic images had to occur through manual printing techniques. In this case, the author uses lithography to represent an eye seen under a microscope.",
-    "longerInfo": ["Lithography is a printing process that involves etching a drawing onto a limestone or treated metal plate. This method allows for the creation of images with a remarkable amount of detail and shading, essential for conveying the complex structures observed under a microscope. The technique exploits the principle that oil and water do not mix: the drawing is traced with an oily substance on a treated surface, then the stone is moistened, and subsequently, ink is applied that adheres only to the oily parts of the drawing."],
-    "fullInfo": ""
-},
-{
-    "id": 3,
-    "name": "Healthy hair Bulb",
-    "image": "pics/pic-3.jpg",
-    "data": {
-        "picData": {
-            "title": "Healthy hair Bulb",
-            "author": "Glaister, John",
-            "Period": "Historical"
-        },
-        "subjectData": {
-            "System": "Integumentary System",
-            "Type": "Organ",
-            "Dimensions": ""
-        }
-    },
-    "shortInfo": "This image of the bulb of a healthy hair was taken from the book <i>A Study of Hairs and Wools Belonging to the Mammalian Group of Animals</i>. It is one of the earliest examples of microscopic photography.",
-    "longerInfo": ["The hair bulb is a vital structure located at the base of the hair follicle, responsible for the growth and development of hair. It is a rounded, bulbous part of the follicle where hair cells are produced and is embedded deeply in the dermis layer of the skin. The hair bulb plays a crucial role in the hair growth cycle and overall hair health."],
-    "fullInfo": ""
-},
-{
-    "id": 4,
-    "name": "Staphylococcus aureus",
-    "image": "pics/pic-4.jpeg",
-    "data": {
-        "picData": {
-            "title": "MRSA",
-            "author": "Annie Cavanagh",
-            "Period": "Contemporary",
-            "Technique": null
-        },
-        "subjectData": {
-            "System": "Integumentary System, Respiratory System, Circulatory System",
-            "Type": "Bacterium",
-            "Dimensions": ""
-        }
-    },
-    "shortInfo": "Clusters of methicillin-resistant Staphylococcus aureus (MRSA) bacteria.",
-    "longerInfo": ["MRSA is a type of Staphylococcus aureus, a Gram-positive bacterium commonly found on the skin and in the noses of healthy individuals. What sets MRSA apart is its resistance to methicillin and other beta-lactam antibiotics, a resistance acquired through the mecA gene. This gene produces an altered penicillin-binding protein, PBP2a, which prevents antibiotics from effectively targeting the bacterial cell wall. This makes the bacterium highly concerning in both healthcare and community settings."],
-    "fullInfo": ""
-},
-{
-    "id": 5,
     "name": "Tooth with bacteria",
     "image": "pics/pic-5.jpeg",
     "data": {
-        "picData": {
-            "title": "SEM tooth showing rods in plaque",
-            "author": "David Gregory, Debbie Marshall",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Skeletal System",
-            "Type": "Bacterium",
-            "Dimensions": "0.2-10µm"
-        }
+      "picData": {
+        "title": "SEM tooth showing rods in plaque",
+        "author": "David Gregory, Debbie Marshall",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Skeletal System",
+        "Type": "Bacterium",
+        "Dimensions": "0.2-10 \u00b5m"
+      }
     },
     "shortInfo": "Scanning electron microscope image of tooth, showing rod-like bacteria in plaque. Dental plaque is a biofilm that forms on the surface of teeth, harboring a diverse community of microorganisms, including bacteria.",
-    "longerInfo": ["This scanning electron microscope image provides a highly detailed view of the surface of a tooth coated with dental plaque, focusing on the rod-like bacteria embedded within it. These bacteria, classified as bacilli, are distinguished by their elongated, cylindrical shape, which allows them to efficiently adhere to the tooth's surface and integrate into the plaque biofilm. <p>The SEM image captures their dense, interwoven clustering, forming a resilient matrix on the enamel. The high magnification reveals the fine details of the bacterial cell walls and their spatial arrangement, illustrating how these microorganisms interact within the biofilm. This visualization offers a closer look at the structural characteristics of the bacilli, including their size, shape, and adherence properties, which play a crucial role in the formation and persistence of dental plaque. Understanding these characteristics is essential for developing strategies to prevent and manage plaque-related dental issues, highlighting the importance of maintaining effective oral hygiene to control bacterial growth and ensure oral health.</p>"],
+    "longerInfo": [
+      "This scanning electron microscope image provides a highly detailed view of the surface of a tooth coated with dental plaque, focusing on the rod-like bacteria embedded within it. These bacteria, classified as bacilli, are distinguished by their elongated, cylindrical shape, which allows them to efficiently adhere to the tooth's surface and integrate into the plaque biofilm. <p>The SEM image captures their dense, interwoven clustering, forming a resilient matrix on the enamel. The high magnification reveals the fine details of the bacterial cell walls and their spatial arrangement, illustrating how these microorganisms interact within the biofilm. This visualization offers a closer look at the structural characteristics of the bacilli, including their size, shape, and adherence properties, which play a crucial role in the formation and persistence of dental plaque. Understanding these characteristics is essential for developing strategies to prevent and manage plaque-related dental issues, highlighting the importance of maintaining effective oral hygiene to control bacterial growth and ensure oral health.</p>"
+    ],
     "fullInfo": ""
-}, 
-{
-    "id": 6,
+  },
+  {
+    "id": 2,
     "name": "Microplasma",
     "image": "pics/pic-6.jpeg",
     "data": {
-        "picData": {
-            "title": "Microplasma",
-            "author": "Kevin Mackenzie",
-            "Period": "Contemporary",
-            "Technique": "SEM, Colorized"
-        },
-        "subjectData": {
-            "System": "Skeletal System, Respiratory System, Urinary System",
-            "Type": "Bacterium",
-            "Dimensions": "0.2-1µm"
-        }
+      "picData": {
+        "title": "Microplasma",
+        "author": "Kevin Mackenzie",
+        "Period": "Contemporary",
+        "Technique": "SEM, Colorized"
+      },
+      "subjectData": {
+        "System": "Skeletal System, Respiratory System, Urinary System",
+        "Type": "Bacterium",
+        "Dimensions": "0.2-1 \u00b5m"
+      }
     },
     "shortInfo": "This scanning electron micrograph shows microplasma, a genus of bacteria that lack a cell wall. Without a cell wall they are unaffected by many common antibiotics, such as penicillin, or other beta-lactam antibiotics that work by targeting cell wall synthesis. These microplasma are shown on the surface of osteoblast cells, cells that are involved in the creation of new bone.",
-    "longerInfo": ["The absence of a cell wall in microplasma is a significant evolutionary adaptation that allows these bacteria to survive in environments where other bacteria might be eliminated by antibiotics. <p>Without a cell wall, microplasma have a flexible and pleomorphic shape, enabling them to adhere closely to host cells and evade immune responses more effectively. This resistance to beta-lactam antibiotics poses a challenge in clinical settings, as infections caused by microplasma require alternative treatment strategies.</p>"],
+    "longerInfo": [
+      "The absence of a cell wall in microplasma is a significant evolutionary adaptation that allows these bacteria to survive in environments where other bacteria might be eliminated by antibiotics. <p>Without a cell wall, microplasma have a flexible and pleomorphic shape, enabling them to adhere closely to host cells and evade immune responses more effectively. This resistance to beta-lactam antibiotics poses a challenge in clinical settings, as infections caused by microplasma require alternative treatment strategies.</p>"
+    ],
     "fullInfo": ""
-}, 
-{
-    "id": 7,
+  },
+  {
+    "id": 3,
+    "name": "Staphylococcus aureus",
+    "image": "pics/pic-4.jpeg",
+    "data": {
+      "picData": {
+        "title": "MRSA",
+        "author": "Annie Cavanagh",
+        "Period": "Contemporary",
+        "Technique": null
+      },
+      "subjectData": {
+        "System": "Integumentary System, Respiratory System, Circulatory System",
+        "Type": "Bacterium",
+        "Dimensions": "0.5-1 \u00b5m"
+      }
+    },
+    "shortInfo": "Clusters of methicillin-resistant Staphylococcus aureus (MRSA) bacteria.",
+    "longerInfo": [
+      "MRSA is a type of Staphylococcus aureus, a Gram-positive bacterium commonly found on the skin and in the noses of healthy individuals. What sets MRSA apart is its resistance to methicillin and other beta-lactam antibiotics, a resistance acquired through the mecA gene. This gene produces an altered penicillin-binding protein, PBP2a, which prevents antibiotics from effectively targeting the bacterial cell wall. This makes the bacterium highly concerning in both healthcare and community settings."
+    ],
+    "fullInfo": ""
+  },
+  {
+    "id": 4,
     "name": "Clostridium difficile colony",
     "image": "pics/pic-7.jpeg",
     "data": {
-        "picData": {
-            "title": "Clostridium difficile colony",
-            "author": "David Goulding",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Digestive System, Respiratory System, Urinary System",
-            "Type": "Bacterium",
-            "Dimensions": "3-8µm"
-        }
+      "picData": {
+        "title": "Clostridium difficile colony",
+        "author": "David Goulding",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Digestive System, Respiratory System, Urinary System",
+        "Type": "Bacterium",
+        "Dimensions": "3-8 \u00b5m"
+      }
     },
     "shortInfo": "Clostridium difficile is a major cause of antibiotic-associated diarrheal disease. This false-coloured scanning electron micrograph shows part of the expanding edge of a bacterial colony in situ on an agar plate. Both vegetative cells and spores are visible. In order to study and accurately profile an intact colony it has been essential to minimise the disturbance of the cells. In this way it has been possible to optimise conditions for spore formation, characterise different cell morphologies across the colony and to study biofilm formation directly.",
-    "longerInfo": ["The micrograph highlights the importance of studying an intact bacterial colony with minimal disturbance to the cells. By carefully preserving the colony structure, researchers have been able to optimize the conditions necessary for spore formation, a key factor in the bacterium's persistence and transmission. Spores are highly resistant to environmental stresses, including antibiotic treatment, making them crucial targets for understanding and controlling C. difficile infections.<p>Additionally, this careful approach has enabled the characterization of different cell morphologies across the colony. Clostridium difficile exhibits a range of shapes and sizes, reflecting its adaptability and the various stages of its life cycle. The detailed visualization provided by the SEM image allows for a deeper understanding of how these morphological changes contribute to the bacterium's survival and pathogenicity.</p>"],
+    "longerInfo": [
+      "The micrograph highlights the importance of studying an intact bacterial colony with minimal disturbance to the cells. By carefully preserving the colony structure, researchers have been able to optimize the conditions necessary for spore formation, a key factor in the bacterium's persistence and transmission. Spores are highly resistant to environmental stresses, including antibiotic treatment, making them crucial targets for understanding and controlling C. difficile infections.<p>Additionally, this careful approach has enabled the characterization of different cell morphologies across the colony. Clostridium difficile exhibits a range of shapes and sizes, reflecting its adaptability and the various stages of its life cycle. The detailed visualization provided by the SEM image allows for a deeper understanding of how these morphological changes contribute to the bacterium's survival and pathogenicity.</p>"
+    ],
     "fullInfo": ""
-},
-{
-    "id": 8,
-    "name": "Blood Vessel",
-    "image": "pics/pic-8.jpg",
-    "data": {
-        "picData": {
-            "title": "Ruptured blood vessel",
-            "author": "Anne Weston",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Circulatory System",
-            "Type": "Organ",
-            "Dimensions": "8µm-25mm"
-        }
-    },
-    "shortInfo": "Colour-enhanced image of red blood cells leaking out of a ruptured blood vessel. This is due to a mutation that causes the blood vessels to be more fragile than normal leading to an increased rate of haemorrhaging.",
-    "longerInfo": ["This mutation affects the structural proteins or regulatory factors responsible for maintaining the integrity and strength of blood vessel walls.<p>One of the notable aspects of this disease is its variability in presentation and severity. Some individuals may experience mild symptoms with occasional minor bleeding episodes, while others may face more frequent and severe hemorrhages that pose significant health risks. The location and extent of bleeding can vary widely, affecting different organs and tissues throughout the body.</p>"],
-    "fullInfo": ""
-},
-{
-    "id": 9,
-    "name": "Red Globules",
-    "image": "pics/pic-9.jpg",
-    "data": {
-        "picData": {
-            "title": "Blood Cells, SEM",
-            "author": "Anne Weston",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Circulatory System",
-            "Type": "Cell",
-            "Dimensions": "7.5-8.5µm"
-        }
-    },
-    "shortInfo": "Red blood cells, also known as erythrocytes, are the cells depicted in this image. These specialized cells are responsible for transporting oxygen from the lungs to tissues throughout the body. <p>Their distinctive red colour is due to the presence of hemoglobin, a protein that binds and carries oxygen. This image emphasizes the critical role of red blood cells in oxygen delivery and underscores their importance in maintaining physiological balance.</p>",
-    "longerInfo": ["Each red blood cell contains millions of hemoglobin molecules, which efficiently bind to oxygen in the lungs due to their high affinity for this gas. As blood circulates through the body, oxygen is released to tissues in response to local metabolic demands, ensuring adequate oxygen supply for cellular functions. The image captures this essential process, emphasizing the critical role of red blood cells in sustaining life-sustaining functions.<p>Beyond oxygen transport, red blood cells also play a vital role in maintaining acid-base balance and regulating blood viscosity. Their ability to deform and squeeze through capillaries ensures they can reach every cell in the body, delivering oxygen and collecting carbon dioxide for exhalation.</p>"],
-    "fullInfo": ""
-},
-{
-    "id": 10,
-    "name": "Intestinal Villi",
-    "image": "pics/pic-10.jpg",
-    "data": {
-        "picData": {
-            "title": "Villus from the small intestine",
-            "author": "S. Schuller",
-            "Period": "Contemporary",
-            "Technique": ""
-        },
-        "subjectData": {
-            "System": "Digestive System",
-            "Type": "Organ",
-            "Dimensions": "0.5–1.6 mm"
-        }
-    },
-    "shortInfo": "A villus from the human small intestine. The finger-like shape increases the surface area of the intestine improving the efficiency of food absorption.",
-    "longerInfo": [""],
-    "fullInfo": ""
-},
-{
-    "id": 11,
-    "name": "Alveoli",
-    "image": "pics/pic-11.jpg",
-    "data": {
-        "picData": {
-            "title": "SEM alveoli in the lung",
-            "author": "David Gregory, Debbie Marshall",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Respiratory System",
-            "Type": "Organ",
-            "Dimensions": "0.2mm"
-        }
-    },
-    "shortInfo": "This image captures the intricate structure of human alveoli, the tiny air sacs in the lungs where gas exchange occurs. The alveoli are lined with a thin layer of epithelial cells and surrounded by a network of capillaries. Their unique, balloon-like shape maximizes surface area, allowing efficient oxygen and carbon dioxide exchange. This image highlights the delicate architecture essential for respiration.",
-    "longerInfo": ["Human alveoli are essential components of the respiratory system, located at the ends of the bronchial tubes in the lungs. These small, balloon-shaped structures are responsible for the critical process of gas exchange. Each alveolus is lined with a thin layer of epithelial cells, which allows for the rapid diffusion of oxygen into the blood and the expulsion of carbon dioxide from it. The surrounding network of capillaries brings blood into close contact with the alveolar surface, optimizing this exchange. The alveoli's structure, characterized by their spongy texture and extensive surface area, is designed to maximize efficiency. The alveolar walls, or septa, contain elastic fibers that help the lungs expand and contract with each breath, ensuring efficient respiratory function. This intricate architecture underscores the alveoli's vital role in sustaining life, facilitating the continuous exchange of gases that is essential for all cellular processes in the body."],
-    "fullInfo": ""
-},
-{
-    "id": 12,
+  },
+  {
+    "id": 5,
     "name": "Stromal Lymphocytes",
     "image": "pics/pic-12.jpg",
     "data": {
-        "picData": {
-            "title": "Massed small stromal lymphocytes - coloured",
-            "author": "Rob Young",
-            "Period": "Contemporary",
-            "Technique": "TEM"
-        },
-        "subjectData": {
-            "System": "Circulatory System, Immune System",
-            "Type": "Cell",
-            "Dimensions": "7-8μm"
-        }
+      "picData": {
+        "title": "Massed small stromal lymphocytes - coloured",
+        "author": "Rob Young",
+        "Period": "Contemporary",
+        "Technique": "TEM"
+      },
+      "subjectData": {
+        "System": "Circulatory System, Immune System",
+        "Type": "Cell",
+        "Dimensions": "7-8 \u00b5m"
+      }
     },
     "shortInfo": "Colour-enhanced, transmission electron micrograph of a mass of small lymphocytes in the conjunctiva of a patient with an autoimmune ulceration of the cornea. The cells have large nuclei and numerous mitochondria. A centriole can be seen towards the centre left of the centre top cell. Collagen fibrils (red) are visible in the stroma between the cells.",
-    "longerInfo": ["Stromal lymphocytes are crucial immune cells observed here within the conjunctiva of a patient with autoimmune corneal ulceration. These lymphocytes, part of the adaptive immune system, show prominent features such as large nuclei and numerous mitochondria, indicating high metabolic activity. A centriole is visible towards the center left of the top cell, signifying cell division and proliferation in response to immune activation. The stroma, rich in red-stained collagen fibrils, offers structural support and a matrix for lymphocyte movement, vital for their function in immune surveillance and response. In autoimmune conditions, the immune system mistakenly targets the body’s tissues, causing inflammation and damage. The interaction between stromal lymphocytes and the collagen-rich stroma provides insights into the pathological processes of such diseases. Studying these interactions helps understand immune cell behavior in autoimmune disorders, guiding the development of therapies aimed at modulating immune responses to reduce inflammation and tissue damage, ultimately improving patient outcomes."],
+    "longerInfo": [
+      "Stromal lymphocytes are crucial immune cells observed here within the conjunctiva of a patient with autoimmune corneal ulceration. These lymphocytes, part of the adaptive immune system, show prominent features such as large nuclei and numerous mitochondria, indicating high metabolic activity. A centriole is visible towards the center left of the top cell, signifying cell division and proliferation in response to immune activation. The stroma, rich in red-stained collagen fibrils, offers structural support and a matrix for lymphocyte movement, vital for their function in immune surveillance and response. In autoimmune conditions, the immune system mistakenly targets the body\u2019s tissues, causing inflammation and damage. The interaction between stromal lymphocytes and the collagen-rich stroma provides insights into the pathological processes of such diseases. Studying these interactions helps understand immune cell behavior in autoimmune disorders, guiding the development of therapies aimed at modulating immune responses to reduce inflammation and tissue damage, ultimately improving patient outcomes."
+    ],
     "fullInfo": ""
-},
-{
-    "id": 13,
+  },
+  {
+    "id": 6,
+    "name": "Red Globules",
+    "image": "pics/pic-9.jpg",
+    "data": {
+      "picData": {
+        "title": "Blood Cells, SEM",
+        "author": "Anne Weston",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Circulatory System",
+        "Type": "Cell",
+        "Dimensions": "7.5-8.5 \u00b5m"
+      }
+    },
+    "shortInfo": "Red blood cells, also known as erythrocytes, are the cells depicted in this image. These specialized cells are responsible for transporting oxygen from the lungs to tissues throughout the body. <p>Their distinctive red colour is due to the presence of hemoglobin, a protein that binds and carries oxygen. This image emphasizes the critical role of red blood cells in oxygen delivery and underscores their importance in maintaining physiological balance.</p>",
+    "longerInfo": [
+      "Each red blood cell contains millions of hemoglobin molecules, which efficiently bind to oxygen in the lungs due to their high affinity for this gas. As blood circulates through the body, oxygen is released to tissues in response to local metabolic demands, ensuring adequate oxygen supply for cellular functions. The image captures this essential process, emphasizing the critical role of red blood cells in sustaining life-sustaining functions.<p>Beyond oxygen transport, red blood cells also play a vital role in maintaining acid-base balance and regulating blood viscosity. Their ability to deform and squeeze through capillaries ensures they can reach every cell in the body, delivering oxygen and collecting carbon dioxide for exhalation.</p>"
+    ],
+    "fullInfo": ""
+  },
+  {
+    "id": 7,
     "name": "Human hair",
     "image": "pics/pic-13.jpg",
     "data": {
-        "picData": {
-            "title": "Split end of a human hair",
-            "author": "Liz Hirst",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Integumentary System",
-            "Type": "Organ",
-            "Dimensions": "0.017-0.18mm"
-        }
+      "picData": {
+        "title": "Split end of a human hair",
+        "author": "Liz Hirst",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Integumentary System",
+        "Type": "Organ",
+        "Dimensions": "17-180 \u00b5m"
+      }
     },
     "shortInfo": "Colour-enhanced scanning electron micrograph of the split end of a human hair showing the outer cuticle layer surrounding the inner cortical layer. The cuticle, composed of overlapping scales, protects the inner cortex, which consists of long keratin fibers that provide strength and elasticity to the hair. The split end highlights damage to the cuticle, exposing the cortex and resulting in frayed and weakened hair.",
-    "longerInfo": ["Human hair is a complex structure consisting of multiple layers that provide strength and resilience. This colour-enhanced scanning electron micrograph displays the split end of a human hair, highlighting the outer cuticle layer surrounding the inner cortical layer. The cuticle, composed of overlapping scale-like cells, protects the underlying cortex, which contains long keratin fibers responsible for the hair's strength and elasticity. An intact cuticle forms a protective barrier, safeguarding the cortex from environmental damage and mechanical stress. The split end reveals cuticle damage, exposing the cortex and leading to fraying and a reduction in the hair's structural integrity. The exposed keratin fibers in the cortex become susceptible to further weakening. The cuticle's overlapping scales are crucial for maintaining the hair's integrity by preventing exposure of the inner cortex. The cortex, rich in keratin, provides the necessary strength and flexibility of healthy hair. Understanding the anatomy of human hair, especially the roles of the cuticle and cortex, highlights the importance of these layers in maintaining hair's overall structure and function."],
+    "longerInfo": [
+      "Human hair is a complex structure consisting of multiple layers that provide strength and resilience. This colour-enhanced scanning electron micrograph displays the split end of a human hair, highlighting the outer cuticle layer surrounding the inner cortical layer. The cuticle, composed of overlapping scale-like cells, protects the underlying cortex, which contains long keratin fibers responsible for the hair's strength and elasticity. An intact cuticle forms a protective barrier, safeguarding the cortex from environmental damage and mechanical stress. The split end reveals cuticle damage, exposing the cortex and leading to fraying and a reduction in the hair's structural integrity. The exposed keratin fibers in the cortex become susceptible to further weakening. The cuticle's overlapping scales are crucial for maintaining the hair's integrity by preventing exposure of the inner cortex. The cortex, rich in keratin, provides the necessary strength and flexibility of healthy hair. Understanding the anatomy of human hair, especially the roles of the cuticle and cortex, highlights the importance of these layers in maintaining hair's overall structure and function."
+    ],
     "fullInfo": ""
-},
-{
+  },
+  {
+    "id": 8,
+    "name": "Purkinje neurons",
+    "image": "pics/pic-15.jpeg",
+    "data": {
+      "picData": {
+        "title": "Purkinje neurons in culture",
+        "author": "Annie Cavanagh",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Nervous System",
+        "Type": "Cell",
+        "Dimensions": "20-40 \u00b5m"
+      }
+    },
+    "shortInfo": "This scanning electron micrograph, shows differentiating neurons grown in culture. These are Purkinje neurons in the cerebellum, showcasing their large, distinctive cell bodies and elaborate dendritic branching. These neurons are pivotal in coordinating and refining motor movements within the brain.",
+    "longerInfo": [
+      "Purkinje neurons, situated in the cerebellum's cortex, are distinctive for their large size and complex dendritic structure. These multipolar neurons feature extensive dendritic arbors that fan out horizontally, receiving inputs primarily from parallel fibers of granule cells and climbing fibers originating from the inferior olive. Functionally, Purkinje neurons integrate these inputs to finely regulate motor coordination and learning. Their role as the cerebellum's principal output neurons involves projecting inhibitory signals onto the deep cerebellar nuclei. This modulation influences motor centers in the brainstem and cortex, crucial for precise movement control, balance, and posture. Structurally, Purkinje neurons exhibit a single axon that extends vertically through the cerebellar layers, forming specialized synapses known as Purkinje cell synapses with neurons in the deep cerebellar nuclei.Beyond their structural complexity, Purkinje neurons are pivotal in motor learning and adaptation processes. Their intricate dendritic morphology and precise inhibitory outputs enable the cerebellum to coordinate and refine motor movements effectively. Understanding the anatomical specifics of Purkinje neurons provides insights into their essential role in neurological function, highlighting their significance in both normal motor control and conditions involving cerebellar dysfunction."
+    ],
+    "fullInfo": ""
+  },
+  {
+    "id": 9,
+    "name": "Tongue",
+    "image": "pics/pic-17.jpeg",
+    "data": {
+      "picData": {
+        "title": "Tongue, taste bud on fungiform papilla. SEM",
+        "author": "David Gregory, Debbie Marshall",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Digestive System, Muscular System, Respiratory System",
+        "Type": "Organ",
+        "Dimensions": "50-100 \u00b5m"
+      }
+    },
+    "shortInfo": "Scanning electron micrograph of fungiform papilla on tongue, showing taste bud. Fungiform papillae are mushroom-shaped projections on the tongue's surface, each housing several taste buds. These specialized sensory organs detect flavors and play a crucial role in gustatory perception, contributing to our sense of taste and oral sensory experiences.",
+    "longerInfo": [
+      "Fungiform papillae on the tongue are specialized structures essential for taste perception. Each papilla houses multiple taste buds, which are clusters of sensory cells responsible for detecting different flavors. The intricate surface of a fungiform papilla is characterized by its mushroom-like shape and tiny taste buds located within epithelial invaginations known as taste pores. Within each taste bud, specialized gustatory receptor cells detect distinct taste qualities: sweet, sour, salty, bitter, and umami. These cells transmit signals to the brain via sensory nerves, initiating the perception of taste. Supporting cells in the taste bud provide structural support and maintain its functionality, while basal cells replenish taste receptor cells as needed. The arrangement and density of fungiform papillae vary across the tongue, contributing to individual differences in taste sensitivity and perception. Their distribution is particularly dense on the tip and edges of the tongue, areas most sensitive to taste stimuli. Taste buds are not only crucial for identifying flavors but also contribute to the enjoyment of food and beverages, influencing dietary preferences and nutritional intake."
+    ],
+    "fullInfo": ""
+  },
+  {
+    "id": 10,
+    "name": "Blood vessels in the optic disc",
+    "image": "pics/pic-16.jpeg",
+    "data": {
+      "picData": {
+        "title": "Blood vessels emerging from the optic disc",
+        "author": "Freya Mowat",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Circulatory System",
+        "Type": "Organ",
+        "Dimensions": "120-200 \u00b5m"
+      }
+    },
+    "shortInfo": "Blood vessels in the retina emerging from the optic disc (black). The optic disc is the area of the retina where the optic nerve and retinal blood vessels leave the back of the eye. These vessels play a vital role in supplying oxygen and nutrients to the optic nerve and surrounding tissues, crucial for maintaining visual function and overall ocular health.",
+    "longerInfo": [
+      "Blood vessels in the optic disc constitute a complex network of arteries and veins that serve the critical role of supplying oxygenated blood to and draining deoxygenated blood from the optic nerve head. This region, also known as the optic disc or optic papilla, is where retinal ganglion cell axons converge to form the optic nerve, transmitting visual information from the retina to the brain. Arteries, such as the central retinal artery, branch out from the ophthalmic artery to supply nutrients and oxygen to the optic nerve head. These arteries divide into smaller arterioles within the optic disc, ensuring a rich blood supply to sustain the metabolic demands of the retinal ganglion cells and associated glial cells. Conversely, veins emerging from the optic disc, notably the central retinal vein, collect deoxygenated blood and waste products from the optic nerve head, draining it into the systemic circulation via the ophthalmic veins. The venous drainage system is crucial for maintaining optimal tissue perfusion and removing metabolic byproducts to support the health and function of the optic nerve. The arrangement and condition of blood vessels in the optic disc are critical indicators of ocular health, often examined during routine eye examinations to assess for signs of vascular abnormalities, such as optic disc edema, optic neuritis, or glaucoma. Understanding the anatomical details of these blood vessels provides essential insights into their role in maintaining visual function and the implications for diagnosing and managing various ocular conditions."
+    ],
+    "fullInfo": ""
+  },
+  {
+    "id": 11,
+    "name": "Blood vessel in a melanoma",
+    "image": "pics/pic-19.jpg",
+    "data": {
+      "picData": {
+        "title": "Blood vessel in a melanoma, SEM",
+        "author": "S. Gschmeissner, K. Hodivala-Dilke, M. Stone",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Circulatory System, Integumentary System",
+        "Type": "Organ",
+        "Dimensions": "150-200 \u00b5m"
+      }
+    },
+    "shortInfo": "Colour-enhanced, freeze-fracture scanning electron micrograph of a blood vessel that has grown into a melanoma and is providing nourishment to it. Blood vessels in melanoma tumors are crucial for supplying nutrients and oxygen to cancerous cells, facilitating their growth and metastasis. Understanding their role is pivotal in developing targeted therapies to disrupt tumor vasculature.",
+    "longerInfo": [
+      "Blood vessels within melanoma tumors play a critical role in the progression and spread of cancerous cells. These vessels are essential for supplying oxygen and nutrients necessary for the rapid proliferation of malignant melanocytes. Microscopically, blood vessels in melanoma often exhibit abnormal characteristics such as irregular shape, increased permeability, and chaotic branching patterns, indicative of tumor angiogenesis. Angiogenesis, the process by which new blood vessels form from pre-existing ones, is a hallmark of cancer growth and metastasis. In melanoma, this process is driven by signaling molecules produced by tumor cells, promoting the sprouting of new vessels to sustain the growing tumor mass. These newly formed blood vessels not only support tumor growth but also provide routes for cancer cells to invade nearby tissues and spread to distant organs, leading to metastatic disease. The microenvironment surrounding blood vessels in melanoma tumors is dynamic, influenced by interactions between cancer cells, endothelial cells lining the vessels, and various immune cells. This complex interplay contributes to the progression of melanoma and influences response to treatment strategies."
+    ],
+    "fullInfo": ""
+  },
+  {
+    "id": 12,
+    "name": "Healthy hair Bulb",
+    "image": "pics/pic-3.jpg",
+    "data": {
+      "picData": {
+        "title": "Healthy hair Bulb",
+        "author": "Glaister, John",
+        "Period": "Historical"
+      },
+      "subjectData": {
+        "System": "Integumentary System",
+        "Type": "Organ",
+        "Dimensions": "200-400 \u00b5m"
+      }
+    },
+    "shortInfo": "This image of the bulb of a healthy hair was taken from the book <i>A Study of Hairs and Wools Belonging to the Mammalian Group of Animals</i>. It is one of the earliest examples of microscopic photography.",
+    "longerInfo": [
+      "The hair bulb is a vital structure located at the base of the hair follicle, responsible for the growth and development of hair. It is a rounded, bulbous part of the follicle where hair cells are produced and is embedded deeply in the dermis layer of the skin. The hair bulb plays a crucial role in the hair growth cycle and overall hair health."
+    ],
+    "fullInfo": ""
+  },
+  {
+    "id": 13,
+    "name": "Alveoli",
+    "image": "pics/pic-11.jpg",
+    "data": {
+      "picData": {
+        "title": "SEM alveoli in the lung",
+        "author": "David Gregory, Debbie Marshall",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Respiratory System",
+        "Type": "Organ",
+        "Dimensions": "200 \u00b5m"
+      }
+    },
+    "shortInfo": "This image captures the intricate structure of human alveoli, the tiny air sacs in the lungs where gas exchange occurs. The alveoli are lined with a thin layer of epithelial cells and surrounded by a network of capillaries. Their unique, balloon-like shape maximizes surface area, allowing efficient oxygen and carbon dioxide exchange. This image highlights the delicate architecture essential for respiration.",
+    "longerInfo": [
+      "Human alveoli are essential components of the respiratory system, located at the ends of the bronchial tubes in the lungs. These small, balloon-shaped structures are responsible for the critical process of gas exchange. Each alveolus is lined with a thin layer of epithelial cells, which allows for the rapid diffusion of oxygen into the blood and the expulsion of carbon dioxide from it. The surrounding network of capillaries brings blood into close contact with the alveolar surface, optimizing this exchange. The alveoli's structure, characterized by their spongy texture and extensive surface area, is designed to maximize efficiency. The alveolar walls, or septa, contain elastic fibers that help the lungs expand and contract with each breath, ensuring efficient respiratory function. This intricate architecture underscores the alveoli's vital role in sustaining life, facilitating the continuous exchange of gases that is essential for all cellular processes in the body."
+    ],
+    "fullInfo": ""
+  },
+  {
     "id": 14,
     "name": "Collagen",
     "image": "pics/pic-14.jpg",
     "data": {
-        "picData": {
-            "title": "SEM of collagen",
-            "author": "David Gregory, Debbie Marshall",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Integumentary System, Skeletal System, Muscular System",
-            "Dimensions": "300 nm"
-        }
+      "picData": {
+        "title": "SEM of collagen",
+        "author": "David Gregory, Debbie Marshall",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Integumentary System, Skeletal System, Muscular System",
+        "Dimensions": "300 nm"
+      }
     },
     "shortInfo": "Scanning electron micrograph of collagen fibrils in human connective tissue. Collagen, a structural protein, forms elongated fibrils that provide tensile strength and support to various tissues, including skin, tendons, and bones. The fibrils appear as densely packed, banded structures, crucial for maintaining the integrity and elasticity of connective tissues.",
-    "longerInfo": ["Collagen, a foundational protein in human connective tissue, is showcased in this transmission electron micrograph by its characteristic elongated fibrils. These fibrils, densely packed and arranged in a staggered pattern, provide remarkable tensile strength to tissues like skin, tendons, ligaments, and bones. The structural integrity of collagen fibrils arises from their intricate molecular arrangement, where collagen molecules align in a regular, repeating pattern. This alignment enables collagen to resist stretching forces, ensuring durability and flexibility in connective tissues. For instance, in tendons and ligaments, collagen fibrils form parallel bundles, optimizing their capacity to endure and transmit mechanical loads. In the skin, collagen plays a pivotal role in maintaining its resilience and elasticity, facilitating its ability to stretch and recoil. Meanwhile, in bones, collagen fibrils are mineralized with calcium phosphate, enhancing bone density and strength. This microscopic view underscores collagen's critical function in supporting and fortifying various tissues throughout the human body, essential for structural integrity and functional resilience."],
+    "longerInfo": [
+      "Collagen, a foundational protein in human connective tissue, is showcased in this transmission electron micrograph by its characteristic elongated fibrils. These fibrils, densely packed and arranged in a staggered pattern, provide remarkable tensile strength to tissues like skin, tendons, ligaments, and bones. The structural integrity of collagen fibrils arises from their intricate molecular arrangement, where collagen molecules align in a regular, repeating pattern. This alignment enables collagen to resist stretching forces, ensuring durability and flexibility in connective tissues. For instance, in tendons and ligaments, collagen fibrils form parallel bundles, optimizing their capacity to endure and transmit mechanical loads. In the skin, collagen plays a pivotal role in maintaining its resilience and elasticity, facilitating its ability to stretch and recoil. Meanwhile, in bones, collagen fibrils are mineralized with calcium phosphate, enhancing bone density and strength. This microscopic view underscores collagen's critical function in supporting and fortifying various tissues throughout the human body, essential for structural integrity and functional resilience."
+    ],
     "fullInfo": ""
-},
-{
+  },
+  {
     "id": 15,
-    "name": "Purkinje neurons",
-    "image": "pics/pic-15.jpeg",
+    "name": "Intestinal Villi",
+    "image": "pics/pic-10.jpg",
     "data": {
-        "picData": {
-            "title": "Purkinje neurons in culture",
-            "author": "Annie Cavanagh",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Nervous System",
-            "Type": "Cell",
-            "Dimensions": "20-40µm"
-        }
+      "picData": {
+        "title": "Villus from the small intestine",
+        "author": "S. Schuller",
+        "Period": "Contemporary",
+        "Technique": ""
+      },
+      "subjectData": {
+        "System": "Digestive System",
+        "Type": "Organ",
+        "Dimensions": "500-1600 \u00b5m"
+      }
     },
-    "shortInfo": "This scanning electron micrograph, shows differentiating neurons grown in culture. These are Purkinje neurons in the cerebellum, showcasing their large, distinctive cell bodies and elaborate dendritic branching. These neurons are pivotal in coordinating and refining motor movements within the brain.",
-    "longerInfo": ["Purkinje neurons, situated in the cerebellum's cortex, are distinctive for their large size and complex dendritic structure. These multipolar neurons feature extensive dendritic arbors that fan out horizontally, receiving inputs primarily from parallel fibers of granule cells and climbing fibers originating from the inferior olive. Functionally, Purkinje neurons integrate these inputs to finely regulate motor coordination and learning. Their role as the cerebellum's principal output neurons involves projecting inhibitory signals onto the deep cerebellar nuclei. This modulation influences motor centers in the brainstem and cortex, crucial for precise movement control, balance, and posture. Structurally, Purkinje neurons exhibit a single axon that extends vertically through the cerebellar layers, forming specialized synapses known as Purkinje cell synapses with neurons in the deep cerebellar nuclei.Beyond their structural complexity, Purkinje neurons are pivotal in motor learning and adaptation processes. Their intricate dendritic morphology and precise inhibitory outputs enable the cerebellum to coordinate and refine motor movements effectively. Understanding the anatomical specifics of Purkinje neurons provides insights into their essential role in neurological function, highlighting their significance in both normal motor control and conditions involving cerebellar dysfunction."],
+    "shortInfo": "A villus from the human small intestine. The finger-like shape increases the surface area of the intestine improving the efficiency of food absorption.",
+    "longerInfo": [
+      ""
+    ],
     "fullInfo": ""
-},
-{
+  },
+  {
     "id": 16,
-    "name": "Blood vessels in the optic disc",
-    "image": "pics/pic-16.jpeg",
+    "name": "The eye, as seen through a microscope: two figures",
+    "image": "pics/pic-1.jpg",
     "data": {
-        "picData": {
-            "title": "Blood vessels emerging from the optic disc",
-            "author": "Freya Mowat",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Circulatory System",
-            "Type": "Organ",
-            "Dimensions": "120-200µm"
-        }
+      "picData": {
+        "title": "The eye, as seen through a microscope: two figures",
+        "author": "Liebreich, Richard",
+        "Period": "Historical",
+        "Technique": "Litography"
+      },
+      "subjectData": {
+        "System": "Nervous System",
+        "Type": "Organ",
+        "Dimensions": "1500 \u00b5m"
+      }
     },
-    "shortInfo": "Blood vessels in the retina emerging from the optic disc (black). The optic disc is the area of the retina where the optic nerve and retinal blood vessels leave the back of the eye. These vessels play a vital role in supplying oxygen and nutrients to the optic nerve and surrounding tissues, crucial for maintaining visual function and overall ocular health.",
-    "longerInfo": ["Blood vessels in the optic disc constitute a complex network of arteries and veins that serve the critical role of supplying oxygenated blood to and draining deoxygenated blood from the optic nerve head. This region, also known as the optic disc or optic papilla, is where retinal ganglion cell axons converge to form the optic nerve, transmitting visual information from the retina to the brain. Arteries, such as the central retinal artery, branch out from the ophthalmic artery to supply nutrients and oxygen to the optic nerve head. These arteries divide into smaller arterioles within the optic disc, ensuring a rich blood supply to sustain the metabolic demands of the retinal ganglion cells and associated glial cells. Conversely, veins emerging from the optic disc, notably the central retinal vein, collect deoxygenated blood and waste products from the optic nerve head, draining it into the systemic circulation via the ophthalmic veins. The venous drainage system is crucial for maintaining optimal tissue perfusion and removing metabolic byproducts to support the health and function of the optic nerve. The arrangement and condition of blood vessels in the optic disc are critical indicators of ocular health, often examined during routine eye examinations to assess for signs of vascular abnormalities, such as optic disc edema, optic neuritis, or glaucoma. Understanding the anatomical details of these blood vessels provides essential insights into their role in maintaining visual function and the implications for diagnosing and managing various ocular conditions."],
+    "shortInfo": "Before the invention of microscopic photography, the dissemination of microscopic images had to occur through manual printing techniques. In this case, the author uses lithography to represent an eye seen under a microscope.",
+    "longerInfo": [
+      ""
+    ],
     "fullInfo": ""
-},
-{
+  },
+  {
     "id": 17,
-    "name": "Tongue",
-    "image": "pics/pic-17.jpeg",
+    "name": "The eye, as seen through a microscope: two figures",
+    "image": "pics/pic-2.jpg",
     "data": {
-        "picData": {
-            "title": "Tongue, taste bud on fungiform papilla. SEM",
-            "author": "David Gregory, Debbie Marshall",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Digestive System, Muscular System, Respiratory System",
-            "Type": "Organ",
-            "Dimensions": "50-100µm"
-        }
+      "picData": {
+        "title": "The eye, as seen through a microscope: two figures",
+        "author": "Liebreich, Richard",
+        "Period": "Historical",
+        "Technique": "Litography"
+      },
+      "subjectData": {
+        "System": "Nervous System",
+        "Type": "Organ",
+        "Dimensions": "1500 \u00b5m"
+      }
     },
-    "shortInfo": "Scanning electron micrograph of fungiform papilla on tongue, showing taste bud. Fungiform papillae are mushroom-shaped projections on the tongue's surface, each housing several taste buds. These specialized sensory organs detect flavors and play a crucial role in gustatory perception, contributing to our sense of taste and oral sensory experiences.",
-    "longerInfo": ["Fungiform papillae on the tongue are specialized structures essential for taste perception. Each papilla houses multiple taste buds, which are clusters of sensory cells responsible for detecting different flavors. The intricate surface of a fungiform papilla is characterized by its mushroom-like shape and tiny taste buds located within epithelial invaginations known as taste pores. Within each taste bud, specialized gustatory receptor cells detect distinct taste qualities: sweet, sour, salty, bitter, and umami. These cells transmit signals to the brain via sensory nerves, initiating the perception of taste. Supporting cells in the taste bud provide structural support and maintain its functionality, while basal cells replenish taste receptor cells as needed. The arrangement and density of fungiform papillae vary across the tongue, contributing to individual differences in taste sensitivity and perception. Their distribution is particularly dense on the tip and edges of the tongue, areas most sensitive to taste stimuli. Taste buds are not only crucial for identifying flavors but also contribute to the enjoyment of food and beverages, influencing dietary preferences and nutritional intake."],
+    "shortInfo": "Before the invention of microscopic photography, the dissemination of microscopic images had to occur through manual printing techniques. In this case, the author uses lithography to represent an eye seen under a microscope.",
+    "longerInfo": [
+      "Lithography is a printing process that involves etching a drawing onto a limestone or treated metal plate. This method allows for the creation of images with a remarkable amount of detail and shading, essential for conveying the complex structures observed under a microscope. The technique exploits the principle that oil and water do not mix: the drawing is traced with an oily substance on a treated surface, then the stone is moistened, and subsequently, ink is applied that adheres only to the oily parts of the drawing."
+    ],
     "fullInfo": ""
-},
-{
+  },
+  {
     "id": 18,
+    "name": "Blood Vessel",
+    "image": "pics/pic-8.jpg",
+    "data": {
+      "picData": {
+        "title": "Ruptured blood vessel",
+        "author": "Anne Weston",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Circulatory System",
+        "Type": "Organ",
+        "Dimensions": "8000-25000 \u00b5m"
+      }
+    },
+    "shortInfo": "Colour-enhanced image of red blood cells leaking out of a ruptured blood vessel. This is due to a mutation that causes the blood vessels to be more fragile than normal leading to an increased rate of haemorrhaging.",
+    "longerInfo": [
+      "This mutation affects the structural proteins or regulatory factors responsible for maintaining the integrity and strength of blood vessel walls.<p>One of the notable aspects of this disease is its variability in presentation and severity. Some individuals may experience mild symptoms with occasional minor bleeding episodes, while others may face more frequent and severe hemorrhages that pose significant health risks. The location and extent of bleeding can vary widely, affecting different organs and tissues throughout the body.</p>"
+    ],
+    "fullInfo": ""
+  },
+  {
+    "id": 19,
     "name": "Human proximal tubule",
     "image": "pics/pic-18.jpeg",
     "data": {
-        "picData": {
-            "title": "Human proximal tubule, tubular structure, SEM",
-            "author": "David Gregory, Debbie Marshall",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Urinary System",
-            "Type": "Organ",
-            "Dimensions": "14-18mm"
-        }
+      "picData": {
+        "title": "Human proximal tubule, tubular structure, SEM",
+        "author": "David Gregory, Debbie Marshall",
+        "Period": "Contemporary",
+        "Technique": "SEM"
+      },
+      "subjectData": {
+        "System": "Urinary System",
+        "Type": "Organ",
+        "Dimensions": "15000 \u00b5m"
+      }
     },
     "shortInfo": "Scanning electron micrograph of human proximal tubule, showing tubular structure. The human proximal tubule is a critical segment of the nephron in the kidney, essential for reabsorbing water, ions, and nutrients from the glomerular filtrate back into the bloodstream. It plays a vital role in maintaining bodily homeostasis and regulating fluid and electrolyte balance.",
-    "longerInfo": ["The human proximal tubule is a key component of the nephron, situated in the renal cortex and extending into the medulla. It begins at the Bowman's capsule, where initial ultrafiltration of blood plasma occurs, and continues into the medulla, connecting to the loop of Henle. Microscopically, the proximal tubule is lined with a single layer of epithelial cells that are rich in microvilli, forming a brush border. This structural feature significantly increases the surface area of the tubule, facilitating the reabsorption of water, electrolytes (such as sodium, potassium, chloride), glucose, amino acids, and other solutes from the filtrate. Epithelial cells of the proximal tubule are metabolically active, evidenced by the abundance of mitochondria, necessary to support energy-demanding transport processes. These cells perform active transport to selectively reabsorb essential substances while allowing waste products and excess ions to be excreted in urine. Functionally, the proximal tubule is divided into two main segments: the proximal convoluted tubule (PCT) and the straight proximal tubule (PST). The PCT, characterized by its highly convoluted structure near the Bowman's capsule, maximizes surface area for efficient reabsorption. In contrast, the PST descends into the medulla, where it continues reabsorption and prepares the filtrate for further concentration in the loop of Henle."],
+    "longerInfo": [
+      "The human proximal tubule is a key component of the nephron, situated in the renal cortex and extending into the medulla. It begins at the Bowman's capsule, where initial ultrafiltration of blood plasma occurs, and continues into the medulla, connecting to the loop of Henle. Microscopically, the proximal tubule is lined with a single layer of epithelial cells that are rich in microvilli, forming a brush border. This structural feature significantly increases the surface area of the tubule, facilitating the reabsorption of water, electrolytes (such as sodium, potassium, chloride), glucose, amino acids, and other solutes from the filtrate. Epithelial cells of the proximal tubule are metabolically active, evidenced by the abundance of mitochondria, necessary to support energy-demanding transport processes. These cells perform active transport to selectively reabsorb essential substances while allowing waste products and excess ions to be excreted in urine. Functionally, the proximal tubule is divided into two main segments: the proximal convoluted tubule (PCT) and the straight proximal tubule (PST). The PCT, characterized by its highly convoluted structure near the Bowman's capsule, maximizes surface area for efficient reabsorption. In contrast, the PST descends into the medulla, where it continues reabsorption and prepares the filtrate for further concentration in the loop of Henle."
+    ],
     "fullInfo": ""
-},
-{
-    "id": 19,
-    "name": "Blood vessel in a melanoma",
-    "image": "pics/pic-19.jpg",
-    "data": {
-        "picData": {
-            "title": "Blood vessel in a melanoma, SEM",
-            "author": "S. Gschmeissner, K. Hodivala-Dilke, M. Stone",
-            "Period": "Contemporary",
-            "Technique": "SEM"
-        },
-        "subjectData": {
-            "System": "Circulatory System, Integumentary System",
-            "Type": "Organ",
-            "Dimensions": ""
-        }
-    },
-    "shortInfo": "Colour-enhanced, freeze-fracture scanning electron micrograph of a blood vessel that has grown into a melanoma and is providing nourishment to it. Blood vessels in melanoma tumors are crucial for supplying nutrients and oxygen to cancerous cells, facilitating their growth and metastasis. Understanding their role is pivotal in developing targeted therapies to disrupt tumor vasculature.",
-    "longerInfo": ["Blood vessels within melanoma tumors play a critical role in the progression and spread of cancerous cells. These vessels are essential for supplying oxygen and nutrients necessary for the rapid proliferation of malignant melanocytes. Microscopically, blood vessels in melanoma often exhibit abnormal characteristics such as irregular shape, increased permeability, and chaotic branching patterns, indicative of tumor angiogenesis. Angiogenesis, the process by which new blood vessels form from pre-existing ones, is a hallmark of cancer growth and metastasis. In melanoma, this process is driven by signaling molecules produced by tumor cells, promoting the sprouting of new vessels to sustain the growing tumor mass. These newly formed blood vessels not only support tumor growth but also provide routes for cancer cells to invade nearby tissues and spread to distant organs, leading to metastatic disease. The microenvironment surrounding blood vessels in melanoma tumors is dynamic, influenced by interactions between cancer cells, endothelial cells lining the vessels, and various immune cells. This complex interplay contributes to the progression of melanoma and influences response to treatment strategies."],
-    "fullInfo": ""
-}
-]}
+  }
+]
+   ]}
