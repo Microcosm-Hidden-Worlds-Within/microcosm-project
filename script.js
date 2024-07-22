@@ -124,7 +124,7 @@ function showInfo(index) {
 	// info
 	inner("shortInfo", object.shortInfo + '<a type="button" class="btn info-button" onclick="more()">Tell me more...</a>'); 
 	//inner("longerInfo", object.longerInfo + '<a type="button" class="btn info-button" onclick="less()">Tell me less...</a>'); 
-	inner("longerInfo","<p>"+object.longerInfo.join("</p><p>")+ '<a type="button" class="btn info-button" onclick="less()">Tell me less</a> or <a type="button" class="btn info-button" onclick="muchMore()">Tell me even more...</a></p>'); 
+	inner("longerInfo","<p>"+object.longerInfo.join("</p><p>")+ '<div class="d-flex justify-content-evenly"><a type="button" class="btn info-button" onclick="less()">Tell me less</a><a type="button" class="btn info-button" onclick="muchMore()">Tell me even more...</a></div></p>'); 
 	byId("fullInfo").dataset['uri'] = object.fullInfo
 	
 	changeNarrativeDescription()
