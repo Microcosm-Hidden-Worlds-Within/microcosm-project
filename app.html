@@ -16,6 +16,7 @@
    <link rel="stylesheet" type="text/css" href="css/app.css">
    <link rel="stylesheet" type="text/css" href="css/media.css">
    <link rel="stylesheet" type="text/css" href="css/app-media.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
 
    <!-- Font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,66 @@
 
 <body>
    <header>
-      <!-- here put the navbar -->
+      <!-- Documentation for navbar at https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid">
+         <a class="navbar-brand" href="index.html">
+            <img src="icons/logo/logo.png" alt="Logo" style="height: 40px;">
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal"
+            aria-controls="navbarModal" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="app.html">Exibition</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="narratives.html">Narratives</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="map.html">Map</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="about_us.html">About us</a>
+               </li>
+            </ul>
+         </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- Modal Structure -->
+   <div class="modal fade" id="navbarModal" tabindex="-1" aria-labelledby="navbarModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+         <div class="modal-content">
+         <div class="modal-header">
+            <a class="modal-title" id="navbarModalLabel" href="index.html">
+               <img src="icons/logo/logo_full.svg" alt="Logo" style="height: 40px;">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+            <!-- Navbar content duplicated inside the modal -->
+            <ul class="navbar-nav">
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="app.html">Exibition</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="narratives.html">Narratives</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="map.html">Map</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="about_us.html">About us</a>
+               </li>
+            </ul>
+         </div>
+         </div>
+      </div>
+   </div>
    </header>
 
    <main>
