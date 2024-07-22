@@ -8,7 +8,6 @@ var narrativeIcons = {};
 var narrativeDesc = {};
 
 document.addEventListener("DOMContentLoaded", async function(event) {
-
 	// check if there are information in the query section of the URL
 	const urlParams = new URLSearchParams(document.location.search);
 	const itemNarrative = urlParams.get("narrative");
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 		currentSort = decodeURIComponent(itemId);
 	}
 
-	console.log("Current narrative:" + String(currentNarrative));
 	
 	// parse NARRATIVE JSON
 	fetch('narrative-data.json')
@@ -69,14 +67,10 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 		if (currentNarrative == "") { 
 			currentNarrative = data.meta.startNarrative;
 		}
-		console.log(currentNarrative);
-
+	
 		if (currentValue == "") {
 			currentValue = data.meta.startValue;
 		}
-
-		console.log(currentValue);
-   
 		prepareNarratives();
 
 		// Adjust height after content is prepared
@@ -146,7 +140,7 @@ function changeNarrativeDescription() {
 	} else {
 		var desc = narrativeDesc[currentNarrative][currentValue]
 	};
-	console.log(desc);
+
 	inner("narrative-info", desc)
 }
 
@@ -194,7 +188,7 @@ function createInfoTable(object) {
 			if (narratives.includes(i)) {
 				var items = object.data.subjectData[i].split(", ")
 				var val = []
-				console.log(mainNarrative);
+	
 				if (mainNarrative !== 'Dimensions') {
 					for (j in items) {
 						var subNarrative = items[j]
@@ -234,7 +228,7 @@ function createInfoTable(object) {
 
 // change color of the active icon
 function setActiveNarrative(currentValue) {
-	console.log(currentValue);
+
 	let buttons = document.querySelectorAll('.narrative-button');
 	buttons.forEach(button => {
     // Extract the value of the onclick attribute
@@ -299,12 +293,12 @@ function byId(id) {
 	return document.getElementById(id)
 }
 
+// Adjusting the height of the images in the app
 function adjustHeight(referenceId, targetId) {
     var referenceElement = document.getElementById(referenceId);
     var targetElement = document.getElementById(targetId);
 
-	 console.log(referenceElement);
-	 console.log(targetElement);
+
 
     if (referenceElement && targetElement) {
         var referenceHeight = referenceElement.offsetHeight;
@@ -315,3 +309,7 @@ function adjustHeight(referenceId, targetId) {
 window.onresize = function() {
    adjustHeight('data-container', 'figure-container');
 };
+
+
+
+

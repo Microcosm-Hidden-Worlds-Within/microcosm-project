@@ -2,12 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-
   <!--Javascript for navbar-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -117,14 +111,13 @@
 
       <div>
         <h3>What is about?</h3>
-        <p style="text-align: justify">Explore "<b>Microcosm: Hidden Worlds Within</b> where science meets art through
+        <p class="slide-from-left">Explore "<b>Microcosm: Hidden Worlds Within</b> where science meets art through
           stunning
           micrographs of the human body. This exhibition reveals the intricate
           complexity and elegance of human tissues and cells, showcasing the
           extraordinary beauty beneath the surface. </p>
-        <p>Join us for a visual journey
+        <p class="slide-from-left">Join us for a visual journey
           that celebrates the marvels of human biology in vivid colors and delicate structures.</p>
-      </div>
     </section>
 
     <section id="narratives">
@@ -267,7 +260,8 @@
         </div>
       </div>
       <div class="center">
-        <a class="btn btn-primary" href="https://microcosm-hidden-worlds-within.github.io/microcosm-project/map.html" role="button">Link</a>
+        <a class="btn btn-primary" href="https://microcosm-hidden-worlds-within.github.io/microcosm-project/map.html"
+          role="button">Link</a>
       </div>
     </section>
     <section id="address" class="colored-bg">
@@ -294,6 +288,24 @@
   <footer>
 
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('slide-in-left');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('p.slide-from-left').forEach(p => {
+        observer.observe(p);
+      });
+    });
+  </script>
+
 </body>
 
 </html>

@@ -53,7 +53,6 @@ h4 {
 
 
 .btn {
-  /* background-color: #2f2497bc; */
   border: 0;
   font-size: 1.5rem;
   padding: 1rem;
@@ -61,11 +60,6 @@ h4 {
   border-radius: 10px;
 }
 
-/* 
-.btn:hover {
-  background-color: #372ba6; 
-}
-*/
 
 .center {
   text-align: center;
@@ -131,6 +125,12 @@ h4 {
 
 .hero-btn:hover {
   background-color: white;
+}
+
+:not(.btn-check)+.btn:active {
+  color: var(--bs-btn-active-color);
+  background-color: var(--primary);
+  border-color: var(--bs-btn-active-border-color);
 }
 
 /* Carousel */
@@ -349,7 +349,8 @@ a {
 }
 
 #list-items {
-  list-style-type: none; /* Remove bullets */
+  list-style-type: none;
+  /* Remove bullets */
 }
 
 /* Home page map section */
@@ -358,4 +359,39 @@ a {
   width: auto;
   height: auto;
   padding: 20px;
+}
+
+/* Home page animations */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+p.slide-in-left {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+p.slide-in-left {
+  animation: slideInLeft 1s forwards;
 }
