@@ -20,7 +20,7 @@ section {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -341,12 +341,6 @@ a {
 }
 
 /* list of items */
-.items-container {
-  border: solid 2px black;
-  height: 25rem;
-  overflow: scroll;
-}
-
 #list-items {
   list-style-type: none;
   /* Remove bullets */

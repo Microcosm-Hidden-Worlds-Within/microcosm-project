@@ -5,15 +5,13 @@
       font-size: 12px;
     }
 
-
-  
-  
   }
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
+    
     .items-container {
-        height: auto;
-        overflow: visible;
-      }
+      height: 40vh;
+      overflow-y: scroll;
+    }
 
-  }
+}
