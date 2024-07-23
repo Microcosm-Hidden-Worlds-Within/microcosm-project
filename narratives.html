@@ -31,7 +31,7 @@
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/colors.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/media.css">
+        <link rel="stylesheet" type="text/css" href="css/narrative-media.css">
     
         <title>Microcosm: Hidden Worlds Within</title>
     </head>
@@ -101,13 +101,10 @@
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
-            <main id ="my-main">
-                <div class="container-fluid p-0 mt-5">
-                    <div class="text-center">
+            <main id="my-main">
+                    <div class="text-center mt-5">
                         <h1>Narratives</h1>
                     </div>
-                
-              
             </main>
             <footer>
 
@@ -163,7 +160,7 @@
                         let main = byId("my-main");
                         let subnarratives = narratives[i]["subnarratives"];
                         let cards = generateCards(subnarratives, narrativeName);
-                        let newCode = "<div class=\"container-fluid mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2>" + cards + "</div>";
+                        let newCode = "<div class=\"container mt-5 section\" id=\"" + narrativeId +"\"><h2>" + narrativeName + "</h2>" + cards + "</div>";
                         console.log(newCode);
                         main.innerHTML += newCode;
                     };
@@ -187,13 +184,13 @@
                             result += "<div class=\"row\">";
                         };
                         result += `
-                        <div class="col-12 col-md-6 col-lg-3 mt-3 d-flex">
+                        <div class="col-12 col-md-6 col-xl-3 mt-3 d-flex">
                             <a href="app.html?narrative=${encodedNarrativeName}&subnarrative=${encodedSubnarrativeName}">
-                            <div class="card h-100 mx-3"> 
+                            <div class="card h-100 w-100"> 
                             <div class="${backgroundImageClass}"></div>
                             <div class="card-body">
                                 <h5 class="card-title">${subnarrativeName}</h5>
-                                <p class="card-text">${subnarrativeDesc}</p>
+                                <p class="card-text mt-1">${subnarrativeDesc}</p>
                             </div>
                             </div>
                             </a>
@@ -232,7 +229,7 @@
                 const navLinks = document.querySelectorAll('.nav .nav-link');
 
                 const isMobile = window.matchMedia("(max-width: 991px)").matches;
-                const threshold = isMobile ? 0.1 : 0.5;
+                const threshold = isMobile ? 0.1 : 0.3;
 
                 const observerOptions = {
                     root: null,
