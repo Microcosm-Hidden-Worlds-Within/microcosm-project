@@ -86,6 +86,16 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+         initObserver();
+      });
+
+      document.addEventListener('click', function (event) {
+         if (event.target.classList.contains('info-button')) {
+            initObserver();
+         }
+      });
+
 function prepareNarratives() {
 	if (currentNarrative == "Dimensions") {
       currentSelection = objects
@@ -126,7 +136,7 @@ function showInfo(index) {
 	createInfoLabel(object)
 	createInfoTable(object)
 	// info
-	inner("shortInfo", object.shortInfo + '<a type="button" class="btn info-button" onclick="more()">Tell me more...</a>'); 
+	inner("shortInfo", "<p>" + object.shortInfo + "</p>" + '<a type="button" class="btn info-button" onclick="more()">Tell me more...</a>'); 
 	//inner("longerInfo", object.longerInfo + '<a type="button" class="btn info-button" onclick="less()">Tell me less...</a>'); 
 	inner("longerInfo","<p>"+object.longerInfo.join("</p><p>")+ '<div class="d-flex justify-content-evenly"><a type="button" class="btn info-button" onclick="less()">Tell me less</a><a type="button" class="btn info-button" onclick="muchMore()">Tell me even more...</a></div></p>'); 
 	byId("fullInfo").dataset['uri'] = object.fullInfo
@@ -150,29 +160,40 @@ function changeNarrativeDescription() {
 
 function more() {
 	hide("shortInfo") ;
+	opacityTo0("shortInfo")
 	show("longerInfo") ;
-	hide("fullInfo") ;
+	
+	hide("fullInfo")
+	opacityTo0("fullInfo") ;
 }
 function less() {
 	hide("longerInfo") ;
+	opacityTo0("longerInfo")
 	show("shortInfo") ;
 	hide("fullInfo") ;
 }
 function muchMore() {
-	var uri = byId("fullInfo").dataset['uri']
-	fetch(uri)
-	.then(response => response.text())
-	.then(data => {	
-		inner("fullInfoContent",data) ;
-		hide("mainCard") ;
-		show("fullInfo") ;
-		window.scrollTo(0,0)
-	})
+    var uri = byId("fullInfo").dataset['uri'];
+    fetch(uri)
+        .then(response => response.text())
+        .then(data => {
+            inner("fullInfoContent", data);
+            hide("mainCard");
+            show("fullInfo");
+
+            // Initialize observer for new content
+            initObserver();
+
+            window.scrollTo(0, 0);
+        });
 }
 
 function hideFullInfo() {
 	hide("longerInfo") ;
+	opacityTo0("longerInfo")
+	opacityTo0("shortInfo")
 	show("shortInfo") ;
+	opacityTo0("fullInfo")
 	hide("fullInfo") ;
 	show("mainCard") ;
 }
@@ -288,6 +309,11 @@ function hide(id) {
 	document.getElementById(id).classList.add('d-none')
 }
 
+function opacityTo0(id) {
+	document.getElementById(id).classList.remove('visible')
+}
+
+
 function inner(id, content, emptyFirst=true) {
 	if(emptyFirst) document.getElementById(id).innerHTML = "" ; 
 	document.getElementById(id).innerHTML += content ; 
@@ -296,6 +322,24 @@ function inner(id, content, emptyFirst=true) {
 function byId(id) {
 	return document.getElementById(id)
 }
+
+function initObserver() {
+         const cardTexts = document.querySelectorAll('.card-text');
+         console.log(cardTexts);
+
+         const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  observer.unobserve(entry.target); // Stop observing after the animation
+               }
+            });
+         }, { threshold: 0.1 });
+
+         cardTexts.forEach(cardText => {
+            observer.observe(cardText);
+         });
+      }
 
 // Adjusting the height of the images in the app
 function adjustHeight(referenceId, targetId) {
@@ -310,6 +354,16 @@ function adjustHeight(referenceId, targetId) {
     }
 }
 
+// Change the arrow direction for narrative description
+document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.card-footer div').addEventListener('click', function () {
+         document.querySelector('.narrative-info').classList.toggle('displayed');
+         document.querySelector('.card-footer img').classList.toggle('rotated')
+      });
+      document.querySelector('.close-btn').addEventListener('click', function () {
+         document.querySelector('.narrative-info').classList.toggle('displayed');
+         document.querySelector('.card-footer img').classList.toggle('rotated')
+      });})
 
 
 
