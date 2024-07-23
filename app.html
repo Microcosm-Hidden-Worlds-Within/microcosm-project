@@ -166,9 +166,9 @@
             </div>
             <!-- Info Card-->
             <h4 class="card-title text-center">Info</h4>
-            <p class="card-text" id="shortInfo">
-            </p>
-            <p class="card-text d-none" id="longerInfo"></p>
+            <div class="card-text" id="shortInfo">
+            </div>
+            <div class="card-text d-none" id="longerInfo"></div>
 
          </div>
          <!-- Footer Card-->
@@ -205,34 +205,6 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-   <script>
-
-
-      document.addEventListener('DOMContentLoaded', function () {
-         const cardText = document.querySelector('.card-text');
-
-         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-               if (entry.isIntersecting) {
-                  entry.target.classList.add('visible');
-                  observer.unobserve(entry.target); // Stop observing after the animation
-               }
-            });
-         }, { threshold: 0.1 });
-
-         observer.observe(cardText);
-      });
-
-      document.querySelector('.card-footer div').addEventListener('click', function () {
-         document.querySelector('.narrative-info').classList.toggle('displayed');
-         document.querySelector('.card-footer img').classList.toggle('rotated')
-      });
-      document.querySelector('.close-btn').addEventListener('click', function () {
-         document.querySelector('.narrative-info').classList.toggle('displayed');
-         document.querySelector('.card-footer img').classList.toggle('rotated')
-      });
-
-   </script>
 </body>
 
 </html>
