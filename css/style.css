@@ -65,6 +65,12 @@ h4 {
   text-align: center;
 }
 
+/* Nav bar */
+.navbar-brand img {
+  height: 40px;
+}
+
+
 /* Hero section */
 #hero {
   position: relative;
@@ -114,12 +120,13 @@ h4 {
 .hero-btn {
   background-color: rgba(255, 255, 255, 0.35);
   font-weight: 600;
-  font-size: 2rem;
-  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  margin-top: 0.7rem;
   color: white;
   margin-left: 2rem;
   margin-right: 2rem;
   letter-spacing: 1px;
+  padding: 5px 20px;
 
 }
 

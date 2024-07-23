@@ -7,6 +7,10 @@ var currentSort = "";
 var narrativeIcons = {};
 var narrativeDesc = {};
 
+window.onresize = function() {
+   adjustHeight('data-container', 'figure-container');
+};
+
 document.addEventListener("DOMContentLoaded", async function(event) {
 	// check if there are information in the query section of the URL
 	const urlParams = new URLSearchParams(document.location.search);
@@ -306,9 +310,7 @@ function adjustHeight(referenceId, targetId) {
     }
 }
 
-window.onresize = function() {
-   adjustHeight('data-container', 'figure-container');
-};
+
 
 
 
