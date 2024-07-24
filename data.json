@@ -12,7 +12,7 @@
     ]
   },
     
-   "objects": [
+  "objects": [
     
   {
     "id": 1,
@@ -449,5 +449,6 @@
     ],
     "fullInfo": "pages/infos/19.html"
   }
-]
+
+  ]
 }
