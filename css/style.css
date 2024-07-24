@@ -182,7 +182,11 @@ h4 {
   border: 1px solid;
 }
 
-
+footer {
+  border-top: solid 1px grey;
+  font-size: 1rem;
+  color: var(--secondary);
+}
 
 /* Alberto */
 #address iframe {
@@ -191,14 +195,9 @@ h4 {
   max-height: 50vw;
 }
 
-#address p {
-  font-size: 2.5rem;
-}
-
 #address .container {
   padding: 1rem;
 }
-
 
 /* Narrative page */
 /* The nav for scrolling */
