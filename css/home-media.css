@@ -6,11 +6,15 @@
   }
 
   section {
-    margin-left: 5vw;
-    margin-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 
   .hero-title {
     width: 50%;
+  }
+
+  #footer {
+    padding: 3rem 10vw;
   }
 }
