@@ -1,3 +1,7 @@
+:root {
+  --navbar-height: 0px;
+}
+
 html {
   font-size: 10px;
 }
@@ -75,7 +79,7 @@ h4 {
 #hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - var(--navbar-height));
   margin: 0;
   padding: 0;
 }

@@ -412,6 +412,17 @@
         observer.observe(p);
       });
     });
+
+
+    function updateHeroHeight() {
+      const navbar = document.querySelector('.navbar-fixed');
+      const navbarHeight = navbar.offsetHeight;
+      document.documentElement.style.setProperty('--navbar-height', navbarHeight + 'px');
+    }
+
+    window.addEventListener('load', updateHeroHeight);
+    window.addEventListener('resize', updateHeroHeight);
+
   </script>
 
 </body>
