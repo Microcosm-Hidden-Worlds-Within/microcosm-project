@@ -32,6 +32,7 @@
         <link rel="stylesheet" type="text/css" href="css/colors.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/map-media.css">
+        <link rel="stylesheet" type="text/css" href="css/map-style.css">
 
         <!-- Javascript -->
     
@@ -120,11 +121,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-xl-5">
+                <div class="col-12 col-xl-5 ml-3">
                     <div class="mt-5 d-flex flex-row flex-wrap p-3" id="subnarratives-buttons">
                         
                     </div>
-                    <h4>The pictures</h4>
+                    <div class="m-3">
+                        <h4>The pictures</h4>
+                    </div>
                     <div class="items-container mt-4">
                         <ul id="list-items">
                         </ul>
@@ -261,7 +264,7 @@
                     let itemId = itemList[x]["id"];
                     let itemName = itemList[x]["name"];
                     encodedItemId = encodeURIComponent(itemId);
-                    byId("list-items").innerHTML += `<li><a href="app.html?id=${encodedItemId}&narrative=${encodedItemNarrative}&subnarrative=${encodedItemSubnarrative}">${itemId} ${itemName}</a></li>`;
+                    byId("list-items").innerHTML += `<li><a href="app.html?id=${encodedItemId}&narrative=${encodedItemNarrative}&subnarrative=${encodedItemSubnarrative}"><span class="identifier">${itemId}</span> ${itemName}</a></li>`;
                 };
                 console.log(buttonText);
             }
@@ -307,35 +310,6 @@
             function byId(id) {
                 return document.getElementById(id)
             }
-
-
-
-
-
-
-            /* document.addEventListener('DOMContentLoaded', function() {
-                const image = document.getElementById('image');
-                const text = document.getElementById('text');
-                let currentImageIndex = 0;
-    
-                const images = [
-                    {
-                        src: 'plan of museum/map.png',
-                        text: 'Narrative blablablabla room 1'
-                    },
-                    {
-                        src: 'plan of museum/map2.png',
-                        text: 'Narrative blablablabla room 2'
-                    }
-                ];
-    
-                image.addEventListener('click', function() {
-                    currentImageIndex = (currentImageIndex + 1) % images.length;
-                    image.src = images[currentImageIndex].src;
-                    text.textContent = images[currentImageIndex].text;
-                    text.style.display = images[currentImageIndex].text ? 'block' : 'none';
-                });
-            }); */
         </script>
 </body>
 </html>

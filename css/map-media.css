@@ -7,11 +7,16 @@
 
   }
 
-@media (min-width: 992px) {
-    
-    .items-container {
-      height: 40vh;
-      overflow-y: scroll;
-    }
+@media (min-width:1200px) {
+
+  #list-items {
+    column-count: 2; /* Adjust the number of columns as needed */
+    column-gap: 1rem; /* Adjust the gap between columns as needed */
+    max-height: 500px; /* Adjust the height to fit your design */
+    overflow-y: auto; /* Optional: add a scrollbar if items overflow vertically */
+    list-style-type: none; /* Optional: remove bullet points if you prefer */
+    padding: 0; /* Optional: remove padding */
+    margin: 0; /* Optional: remove margin */
+  }
 
 }
