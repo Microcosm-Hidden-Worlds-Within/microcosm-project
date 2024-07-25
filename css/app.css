@@ -387,6 +387,11 @@ th {
    transform: rotate(-180deg);
 }
 
+.card-footer div img.rotated:hover {
+   cursor: pointer;
+
+}
+
 .card-footer:last-child {
    border-radius: 0;
 }
@@ -459,6 +464,10 @@ fieldset:disabled {
 
 
 /* narrative info */
+
+img.close-btn:hover {
+   cursor: pointer
+}
 
 .narrative-info {
    position: fixed;
