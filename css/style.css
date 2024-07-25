@@ -248,7 +248,7 @@ h4 {
 
 /* The cards */
 [class^="card-img-bg-"] {
-  height: 40vh;
+  height: 30vh;
   background-size: cover;
   background-position: center;
 }
