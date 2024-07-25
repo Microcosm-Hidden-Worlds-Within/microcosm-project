@@ -398,6 +398,7 @@
   </footer>
 
   <script>
+    // animation on text when the user reaches it
     document.addEventListener('DOMContentLoaded', function () {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -413,7 +414,7 @@
       });
     });
 
-
+    // discover navbar height
     function updateHeroHeight() {
       const navbar = document.querySelector('.navbar-fixed');
       const navbarHeight = navbar.offsetHeight;
