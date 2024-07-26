@@ -70,8 +70,22 @@ h4 {
 }
 
 /* Nav bar */
+/* Save on home css */
 .navbar-brand img {
   height: 40px;
+}
+
+
+/* Nav bar app version */
+/* Save on home css */
+/* The modal window covers the full screen */
+.modal-fullscreen .modal-content {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -241,12 +255,15 @@ section .container-fluid {
 }
 
 .nav .nav-link.active {
-  background-color: var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  border: 1px solid var(--tertiary);
 }
 
 .narrative-item a:hover {
-  color: var(--primary);
-  background-color: var(--secondary);
+  color: var(--tertiary);
+  background-color: var(--primary);
+  border: 1px solid var(--tertiary);
   cursor: pointer;
 }
 
@@ -291,16 +308,7 @@ section .btn-primary {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Nav bar app version */
-/* The modal window covers the full screen */
-.modal-fullscreen .modal-content {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  border-radius: 0;
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* Adjust the modal header and body */
 .modal-header {
