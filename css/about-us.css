@@ -1,0 +1,52 @@
+.center-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100%;
+   /* Make sure the container takes full viewport height */
+}
+
+.d-flex {
+   flex-direction: column;
+}
+
+.name {
+   text-align: center;
+   font-weight: 600;
+}
+
+.card {
+   border: none;
+   margin: 3rem;
+}
+
+.card:hover {
+   box-shadow: none;
+}
+
+a.git {
+   width: fit-content;
+   display: block;
+   text-align: center;
+   margin: 0 auto;
+   text-decoration: none;
+   color: var(--tertiary);
+   padding: 2px;
+   transition: 0.3s ease-in;
+}
+
+a.git:hover {
+   background-color: var(--tertiary);
+   color: var(--primary)
+}
+
+.card-img-top {
+   padding: 10px;
+}
+
+@media (min-width:768px) {
+   .d-flex {
+      flex-direction: row;
+   }
+}
