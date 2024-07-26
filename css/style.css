@@ -158,6 +158,26 @@ h4 {
   border-color: var(--bs-btn-active-border-color);
 }
 
+/* Buttons */
+.btn-primary {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 2px solid var(--tertiary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  border: 2px solid var(--tertiary);
+  transition: all 0.3s ease-out;
+}
+
+section .btn-primary {
+  margin-top: 1rem
+}
+
+
+
 /* Carousel */
 
 section .container-fluid {
@@ -238,50 +258,6 @@ section .container-fluid {
   font-weight: 500;
 }
 
-/* Narrative page */
-/* The nav for scrolling */
-.nav-pills {
-  font-size: 2rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-.nav-for-scroll {
-  background-color: var(--tertiary);
-}
-
-.narrative-item a {
-  color: var(--primary);
-}
-
-.nav .nav-link.active {
-  background-color: var(--primary);
-  color: var(--tertiary);
-  border: 1px solid var(--tertiary);
-}
-
-.narrative-item a:hover {
-  color: var(--tertiary);
-  background-color: var(--primary);
-  border: 1px solid var(--tertiary);
-  cursor: pointer;
-}
-
-/* The cards */
-[class^="card-img-bg-"] {
-  height: 30vh;
-  background-size: cover;
-  background-position: center;
-}
-
-.card-title {
-  font-size: 2rem;
-}
-
-.card-text {
-  font-size: 1.6rem;
-}
-
 .btn-primary {
   background-color: var(--tertiary);
   color: var(--primary);
@@ -298,16 +274,6 @@ section .container-fluid {
 section .btn-primary {
   margin-top: 1rem
 }
-
-.card {
-  width: 100%;
-  transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 
 
 /* Adjust the modal header and body */

@@ -1,73 +1,101 @@
 /* Map page */
+/* The nav for scrolling */
+.nav-pills {
+  font-size: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.nav-for-scroll {
+  background-color: var(--tertiary);
+}
+
+.narrative-item a {
+  color: var(--primary);
+}
+
+.nav .nav-link.active {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  border: 1px solid var(--tertiary);
+}
+
+.narrative-item a:hover {
+  color: var(--tertiary);
+  background-color: var(--primary);
+  border: 1px solid var(--tertiary);
+  cursor: pointer;
+}
+
+/* the map */
 .map-container img {
     width: 100%;
   }
   
-  .text {
-    display: none;
-    margin-top: 10px;
-  }
-  
-  /* Subnarratives buttons in the map page */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  
-  .narrative-button {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 2px solid var(--secondary);
-    padding: 7px;
-    border-radius: 12px;
-  }
-  
-  .narrative-button p {
-    margin: 0 5px;
-    color: inherit;
-  
-  }
-  
-  .narrative-icon {
-    height: 3.5rem;
-    width: auto;
-  }
-  
-  /* hover behaviour on narrative buttons */
-  .narrative-button:hover {
-    border: 2px solid var(--tertiary);
-    color: var(--tertiary);
-    transition: all 0.3s ease-out;
-  }
-  
-  .narrative-button:hover img {
-    filter: brightness(0) saturate(100%) invert(17%) sepia(80%) saturate(4825%) hue-rotate(355deg) brightness(84%) contrast(87%);
-    transition: all 0.3s ease-out;
-  }
-  
-  
-  /* active narrative button */
-  .narrative-button.active-narrative {
-    background-color: var(--tertiary);
-    border: 2px solid var(--tertiary);
-    color: var(--primary);
-  }
-  
-  .narrative-button.active-narrative img {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-  }
-  
-  /* list of items */
-  .identifier {
-    color: var(--tertiary);
-  }
-  
-  #list-items {
-    list-style-type: none;
-  }
-  
+.text {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Subnarratives buttons in the map page */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.narrative-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  padding: 7px;
+  border-radius: 12px;
+}
+
+.narrative-button p {
+  margin: 0 5px;
+  color: inherit;
+
+}
+
+.narrative-icon {
+  height: 3.5rem;
+  width: auto;
+}
+
+/* hover behaviour on narrative buttons */
+.narrative-button:hover {
+  border: 2px solid var(--tertiary);
+  color: var(--tertiary);
+  transition: all 0.3s ease-out;
+}
+
+.narrative-button:hover img {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(80%) saturate(4825%) hue-rotate(355deg) brightness(84%) contrast(87%);
+  transition: all 0.3s ease-out;
+}
+
+
+/* active narrative button */
+.narrative-button.active-narrative {
+  background-color: var(--tertiary);
+  border: 2px solid var(--tertiary);
+  color: var(--primary);
+}
+
+.narrative-button.active-narrative img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+/* list of items */
+.identifier {
+  color: var(--tertiary);
+}
+
+#list-items {
+  list-style-type: none;
+}

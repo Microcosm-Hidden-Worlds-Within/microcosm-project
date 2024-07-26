@@ -28,7 +28,6 @@
   <link rel="stylesheet" type="text/css" href="css/home-media.css">
 
   <!-- Javascript -->
-  <script type="text/javascript" src="#"></script>
 
   <title>Microcosm: Hidden Worlds Within</title>
 </head>
@@ -125,110 +124,11 @@
       <!-- Documentation for carousel at https://getbootstrap.com/docs/5.3/components/carousel/#how-it-works -->
       <div class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-              aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-              aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
-              aria-label="Slide 7"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
-              aria-label="Slide 8"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
-              aria-label="Slide 9"></button>
+          <div class="carousel-indicators" id="carouselIndicators">
+            
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('pics/pic-9.jpg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Circulatory system</h5>
-                  <p>It moves blood, delivering oxygen and nutrients while removing waste.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-10.jpg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Digestive system</h5>
-                  <p>It breaks down food into nutrients and eliminates waste.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-12.jpg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Immune system</h5>
-                  <p>It defends against infections and diseases by identifying and destroying harmful invaders.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-13.jpg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Integumentary system</h5>
-                  <p>It includes the skin, hair, and nails, providing protection and helping regulate temperature.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-14.jpg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Muscular system</h5>
-                  <p>It enables movement and maintains posture through muscle contractions.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-15.jpeg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Nervous system</h5>
-                  <p>It controls and coordinates activities by transmitting signals to and from different parts of the
-                    body.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-11.jpg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Respiratory system</h5>
-                  <p>It facilitates breathing, taking in oxygen and expelling carbon dioxide.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-5.jpeg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Skeletal system</h5>
-                  <p>It provides structure, protects organs, and supports movement.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('pics/pic-18.jpeg');">
-              <div class="transparent-background">
-                <div class="carousel-caption mb-5">
-                  <h5 class="carousel-title">Urinary system</h5>
-                  <p>It removes waste from the blood and regulates water and electrolyte balance.</p>
-                  <button type="button" class="btn btn-outline-light mt-3">Explore</button>
-                </div>
-              </div>
-            </div>
-
+          <div class="carousel-inner" id="carouselInner">
+            
           </div>
 
 
@@ -244,10 +144,14 @@
           </button>
         </div>
       </div>
+
+
       <div class="center mt-4">
         <a class="btn btn-primary" href="narratives.html" role="button">See all the narratives</a>
       </div>
     </section>
+
+    
     <section id="navigation" class="colored-bg">
       <h3>Microcosm exhibition at Palazzo Pepoli</h3>
       <div>
@@ -413,6 +317,66 @@
         observer.observe(p);
       });
     });
+
+    document.addEventListener("DOMContentLoaded", async function(event) {
+                    fetch('narrative-data.json')
+                    .then(response => response.json())
+                    .then(data => {	
+                        const narrativeData = data;
+                        insertDataInCarousel(narrativeData);
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                    });
+                });
+
+    function insertDataInCarousel(dataToInsert) {
+      const narrativeName = dataToInsert.narratives[0].name
+      const subnarrativesList = dataToInsert.narratives[0].subnarratives;
+      for (let i = 0; i < subnarrativesList.length; i++) {
+        let subnarrativeName = subnarrativesList[i]["name"];
+        let subnarrativePic = subnarrativesList[i]["pic"];
+        let subnarrativeDesc = subnarrativesList[i]["short-desc"];
+        let encodedNarrativeName = encodeURIComponent(narrativeName);
+        let encodedSubnarrativeName = encodeURIComponent(subnarrativeName);
+        if (i == 0) {
+          byId("carouselIndicators").innerHTML += `<button type="button" data-bs-target="#carouselExampleCaptions" 
+              data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>`;
+
+          byId("carouselInner").innerHTML += `<div class="carousel-item active" style="background-image: url('${subnarrativePic}');">
+              <div class="transparent-background">
+                <div class="carousel-caption mb-5">
+                  <h5 class="carousel-title">${subnarrativeName}</h5>
+                  <p>${subnarrativeDesc}</p>
+                  <a href="app.html?narrative=${encodedNarrativeName}&subnarrative=${encodedSubnarrativeName}"><button type="button" class="btn btn-outline-light mt-3">Explore</button></a>
+                </div>
+              </div>
+            </div>`;
+        } else {
+          byId("carouselIndicators").innerHTML += `<button type="button" data-bs-target="#carouselExampleCaptions" 
+              data-bs-slide-to="${i}"
+              aria-label="Slide ${i + 1}"></button>`;
+
+          byId("carouselInner").innerHTML += `<div class="carousel-item" style="background-image: url('${subnarrativePic}');">
+              <div class="transparent-background">
+                <div class="carousel-caption mb-5">
+                  <h5 class="carousel-title">${subnarrativeName}</h5>
+                  <p>${subnarrativeDesc}</p>
+                  <a href="app.html?narrative=${encodedNarrativeName}&subnarrative=${encodedSubnarrativeName}"><button type="button" class="btn btn-outline-light mt-3">Explore</button></a>
+                </div>
+              </div>
+            </div>`;
+        }
+        
+
+      }
+    }
+
+    function byId(id) {
+	                return document.getElementById(id)
+                }
+                
 
     // discover navbar height
     function updateHeroHeight() {
