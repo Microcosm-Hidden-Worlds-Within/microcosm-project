@@ -1,3 +1,4 @@
+/* general rules for the whole website */
 :root {
   --navbar-height: 0px;
 }
@@ -39,6 +40,39 @@ h3 {
   margin-bottom: 2rem;
 }
 
+h4 {
+  font-size: 2.8rem;
+}
+
+.btn {
+  border: 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 2px solid var(--tertiary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  border: 2px solid var(--tertiary);
+  transition: all 0.3s ease-out;
+}
+
+section .btn-primary {
+  margin-top: 1rem
+}
+
+
+/* Rules for the home-page */
+
 h3::before {
   position: absolute;
   bottom: 10px;
@@ -49,19 +83,6 @@ h3::before {
   margin-left: calc(-15rem / 2);
   background-color: var(--tertiary);
   z-index: 100;
-}
-
-h4 {
-  font-size: 2.8rem;
-}
-
-
-.btn {
-  border: 0;
-  font-size: 1.5rem;
-  padding: 1rem;
-  font-weight: 500;
-  border-radius: 10px;
 }
 
 
@@ -157,26 +178,6 @@ h4 {
   background-color: var(--primary);
   border-color: var(--bs-btn-active-border-color);
 }
-
-/* Buttons */
-.btn-primary {
-  background-color: var(--tertiary);
-  color: var(--primary);
-  border: 2px solid var(--tertiary);
-}
-
-.btn-primary:hover {
-  background-color: var(--primary);
-  color: var(--tertiary);
-  border: 2px solid var(--tertiary);
-  transition: all 0.3s ease-out;
-}
-
-section .btn-primary {
-  margin-top: 1rem
-}
-
-
 
 /* Carousel */
 
