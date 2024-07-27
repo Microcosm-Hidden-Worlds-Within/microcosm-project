@@ -46,6 +46,10 @@ a.git:hover {
 }
 
 @media (min-width:768px) {
+   html {
+      font-size: 12px;
+   }
+
    .d-flex {
       flex-direction: row;
    }
