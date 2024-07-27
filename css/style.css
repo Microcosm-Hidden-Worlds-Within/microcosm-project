@@ -64,6 +64,10 @@ h4 {
 
 /* Nav bar */
 /* Save on home css */
+.navbar {
+  height: 4.5rem;
+}
+
 .navbar-brand img {
   height: 40px;
 }

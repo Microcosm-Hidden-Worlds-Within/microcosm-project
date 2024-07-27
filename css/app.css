@@ -19,6 +19,10 @@ a {
    color: inherit;
 }
 
+strong {
+   color: var(--tertiary);
+}
+
 .card {
    color: var(--secondary);
 }
