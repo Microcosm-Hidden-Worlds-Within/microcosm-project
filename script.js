@@ -366,7 +366,6 @@ function byId(id) {
 
 function initObserver() {
          const cardTexts = document.querySelectorAll('.card-text');
-         console.log(cardTexts);
 
          const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
