@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	const itemNarrative = urlParams.get("narrative");
 	const itemSubnarrative = urlParams.get("subnarrative");
 	const itemId = urlParams.get("id");
+	const urls = [
+		"narrative-data.json",
+		"data.json"
+	];
 	
 	if (itemNarrative) {
 		currentNarrative = decodeURIComponent(itemNarrative);
@@ -31,58 +35,95 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	}
 
 	
-	// parse NARRATIVE JSON
-	fetch('narrative-data.json')
-	.then(response => response.json())
-	.then(data => {	
-		originalData = data
+	// // parse NARRATIVE JSON
+	// fetch('narrative-data.json')
+	// .then(response => response.json())
+	// .then(data => {	
+	// 	originalData = data
 
-		// populate narrativeIcons 
-		originalData.narratives.forEach(narrative => {
-    		const subnarrativesMap = {};
-   		narrative.subnarratives.forEach(sub => {
-         	subnarrativesMap[sub.name] = sub.icon;
-    		});
-    		narrativeIcons[narrative.name] = subnarrativesMap;
-		});
+	// 	// populate narrativeIcons 
+	// 	originalData.narratives.forEach(narrative => {
+    // 		const subnarrativesMap = {};
+   	// 	narrative.subnarratives.forEach(sub => {
+    //      	subnarrativesMap[sub.name] = sub.icon;
+    // 		});
+    // 		narrativeIcons[narrative.name] = subnarrativesMap;
+	// 	});
 
-		// populate narrativeDesc
-		originalData.narratives.forEach(narrative => {
-    		const subnarrativesMap = {};
-   		narrative.subnarratives.forEach(sub => {
-         	subnarrativesMap[sub.name] = sub.description;
-    		});
-    		narrativeDesc[narrative.name] = subnarrativesMap;
-		});
-	});
-	
+	// 	// populate narrativeDesc
+	// 	originalData.narratives.forEach(narrative => {
+    // 		const subnarrativesMap = {};
+   	// 	narrative.subnarratives.forEach(sub => {
+    //      	subnarrativesMap[sub.name] = sub.description;
+    // 		});
+    // 		narrativeDesc[narrative.name] = subnarrativesMap;
+	// 	});
+	// });
 
-	// parse DATA JSON
-	fetch('data.json')
-	.then(response => response.json())
-	.then(data => {	
+	// // parse DATA JSON
+	// fetch('data.json')
+	// .then(response => response.json())
+	// .then(data => {	
 
-		objects = data.objects;
-		var startWith = data.meta.startWith;
-		var object = objects[startWith];
+	// 	objects = data.objects;
+	// 	var startWith = data.meta.startWith;
+	// 	var object = objects[startWith];
 
-		narratives = data.meta.narratives;
+	// 	narratives = data.meta.narratives;
 		
-		if (currentNarrative == "") { 
-			currentNarrative = data.meta.startNarrative;
-		}
+	// 	if (currentNarrative == "") { 
+	// 		currentNarrative = data.meta.startNarrative;
+	// 	}
 	
-		if (currentValue == "") {
-			currentValue = data.meta.startValue;
-		}
-		prepareNarratives();
+	// 	if (currentValue == "") {
+	// 		currentValue = data.meta.startValue;
+	// 	}
+	// 	prepareNarratives();
 
-		// Adjust height after content is prepared
-        adjustHeight('data-container', 'figure-container');
+	// 	// Adjust height after content is prepared
+    //     adjustHeight('data-container', 'figure-container');
+	// });
 
+	Promise.all(urls.map(url => fetch(url).then(response => response.json())))
+		.then(dataArray => {
+			originalData = dataArray[0];
+			objects = dataArray[1].objects;
+
+			// populate narrativeIcons 
+			originalData.narratives.forEach(narrative => {
+				const subnarrativesMap = {};
+			   narrative.subnarratives.forEach(sub => {
+				 subnarrativesMap[sub.name] = sub.icon;
+				});
+				narrativeIcons[narrative.name] = subnarrativesMap;
+			});
+	
+			// populate narrativeDesc
+			originalData.narratives.forEach(narrative => {
+				const subnarrativesMap = {};
+			   narrative.subnarratives.forEach(sub => {
+				 subnarrativesMap[sub.name] = sub.description;
+				});
+				narrativeDesc[narrative.name] = subnarrativesMap;
+			});
+
+			var startWith = dataArray[1].meta.startWith;
+			var object = objects[startWith];
+	
+			narratives = dataArray[1].meta.narratives;
+			
+			if (currentNarrative == "") { 
+				currentNarrative = dataArray[1].meta.startNarrative;
+			}
 		
-	});
-
+			if (currentValue == "") {
+				currentValue = dataArray[1].meta.startValue;
+			}
+			prepareNarratives();
+	
+			// Adjust height after content is prepared
+			adjustHeight('data-container', 'figure-container');
+		})
 	
 });
 
