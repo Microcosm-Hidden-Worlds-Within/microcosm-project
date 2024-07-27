@@ -3,6 +3,7 @@
 
 html {
   font-size: 10px;
+  background-color: var(--secondary);
 }
 
 
@@ -96,14 +97,15 @@ h4 {
   padding: 3rem 5vw;
   border-top: solid 1px grey;
   font-size: 1.2rem;
-  color: var(--secondary);
-  background-color: rgb(226, 226, 226);
+  color: var(--primary);
+  background-color: var(--secondary);
   text-wrap: wrap;
   text-align: justify;
 }
 
 #footer a {
   text-decoration: underline;
+  color: var(--primary);
 }
 
 #footer li {

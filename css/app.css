@@ -100,7 +100,6 @@ h6 {
 
 .card-body {
    padding: 0;
-   margin-bottom: 6rem;
 }
 
 .row {
@@ -362,7 +361,7 @@ th {
 .card-text {
    max-width: 1000px;
    text-align: justify;
-   margin: auto auto 80px auto;
+   margin: auto;
    font-size: 1.5rem;
    padding: 1.5rem;
 
@@ -539,4 +538,8 @@ img.close-btn:hover {
    text-align: center;
    margin-top: 10px;
 
+}
+
+#footer {
+   margin-bottom: 5rem;
 }
