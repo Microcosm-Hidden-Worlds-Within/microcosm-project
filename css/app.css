@@ -29,13 +29,11 @@ strong {
 
 /* titles */
 h2 {
+   display: inline;
    text-align: center;
    font-size: 3.5rem;
    font-weight: 400;
-   padding: 1rem;
-   margin: 0;
-   color: var(--primary);
-   background-color: var(--secondary);
+
 }
 
 h3 {
@@ -70,7 +68,34 @@ h6 {
 .card-header {
    padding: 0;
    border: 0;
-   background-color: transparent;
+   padding: 1rem;
+   margin: 0;
+   text-align: center;
+   color: var(--primary);
+   background-color: var(--secondary);
+   position: relative
+}
+
+.icon-where {
+   display: inline-block;
+   background-color: var(--secondary);
+   position: fixed;
+   right: 1.5rem;
+   bottom: 7.5rem;
+   height: 5rem;
+   width: 5rem;
+   border-radius: 100%;
+   padding: 10px;
+   text-align: center;
+   border: 2px solid var(--primary);
+   z-index: 50;
+   cursor: pointer;
+
+}
+
+.icon-where img {
+   max-height: 3.8rem;
+   width: auto;
 }
 
 .card-body {

@@ -34,7 +34,7 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
          <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-               <img src="icons/logo/logo.png" alt="Logo" style="height: 40px;">
+               <img src="icons/logo/logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal"
                aria-controls="navbarModal" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@
          <div class="modal-content">
             <div class="modal-header">
                <a class="modal-title" id="navbarModalLabel" href="index.html">
-                  <img src="icons/logo/logo_full.svg" alt="Logo" style="height: 40px;">
+                  <img src="icons/logo/logo_full.svg" alt="Logo">
                </a>
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -98,7 +98,19 @@
          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                <div class="modal-body">
-                  <img id="modal" src="" class="img-fluid" alt="">
+                  <img id="img-modal" src="" class="img-fluid" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Modal to open the map -->
+      <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <p id="object-id"></p>
+                  <img id="map-modal" src="" class="img-fluid" alt="">
                </div>
             </div>
          </div>
@@ -109,6 +121,7 @@
          <!-- Header Card-->
          <div class="card-header">
             <h2 id="header"></h2>
+
          </div>
          <!-- Body Card-->
          <div class="card-body">
@@ -200,6 +213,9 @@
          <img class="close-btn" src="icons/close.png" alt="">
          <div id="narrative-info"></div>
       </div>
+
+      <div class="icon-where" class=" m-auto" alt="" data-bs-toggle="modal" data-bs-target="#mapModal"><img
+            src="icons/where.png"></div>
 
    </main>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

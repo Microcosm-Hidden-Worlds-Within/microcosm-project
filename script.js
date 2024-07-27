@@ -1,3 +1,7 @@
+
+
+var narrativesData = {}
+var objectsData = {}
 var objects = [];
 var narratives = [];
 var currentSelection = [];
@@ -6,6 +10,7 @@ var currentValue= "";
 var currentSort = "";
 var narrativeIcons = {};
 var narrativeDesc = {};
+var narrativeMaps = {};
 
 window.onresize = function() {
    adjustHeight('data-container', 'figure-container');
@@ -86,11 +91,12 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 
 	Promise.all(urls.map(url => fetch(url).then(response => response.json())))
 		.then(dataArray => {
-			originalData = dataArray[0];
+			narrativesData = dataArray[0];
+			objectsData = dataArray[1]
 			objects = dataArray[1].objects;
 
 			// populate narrativeIcons 
-			originalData.narratives.forEach(narrative => {
+			narrativesData.narratives.forEach(narrative => {
 				const subnarrativesMap = {};
 			   narrative.subnarratives.forEach(sub => {
 				 subnarrativesMap[sub.name] = sub.icon;
@@ -99,7 +105,7 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 			});
 	
 			// populate narrativeDesc
-			originalData.narratives.forEach(narrative => {
+			narrativesData.narratives.forEach(narrative => {
 				const subnarrativesMap = {};
 			   narrative.subnarratives.forEach(sub => {
 				 subnarrativesMap[sub.name] = sub.description;
@@ -107,17 +113,26 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 				narrativeDesc[narrative.name] = subnarrativesMap;
 			});
 
-			var startWith = dataArray[1].meta.startWith;
+			// populate NarrativeMaps
+			narrativesData.narratives.forEach(narrative => {
+				const subnarrativesMap = {};
+			   narrative.subnarratives.forEach(sub => {
+				 subnarrativesMap[sub.name] = sub.map;
+				});
+				narrativeMaps[narrative.name] = subnarrativesMap;
+			});
+
+			var startWith = objectsData.meta.startWith;
 			var object = objects[startWith];
 	
-			narratives = dataArray[1].meta.narratives;
+			narratives = objectsData.meta.narratives;
 			
 			if (currentNarrative == "") { 
-				currentNarrative = dataArray[1].meta.startNarrative;
+				currentNarrative = objectsData.meta.startNarrative;
 			}
 		
 			if (currentValue == "") {
-				currentValue = dataArray[1].meta.startValue;
+				currentValue = objectsData.meta.startValue;
 			}
 			prepareNarratives();
 	
@@ -172,10 +187,12 @@ function showInfo(index) {
 	byId("img").src = object.image;
 	byId("img").alt = object.data.picData.title;
 	// change the modal 
-   byId("modal").src = object.image;
-   byId("modal").alt = object.data.picData.title;
+   byId("img-modal").src = object.image;
+   byId("img-modal").alt = object.data.picData.title;
 	createInfoLabel(object)
 	createInfoTable(object)
+	// map modal
+	changeMapModal(object)
 	// info
 	inner("shortInfo", "<p>" + object.shortInfo + "</p>" + '<a type="button" class="btn info-button" onclick="more()">Tell me more...</a>'); 
 	//inner("longerInfo", object.longerInfo + '<a type="button" class="btn info-button" onclick="less()">Tell me less...</a>'); 
@@ -187,6 +204,19 @@ function showInfo(index) {
 
 	// Adjust height after showing the info
    adjustHeight('data-container', 'figure-container');
+}
+
+function changeMapModal(object) {
+	if (currentNarrative == "Dimensions") {
+		var map = narrativeMaps[currentNarrative]["Dimensions"]
+	} else {
+		var map = narrativeMaps[currentNarrative][currentValue]
+	};
+	document.getElementById("map-modal").src = "" ; 
+	document.getElementById("map-modal").src = map ; 
+
+	modalText = "You are currently at object " + object.id
+	inner('object-id', modalText)
 }
 
 function changeNarrativeDescription() {
