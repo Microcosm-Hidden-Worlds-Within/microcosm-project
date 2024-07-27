@@ -3,7 +3,8 @@
 
 html {
   font-size: 10px;
-  background-color: var(--secondary);
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -15,6 +16,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
+  height: 100%;
+  width: 100%;
 }
 
 
