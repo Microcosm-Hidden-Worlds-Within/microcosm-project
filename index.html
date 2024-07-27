@@ -377,17 +377,6 @@
       return document.getElementById(id)
     }
 
-
-    // discover navbar height
-    function updateHeroHeight() {
-      const navbar = document.querySelector('.navbar');
-      const navbarHeight = navbar.offsetHeight;
-      document.documentElement.style.setProperty('--navbar-height', navbarHeight + 'px');
-    }
-
-    window.addEventListener('load', updateHeroHeight);
-    window.addEventListener('resize', updateHeroHeight);
-
   </script>
 
 </body>
