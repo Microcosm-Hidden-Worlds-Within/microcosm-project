@@ -425,7 +425,7 @@ th {
    margin: 10px auto;
    background-color: var(--primary);
    color: var(--tertiary);
-   border: 2px solid var(--tertiary);
+   border: 0;
    transition: all 0.3s ease-out;
 }
 
