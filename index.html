@@ -125,10 +125,10 @@
       <div class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators" id="carouselIndicators">
-            
+
           </div>
           <div class="carousel-inner" id="carouselInner">
-            
+
           </div>
 
 
@@ -151,7 +151,7 @@
       </div>
     </section>
 
-    
+
     <section id="navigation" class="colored-bg">
       <h3>Microcosm exhibition at Palazzo Pepoli</h3>
       <div>
@@ -165,8 +165,7 @@
         </div>
       </div>
       <div class="center">
-        <a class="btn btn-primary" href="map.html"
-          role="button">Map of the museum</a>
+        <a class="btn btn-primary" href="map.html" role="button">Map of the museum</a>
       </div>
     </section>
     <section id="address" class="colored-bg">
@@ -318,17 +317,17 @@
       });
     });
 
-    document.addEventListener("DOMContentLoaded", async function(event) {
-                    fetch('narrative-data.json')
-                    .then(response => response.json())
-                    .then(data => {	
-                        const narrativeData = data;
-                        insertDataInCarousel(narrativeData);
-                    })
-                    .catch(error => {
-                        console.error("Error:", error);
-                    });
-                });
+    document.addEventListener("DOMContentLoaded", async function (event) {
+      fetch('narrative-data.json')
+        .then(response => response.json())
+        .then(data => {
+          const narrativeData = data;
+          insertDataInCarousel(narrativeData);
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+    });
 
     function insertDataInCarousel(dataToInsert) {
       const narrativeName = dataToInsert.narratives[0].name
@@ -368,19 +367,19 @@
               </div>
             </div>`;
         }
-        
+
 
       }
     }
 
     function byId(id) {
-	                return document.getElementById(id)
-                }
-                
+      return document.getElementById(id)
+    }
+
 
     // discover navbar height
     function updateHeroHeight() {
-      const navbar = document.querySelector('.navbar-fixed');
+      const navbar = document.querySelector('.navbar');
       const navbarHeight = navbar.offsetHeight;
       document.documentElement.style.setProperty('--navbar-height', navbarHeight + 'px');
     }
