@@ -171,7 +171,7 @@
     {"name": "Dimensions",
         "subnarratives": [
             {
-                "name": "From the smallest to the biggest", 
+                "name": "Dimensions", 
                 "icon": "icons/dimension.png", 
                 "pic": "pics/dimensions/dimensions.jpg", 
                 "short-desc": "See all the pictures ordered by the dimension of the subject, showcasing the fascinating scale from microscopic to larger structures.", 

@@ -191,7 +191,7 @@ function showInfo(index) {
 
 function changeNarrativeDescription() {
 	if (currentNarrative == "Dimensions") {
-		var desc = narrativeDesc[currentNarrative]["From the smallest to the biggest"]
+		var desc = narrativeDesc[currentNarrative]["Dimensions"]
 	} else {
 		var desc = narrativeDesc[currentNarrative][currentValue]
 	};
