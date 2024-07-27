@@ -373,6 +373,10 @@ th {
    z-index: 1001;
 }
 
+.card-footer.open {
+   justify-content: center !important;
+}
+
 .card-footer div {
    display: flex;
    flex-direction: column;

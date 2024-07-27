@@ -398,12 +398,21 @@ function adjustHeight(referenceId, targetId) {
 document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('.card-footer div').addEventListener('click', function () {
          document.querySelector('.narrative-info').classList.toggle('displayed');
-         document.querySelector('.card-footer img').classList.toggle('rotated')
+         document.querySelector('.card-footer img').classList.toggle('rotated');
+		 document.querySelector('.card-footer').classList.toggle('open');
+		 document.querySelectorAll('.nav-button').forEach(button => {
+			button.classList.toggle('d-none');
+		 })
       });
       document.querySelector('.close-btn').addEventListener('click', function () {
          document.querySelector('.narrative-info').classList.toggle('displayed');
-         document.querySelector('.card-footer img').classList.toggle('rotated')
-      });})
+         document.querySelector('.card-footer img').classList.toggle('rotated');
+		 document.querySelector('.card-footer').classList.toggle('open');
+		 document.querySelectorAll('.nav-button').forEach(button => {
+			button.classList.toggle('d-none');
+		 })
+      });
+	})
 
 
 
