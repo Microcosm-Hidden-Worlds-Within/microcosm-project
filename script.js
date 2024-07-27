@@ -289,13 +289,13 @@ function createInfoTable(object) {
 					for (j in items) {
 						var subNarrative = items[j]
 						var icon = narrativeIcons[mainNarrative][subNarrative];
-						//val.push('<a class="button" role="button" href="#" onclick="changeNarrative(\''+i+'\',\''+items[j]+'\')">'+items[j]+'</a>')
+						//val.push('<a class="button" role="button" onclick="changeNarrative(\''+i+'\',\''+items[j]+'\')">'+items[j]+'</a>')
 						// creating narrative buttons 
-						val.push(`<a class="narrative-button" role="button" href="#" onclick="changeNarrative('${mainNarrative}', '${subNarrative}')"><img src="${icon}" class="narrative-icon"></a>`)
+						val.push(`<a class="narrative-button" role="button" onclick="changeNarrative('${mainNarrative}', '${subNarrative}')"><img src="${icon}" class="narrative-icon"></a>`)
 					}
 				} else {	
 					// create dimensions button
-					val.push(`<a class="narrative-button" role="button" href="#" onclick="changeNarrative('${mainNarrative}', '${mainNarrative}')"><img src="icons/dimension.png" class="narrative-icon"><p>${items[0]}</p></a>`)
+					val.push(`<a class="narrative-button" role="button" onclick="changeNarrative('${mainNarrative}', '${mainNarrative}')"><img src="icons/dimension.png" class="narrative-icon"><p>${items[0]}</p></a>`)
 				}
 			inner("infoTable1","<tr><th>"+mainNarrative+"</th><td>"+val.join("")+"</td></tr>", false)
 			}
@@ -312,7 +312,7 @@ function createInfoTable(object) {
 					var subNarrative = items[j]
 					var icon = narrativeIcons[mainNarrative][subNarrative];
 
-					val.push(`<a class="narrative-button" role="button" href="#" onclick="changeNarrative('${mainNarrative}', '${subNarrative}')"><img src="${icon}" class="narrative-icon"><p>${items[j]}</p></a>`)
+					val.push(`<a class="narrative-button" role="button" onclick="changeNarrative('${mainNarrative}', '${subNarrative}')"><img src="${icon}" class="narrative-icon"><p>${items[j]}</p></a>`)
 				}
 			inner("infoTable2","<tr><th>"+i+"</th><td>"+val.join("")+"</td></tr>", false)
 			}
