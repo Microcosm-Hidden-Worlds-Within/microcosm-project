@@ -533,3 +533,10 @@ img.close-btn:hover {
    top: 0;
    padding-bottom: 6.5rem;
 }
+
+/* modal for the map */
+#object-id {
+   text-align: center;
+   margin-top: 10px;
+
+}

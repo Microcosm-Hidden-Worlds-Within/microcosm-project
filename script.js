@@ -215,7 +215,7 @@ function changeMapModal(object) {
 	document.getElementById("map-modal").src = "" ; 
 	document.getElementById("map-modal").src = map ; 
 
-	modalText = "You are currently at object " + object.id
+	modalText = "You are currently at picture " + "<strong>"+ object.id +"</strong>"
 	inner('object-id', modalText)
 }
 
