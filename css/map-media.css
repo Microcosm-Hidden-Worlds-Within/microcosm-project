@@ -1,12 +1,5 @@
 /* Media Queries */
 /* Desktop Version */
-@media (min-width:768px) {
-    html {
-      font-size: 12px;
-    }
-
-  }
-
 @media (min-width:1200px) {
 
   #list-items {

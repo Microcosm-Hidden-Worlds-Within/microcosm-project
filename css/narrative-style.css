@@ -1,10 +1,18 @@
 /* Narrative page */
+h1 {
+  text-align: center;
+}
+
+h2 {
+    font-size: 3.10rem; /* 1.92rem * (1.200^2) */
+}
+
 /* The nav for scrolling */
 .nav-pills {
-    font-size: 2rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
+  font-size: 1.8rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
   
   .nav-for-scroll {
     background-color: var(--tertiary);
@@ -35,7 +43,7 @@
 }
 
 .card-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .card-text {

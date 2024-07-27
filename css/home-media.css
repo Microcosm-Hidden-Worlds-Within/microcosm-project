@@ -1,10 +1,6 @@
 /* Media Queries */
 /* Desktop Version */
 @media (min-width:768px) {
-  html {
-    font-size: 12px;
-  }
-
   section {
     padding-left: 10vw;
     padding-right: 10vw;

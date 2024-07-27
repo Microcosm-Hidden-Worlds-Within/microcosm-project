@@ -1,7 +1,15 @@
 /* Map page */
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
 /* The nav for scrolling */
 .nav-pills {
-  font-size: 2rem;
+  font-size: 1.8rem;
   flex-wrap: nowrap;
   overflow-x: auto;
 }

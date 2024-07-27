@@ -1,5 +1,6 @@
-@media (min-width:992px) {
-    html {
-      font-size: 12px;
+@media (min-width: 768px) {
+    h2 {
+        font-size: 3.10rem; /* 1.92rem * (1.200^2) */
     }
+
 }
