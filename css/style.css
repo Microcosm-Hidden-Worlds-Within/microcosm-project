@@ -6,27 +6,27 @@ html {
 }
 
 h1 {
-  font-size: 5.84rem; /* 1.92rem * (1.200^4) */
+  font-size: 5.84rem; 
 }
 
 h2 {
-    font-size: 4.86rem; /* 1.92rem * (1.200^3) */
+    font-size: 4.86rem;
 }
 
 h3 {
-    font-size: 4.08rem; /* 1.92rem * (1.200^2) */
+    font-size: 4.08rem; 
 }
 
 h4 {
-    font-size: 3.10rem; /* 1.92rem * 1.200 */
+    font-size: 3.10rem; 
 }
 
 h5 {
-    font-size: 2.48rem; /* 1.92rem */
+    font-size: 2.48rem; 
 }
 
 h6 {
-    font-size: 1.92rem; /* Base size */
+    font-size: 1.92rem; 
 }
 
 
