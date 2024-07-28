@@ -11,27 +11,27 @@
 }
 
 h1 {
-    font-size: 3.17rem; /* 1.8rem * (1.125^5) */
+    font-size: 3.17rem; 
 }
 
 h2 {
-    font-size: 2.82rem; /* 1.8rem * (1.125^4) */
+    font-size: 2.82rem; 
 }
 
 h3 {
-    font-size: 2.51rem; /* 1.8rem * (1.125^3) */
+    font-size: 2.51rem; 
 }
 
 h4 {
-    font-size: 2.23rem; /* 1.8rem * (1.125^2) */
+    font-size: 2.23rem; 
 }
 
 h5 {
-    font-size: 2.02rem; /* 1.8rem * (1.125^1) */
+    font-size: 2.02rem; 
 }
 
 h6 {
-    font-size: 1.8rem; /* Base size */
+    font-size: 1.8rem; 
 }
 
 @media (min-width: 768px) {
