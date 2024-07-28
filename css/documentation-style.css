@@ -1,9 +1,49 @@
-.documentation-index ul {
-    list-style: none;
+.documentation-index {
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1rem;
 }
 
-.documentation-index {
-    width: 30%;
-    border: 1px solid black;
-    margin-left: 3rem;
+.main-documentation {
+    padding: 3rem;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 3.17rem; /* 1.8rem * (1.125^5) */
+}
+
+h2 {
+    font-size: 2.82rem; /* 1.8rem * (1.125^4) */
+}
+
+h3 {
+    font-size: 2.51rem; /* 1.8rem * (1.125^3) */
+}
+
+h4 {
+    font-size: 2.23rem; /* 1.8rem * (1.125^2) */
+}
+
+h5 {
+    font-size: 2.02rem; /* 1.8rem * (1.125^1) */
+}
+
+h6 {
+    font-size: 1.8rem; /* Base size */
+}
+
+@media (min-width: 768px) {
+    .documentation-index {
+        width: 50%;
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 992px) {
+    .documentation-index {
+        width: 30%;
+        margin-left: 5%;
+    }
 }
