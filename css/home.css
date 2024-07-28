@@ -16,6 +16,13 @@ h2 {
    text-align: center;
 }
 
+h3 {
+   text-align: center;
+   padding: 2rem;
+   position: relative;
+   margin-bottom: 2rem;
+ }
+
 
 h3::before {
    position: absolute;

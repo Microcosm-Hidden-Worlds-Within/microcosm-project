@@ -47,13 +47,6 @@ body {
 
 
 /* To which page does this rule refer to */
-h3 {
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  margin-bottom: 2rem;
-}
-
 .btn {
   border: 0;
   font-size: 1.5rem;

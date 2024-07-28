@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Javascript for navbar-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/colors.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/documentation-style.css">
+
+  <title>Microcosm: Hidden Worlds Within</title>
+</head>
+
+<body>
+  <header>
+    <!-- Documentation for navbar at https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="icons/logo/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal"
+          aria-controls="navbarModal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="app.html">Exhibition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="narratives.html">Narratives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="map.html">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about_us.html">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="navbarModal" tabindex="-1" aria-labelledby="navbarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="modal-title" id="navbarModalLabel" href="index.html">
+            <img src="icons/logo/logo_full.svg" alt="Logo">
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Navbar content duplicated inside the modal -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="app.html">Exhibition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="narratives.html">Narratives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="map.html">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about_us.html">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="text-center mt-5"><h1>Documentation</h1></div>
+    <div class="documentation-index">
+        <ul>
+            <li><a href="#1">General Introduction About Project</a>
+                <ul>
+                    <li><a href="#1.1">Idea</a>
+                        <ul>
+                            <li><a href="#1.1.1">List of Pictures</a></li>
+                            <li><a href="#1.1.2">Narratives and Sub-Narratives</a></li>
+                            <li><a href="#1.1.3">Objectives</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#1.2">Idea Development</a>
+                        <ul>
+                            <li><a href="#1.2.1">Brainstorming Categories</a></li>
+                            <li><a href="#1.2.2">Techniques for Ideation in Design</a></li>
+                            <li><a href="#1.2.3">Primary Goals and Selection of Project Topic</a></li>
+                            <li><a href="#1.2.4">Popularity of the Human Body as a Topic</a></li>
+                            <li><a href="#1.2.5">Assigning Responsibilities</a></li>
+                            <li><a href="#1.2.6">Team Responsibilities</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <div class="main-documentation container mt-5 mb-5">
+        <h2 id="1">1. General Introduction About Project</h2>
+
+        <h3 id="1.1">1.1 Idea</h3>
+        <p>Welcome to our project for the Information Modelling and Web Technologies course. This project embarks on a fascinating journey into the <strong>microscopic world</strong>, presenting a collection of 19 meticulously curated images of cells, bacteria, and human body organs.</p>
+        <p>Our mission is to create <strong>an engaging and educational web experience</strong> that showcases these images within the context of <strong>a virtual exhibition at Palazzo Pepoli in Bologna</strong>.</p>
+        <p>The central theme of our project revolves around the <strong>narratives and sub-narratives</strong> that structure and enhance the viewer's understanding of the images. By organizing the data into coherent and interrelated stories, we aim to transform the collection into a rich tapestry of scientific discovery and human anatomy.</p>
+
+        <h4 id="1.1.1">1.1.1 List of Pictures</h4>
+        <ul>
+            <li>Tooth with bacteria</li>
+            <li>Microplasma</li>
+            <li>Staphylococcus aureus</li>
+            <li>Clostridium difficile colony</li>
+            <li>Stromal Lymphocytes</li>
+            <li>Red Globules</li>
+            <li>Human hair</li>
+            <li>Purkinje neurons</li>
+            <li>Tongue</li>
+            <li>Blood vessels in the optic disc</li>
+            <li>Blood vessel in a melanoma</li>
+            <li>Healthy hair bulb</li>
+            <li>Alveoli</li>
+            <li>Collagen</li>
+            <li>Intestinal villi</li>
+            <li>Section of an eye (1)</li>
+            <li>Section of an eye (2)</li>
+            <li>Blood vessel</li>
+            <li>Human proximal tubule</li>
+        </ul>
+
+        <h4 id="1.1.2">1.1.2 Narratives and Sub-Narratives</h4>
+        <p><strong>Our approach to data organization is anchored in the following narratives and sub-narratives:</strong></p>
+        <p><strong>Systems:</strong> Circulatory system, Digestive system, Immune system, Integumentary system, Muscular system, Nervous system, Respiratory system, Skeletal system, Urinary system</p>
+        <p><strong>Type:</strong> Bacterium, Cell, Organ</p>
+        <p><strong>Technique:</strong> Lithography, Scanning Electron Microscopy (SEM), Scanning Electron Microscopy, colorized, Transmission Electron Microscopy (TEM)</p>
+        <p><strong>Period:</strong> Historical, Contemporary</p>
+        <p><strong>Dimensions:</strong> From the smallest to the biggest</p>
+
+        <h4 id="1.1.3">1.1.3 Objectives</h4>
+        <p><strong>Educational Value:</strong> Provide detailed information and context about each image to enhance understanding of microscopic structures and their significance in human biology.</p>
+        <p><strong>Interactive Experience:</strong> Utilize web technologies to create an interactive and immersive exhibition that encourages exploration and curiosity.</p>
+        <p><strong>Narrative Integration:</strong> Employ a narrative-driven approach to data organization, ensuring that each image is part of a larger story that connects with the viewer on multiple levels.</p>
+        <p><strong>Aesthetic Presentation:</strong> Design the website with a focus on visual appeal and user-friendly navigation, reflecting the elegance and historical significance of Palazzo Pepoli.</p>
+        <p>Through this project, we aim to bridge the gap between art, science, and technology. By bringing microscopic images to life in a virtual museum setting, we hope to inspire a deeper appreciation for the complexities of the human body and the scientific techniques used to explore it.</p>
+        <p><strong>Welcome to a world where the unseen becomes visible, and every image tells a story.</strong></p>
+
+        <h3 id="1.2">1.2 Idea Development</h3>
+        <p>We began our project with a comprehensive brainstorming session, focusing on the most critical aspects of web development. Our approach was rooted in an iterative design process. Utilizing notes for publication, we brainstormed and gathered intriguing ideas.</p>
+        <p>This cycle was split into two phases:</p>
+        <ul>
+            <li>In the first phase, we generated a wide array of ideas.</li>
+            <li>In the second phase, we organized and selected the most promising ones.</li>
+        </ul>
+
+        <h4 id="1.2.1">1.2.1 Brainstorming Categories</h4>
+        <ul>
+            <li><strong>Information Architecture:</strong> We considered how to structure and present information effectively.</li>
+            <li><strong>General Graphic Design:</strong> We explored various visual styles and design principles.</li>
+            <li><strong>User Interface:</strong> We designed for both desktop and mobile applications.</li>
+            <li><strong>User Experience:</strong> We focused on creating an intuitive and engaging experience for our users.</li>
+        </ul>
+
+        <h4 id="1.2.2">1.2.2 Techniques for Ideation in Design</h4>
+        <p>For our brainstorming sessions, we employed several ideation techniques, such as mind mapping, affinity diagrams, and the SCAMPER method (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse). These techniques helped us explore a wide range of possibilities and ensure that no idea was overlooked.</p>
+        <p>Our two-stage approach to ideation was particularly effective for our project. By first generating a broad set of ideas and then narrowing them down, we ensured that we considered all possibilities before making any decisions. This method also allowed us to refine our concepts and focus on the most impactful solutions.</p>
+        <p>Through multiple brainstorming sessions, we were able to clearly define our development goals and principles. This clarity enabled us to distribute responsibilities equitably within our team, ensuring that each member could contribute their strengths to the project.</p>
+
+        <h4 id="1.2.3">1.2.3 Primary Goals and Selection of Project Topic</h4>
+        <p>Our exhibition focuses on micrographs of the human body. Initially, we considered including images of the broader biological world. However, after thorough brainstorming, we decided that concentrating on the human body would be more impactful for several reasons:</p>
+        <ul>
+            <li><strong>Familiarity:</strong> Many people have a basic understanding of the human body. Iconic educational cartoons like "Il était une fois... la Vie" (Once Upon a Time... Life) and the anime "Cells at Work!" have popularized the subject.</li>
+            <li><strong>Educational Relevance:</strong> The human body is a topic covered in primary and high school curricula, making it familiar to a broad audience, including medical students.</li>
+            <li><strong>Personal Connection:</strong> People tend to be more interested in the human body because it directly relates to themselves.</li>
+        </ul>
+
+        <h4 id="1.2.4">1.2.4 Popularity of the Human Body as a Topic</h4>
+        <p>Statistics show that the human body is a popular topic of interest. According to Google Trends, search queries related to human anatomy and physiology consistently rank higher than other biology topics. Educational platforms like Khan Academy and Coursera report higher enrollment numbers for courses on human biology compared to general biology courses. Additionally, children's educational programming featuring the human body garners significant viewership, indicating a widespread interest across age groups.</p>
+        <p>By focusing on the human body, we aim to leverage this inherent interest to create a compelling and educational exhibition that resonates with a wide audience.</p>
+
+        <h4 id="1.2.5">1.2.5 Assigning Responsibilities</h4>
+        <p>When dividing responsibilities, we adhered to a single principle: not to separate by techniques, but to share by functionality. This approach was crucial for us, as it ensured that every team member was involved in the application's development, thereby enhancing their hard skills.</p>
+        <p>By dividing responsibilities based on pages rather than specific tasks, we ensured comprehensive involvement across all aspects of the project. This method facilitated a more integrated and holistic development process.</p>
+
+        <h4 id="1.2.6">1.2.6 Team Responsibilities</h4>
+        <ul>
+            <li><strong>Ludovica Benini and Alberto Ciarrocca:</strong> Responsible for the complete application development, encompassing everything from design to the creation of application navigation algorithms.</li>
+            <li><strong>Simone Casazza and Anna Pak:</strong> Tasked with developing the narrative page and the map page.</li>
+            <li><strong>Entire Team:</strong> Collaboratively developed the home page, ensuring a unified and cohesive entry point for the website.</li>
+        </ul>
+
+
+
+
+
+    </div>
+  </main>
+
+
+  <footer id="footer">
+    <div class="container">
+      <div>
+        <p>
+          The purpose of this web site is to explore various types of typographic and layout style for musem pages, as an end-of-course project for the <em>"Information Modeling and Web technologies"</em> course of the <em>Master Degree in Digital Humanities and Digital Knowledge</em> of the University of Bologna, under prof. Fabio Vitali. The documents contained in this web site have been selected for their length and complexity from Wellcome Collections. Their publication here is not intended to be an alternative or replace their original locations. Full attributions are found in the Documentation page.
+        </p>
+        <p>
+          All copyrights and related rights on the content remain with their original owners.<br>
+          All copyright on the typographic and layout choices are 2024 © Benini Ludovica, Casazza Simone, Ciarrocca
+          Alberto, Pak Anna
+        </p>
+        <p><a href="documentation.html">Read full Documentation</a> | All icons from <a href="https://www.flaticon.com" target="_blank">flaticon.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
