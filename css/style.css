@@ -74,7 +74,24 @@ body {
 /* Save on home css */
 .navbar {
   height: 5rem;
-  --bs-navbar-padding-y: 0;
+  background-color: var(--primary) !important; 
+  border-bottom: 1px solid gray; 
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: var(--secondary);
+}
+  
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--tertiary);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: var(--tertiary); 
 }
 
 .navbar-brand img {
