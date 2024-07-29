@@ -5,6 +5,10 @@
     padding: 1rem;
 }
 
+img {
+    width: 100%;
+}
+
 .main-documentation {
     padding: 3rem;
     text-align: justify;

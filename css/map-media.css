@@ -12,4 +12,8 @@
     margin: 0; /* Optional: remove margin */
   }
 
+  #list-items li {
+    break-inside: avoid;
+  }
+
 }
