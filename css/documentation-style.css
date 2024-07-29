@@ -5,9 +5,15 @@
     padding: 1rem;
 }
 
-img {
-    width: 100%;
+.main-documentation img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
+
+
 
 .main-documentation {
     padding: 3rem;
@@ -19,23 +25,28 @@ h1 {
 }
 
 h2 {
-    font-size: 2.82rem; 
+    font-size: 2.82rem;
+    text-align: left;
 }
 
 h3 {
-    font-size: 2.51rem; 
+    font-size: 2.51rem;
+    text-align: left;
 }
 
 h4 {
-    font-size: 2.23rem; 
+    font-size: 2.23rem;
+    text-align: left;
 }
 
 h5 {
-    font-size: 2.02rem; 
+    font-size: 2.02rem;
+    text-align: left;
 }
 
 h6 {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
+    text-align: left;
 }
 
 @media (min-width: 768px) {
