@@ -218,7 +218,7 @@
                         }
                         `;
 
-                let ruleIndex = mySheet.insertRule(newRule, mySheet.cssRules.length);
+                mySheet.insertRule(newRule, mySheet.cssRules.length);
 
                 if (lastRowItem % 4 == 0 || i == param1.length - 1) {
                     result += "</div>";
