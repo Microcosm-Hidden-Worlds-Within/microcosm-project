@@ -135,6 +135,9 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 				currentValue = objectsData.meta.startValue;
 			}
 			prepareNarratives();
+
+			// fading texts
+			initObserver();
 	
 			// Adjust height after content is prepared
 			adjustHeight('data-container', 'figure-container');
@@ -142,12 +145,8 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 	
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-         initObserver();
-      });
-
-      document.addEventListener('click', function (event) {
-         if (event.target.classList.contains('info-button')) {
+document.addEventListener('click', function (event) {
+      if (event.target.classList.contains('info-button')) {
             initObserver();
          }
       });
@@ -173,7 +172,7 @@ function prepareNarratives() {
 	if (currentSelection.length==0) 
 		currentSelection = objects	
 
-	var index  = currentSelection.findIndex( i => i['id'] == currentSort )
+	var index = currentSelection.findIndex(i => i['id'] == currentSort)
 	if (index == -1) index = 0
 	showInfo(index)
 }
@@ -275,7 +274,7 @@ function createInfoLabel(object) {
 
 // table
 function createInfoTable(object) {
-	inner("infoTable1","",true) ;
+	inner("infoTable1","",true);
 	for (i in object.data.subjectData) {
 		var mainNarrative = i
 		// check if the narrative has a value
@@ -289,7 +288,6 @@ function createInfoTable(object) {
 					for (j in items) {
 						var subNarrative = items[j]
 						var icon = narrativeIcons[mainNarrative][subNarrative];
-						//val.push('<a class="button" role="button" onclick="changeNarrative(\''+i+'\',\''+items[j]+'\')">'+items[j]+'</a>')
 						// creating narrative buttons 
 						val.push(`<a class="narrative-button" role="button" onclick="changeNarrative('${mainNarrative}', '${subNarrative}')"><img src="${icon}" class="narrative-icon"></a>`)
 					}
@@ -359,11 +357,8 @@ function prepareNavigationButtons(index) {
 		byId("buttonNext").onclick = null
 		byId("buttonNext").innerHTML = "--"
 	}
-	if (currentNarrative == "Dimensions") {
-		inner("narrative", currentNarrative, true)
-	} else {
-		inner("narrative", currentValue, true)
-	}
+	// change the name of the narrative displayed 
+	inner("narrative", currentValue, true)
 }
 
 function changeNarrative(narrative, value) {
