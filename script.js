@@ -134,14 +134,26 @@ document.addEventListener("DOMContentLoaded", async function(event) {
 			if (currentValue == "") {
 				currentValue = objectsData.meta.startValue;
 			}
-			prepareNarratives();
 
-			// fading texts
+			prepareNarratives();
+			
+		})
+
+		
+
+		// fading texts
 			initObserver();
 	
-			// Adjust height after content is prepared
+		// Adjust height after content is prepared
 			adjustHeight('data-container', 'figure-container');
-		})
+
+		// Show narrative descripton
+			document.querySelector('.card-footer div').addEventListener('click', function () {
+        displayNarrativeDesc();
+		 })
+      	document.querySelector('.close-btn').addEventListener('click', function () {
+         displayNarrativeDesc()
+		 })
 	
 });
 
@@ -411,33 +423,21 @@ function adjustHeight(referenceId, targetId) {
     var referenceElement = document.getElementById(referenceId);
     var targetElement = document.getElementById(targetId);
 
-
-
     if (referenceElement && targetElement) {
         var referenceHeight = referenceElement.offsetHeight;
         targetElement.style.height = referenceHeight + 'px';
     }
 }
 
-// Change the arrow direction for narrative description
-document.addEventListener('DOMContentLoaded', function () {
-      document.querySelector('.card-footer div').addEventListener('click', function () {
-         document.querySelector('.narrative-info').classList.toggle('displayed');
-         document.querySelector('.card-footer img').classList.toggle('rotated');
-		 document.querySelector('.card-footer').classList.toggle('open');
-		 document.querySelectorAll('.nav-button').forEach(button => {
-			button.classList.toggle('d-none');
-		 })
-      });
-      document.querySelector('.close-btn').addEventListener('click', function () {
-         document.querySelector('.narrative-info').classList.toggle('displayed');
-         document.querySelector('.card-footer img').classList.toggle('rotated');
-		 document.querySelector('.card-footer').classList.toggle('open');
-		 document.querySelectorAll('.nav-button').forEach(button => {
-			button.classList.toggle('d-none');
-		 })
-      });
-	})
+// showing the narratives 
+function displayNarrativeDesc () {
+      document.querySelector('.narrative-info').classList.toggle('displayed');
+      document.querySelector('.card-footer img').classList.toggle('rotated');
+		document.querySelector('.card-footer').classList.toggle('open');
+		document.querySelectorAll('.nav-button').forEach(button => {
+		button.classList.toggle('d-none');
+		 })}
+      
 
 
 
