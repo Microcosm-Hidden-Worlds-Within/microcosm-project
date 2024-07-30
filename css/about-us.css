@@ -14,6 +14,7 @@
 .name {
    text-align: center;
    font-weight: 600;
+   margin: 0
 }
 
 .card {
@@ -25,7 +26,8 @@
    box-shadow: none;
 }
 
-a.git {
+
+.card-text a.git {
    width: fit-content;
    display: block;
    text-align: center;
@@ -43,6 +45,12 @@ a.git:hover {
 
 .card-img-top {
    padding: 10px;
+}
+
+
+
+.likes {
+   text-align: justify;
 }
 
 @media (min-width:768px) {
